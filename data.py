@@ -95,3 +95,6 @@ print(gen)
 
 # df.to_csv('netflix_v2.csv', index=False)
 
+
+imgs = pd.read_csv('https://raw.githubusercontent.com/zihong518/data_visualization/master/data.csv')
+print(imgs)
