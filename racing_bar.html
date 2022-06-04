@@ -4,6 +4,8 @@
 <script src="https://d3js.org/d3.v6.js"></script>
 <script src="https://unpkg.com/d3-simple-slider"></script>
 
+<script src="utils.js"></script>
+
 <!-- Create a div where the graph will take place -->
 <div id="my_dataviz"></div>
 
@@ -29,7 +31,6 @@
       height = 800 - margin.top - margin.bottom;
   
   // append the svg object to the body of the page
-
   let svg = d3.select("#my_dataviz")
     .append("svg")
       .attr("width", width + margin.left + margin.right)
@@ -45,31 +46,11 @@
     
     const parseTime = d3.timeParse("%B %d, %Y");
     data.forEach(element => {
-      // parse datetime data
       element.date_added  = parseTime(element.date_added); 
       element.duration = +element.duration.split(' ')[0];
     });
 
-		// get all genres and countrys
-    let countrys = [];
-    let genres = [];
-    for(const d of data){
-      // country
-      for(const c of d.country.split(', ')){
-        if (!countrys.includes(c) && c){
-          countrys.push(c);
-        }
-      }
-
-      // genres
-      for(const g of d.listed_in.split(', ')){
-        if (!genres.includes(g) && g){
-          genres.push(g);
-        }
-      }
-    }
-		
-
+		const genres = get_all_genres(data)
 		//tranform data structure
     let gtime = d3.group(data , d => d.date_added);
 		
@@ -93,11 +74,11 @@
 				Object.keys(obj).forEach(d => obj[d] += gtime.get(keys[i-1])[d])
 			}
 			
-			// reassign value for every timestamp
+			// reassign value to every timestamp
 			gtime.set(keys[i], obj)
     }
 
-		// add genre in imfo in object
+		// add genre in info in object
 		for(let i=0 ; i<keys.length; i++){
 			let data_obj = gtime.get(keys[i])
 			gtime.set(keys[i], Object.keys(data_obj).map( function(k){
@@ -112,7 +93,7 @@
 		const sliderRange = d3.sliderBottom()
 													.min(d3.min(dateList))
 													.max(d3.timeParse("%Y")('2021'))
-													.step(1000 * 60 * 60 * 24 * 366) // not 365 due
+													.step(1000 * 60 * 60 * 24 * 366) // not 365 
 													.width(800)
 													.tickFormat(d3.timeFormat('%Y'))
 													.default([d3.min(dateList), d3.timeParse("%Y")('2021')])
@@ -257,13 +238,16 @@
 
 
 				svg.selectAll('text.label')
-					.data(data)
+					.data(data, d => d.genre)
 					.join('text')
+					.transition()
+					.duration(tickDuration)
+					.ease(d3.easeLinear)
 					.attr('x', d => x(d.value) - 8)
 					.attr('y', (d, i) =>  y(i) + (y(1)-y(0))/ 2 + 10)
 					.attr('class', 'label')
-					.text(d => d.genre.replace('_', ' ') + ' ' + d.value)
-					//.style('text-anchor', 'end')
+					.text(d => d.genre.replaceAll('_', ' ') + ' ' + d.value)
+					.style('text-anchor', 'end')
 				
 				// show current year
 				svg.select('text.time')
@@ -275,7 +259,7 @@
 					return Math.abs(b - needle_time) < Math.abs(a - needle_time) ? b : a;
 				}
 
-				// get the index pf closest timestamp 
+				// get the index of closest timestamp 
 				let needle_time = start
 				const start_index = dateList.indexOf(dateList.reduce(findcloest))
 				needle_time = end
