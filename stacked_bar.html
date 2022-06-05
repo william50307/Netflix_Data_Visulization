@@ -206,6 +206,8 @@
           .attr("fill", d => color(d.key))
           .attr("class", d => d.key)
           .on('dblclick', function(event, data){ // double click to show the radar chart
+            //console.log(event)
+            //console.log(data)
             const key = data.key
             let sum = data.map(d => d.data[key]).reduce( (a,b) => a + b)
             data = data.map( d => ({'axis' : d.data.genre,  'value' : d.data[key]/sum }))

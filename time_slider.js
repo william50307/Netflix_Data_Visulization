@@ -1,6 +1,5 @@
 function time_slider(min_time, update){
 
-	console.log(min_time)
 	// create time slider
 	const sliderRange = d3.sliderBottom()
 		//.min(d3.min(dateList))
