@@ -300,17 +300,16 @@
 
 	// get all conditions => redraw the chart
 	function update(){
-		const [filtered_data, countrys, genres, amount] = get_all_condition_and_prepare_data() // testing
+		const [filtered_data, countrys, genres, amount] = get_all_condition_and_prepare_data()
 		// update the data amount
 		d3.select('#amount').text(amount)
 
-		console.log
 		// calculate the squre length
 		const r = calculate_r(d3.max([...filtered_data.values()].map(d => d.length)))
 		const x_amount = Math.floor(width / r);
 		const y_amount = Math.floor(height / r);
 
-		// set calculate view amount
+		// set view amount
 		xGroup.domain(d3.range(filtered_data.size))
 
 		// set new domain
