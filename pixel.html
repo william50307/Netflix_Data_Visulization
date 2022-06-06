@@ -28,8 +28,18 @@
 	</div>
 
 	<div id='slider'>
-			<span>From : </span><span id='time_min'>2008</span>
-			<span>To : </span><span id='time_max'>2021</span>
+		<span>From : </span><span id='time_min'>2008</span>
+		<span>To : </span><span id='time_max'>2021</span>
+	</div>
+
+	<div id='averageRating'>
+		<span>From : </span><span id='averageRating_min'>0</span>
+		<span>To : </span><span id='averageRating_max'>10</span>
+	</div>
+
+	<div id='numVotes'>
+		<span>From : </span><span id='numVotes_min'>0</span>
+		<span>To : </span><span id='numVotes_max'>10</span>
 	</div>
 
 </div>
@@ -62,6 +72,8 @@
 		// parse datetime data
 		element.date_added  = parseTime(element.date_added); 
 		element.duration = +element.duration.split(' ')[0];
+		element.averageRating = +element.averageRating
+		element.numVotes = +element.numVotes
 		element.listed_in = element.listed_in.split(', ').map( d => d.replaceAll(' ','_').replaceAll('&', 'and')).join(', ')
 		element.country = element.country.split(', ').map( d => d.replaceAll(' ','_')).join(', ')
 	});
@@ -95,11 +107,15 @@
 	//d3.select("#pixel_filter div.select_type").selectAll("input").on('change', add_and_update)
 
 	// creatre time slider
-	time_slider(d3.min( data.map( d => d.date_added)), update)
+	time_slider('pixel_filter', d3.min( data.map( d => d.date_added)), update)
 	// create duration slider
-	duration_slider(...d3.extent( data.map(d => d.duration)), update)
+	duration_slider('pixel_filter', ...d3.extent(data.map(d => d.duration)), update)
+	// create averageRating slider
+	averageRating_slider('pixel_filter', update)
+	// create averageRating slider
+	numVotes_slider('pixel_filter',...d3.extent(data.map(d => d.numVotes)), update)
 
-
+	console.log(d3.extent(data.map(d => d.numVotes)))
 	// calculat the lenght of square
 	const r = calculate_r(data.length);
 	const x_amount = Math.floor(width / r);
@@ -173,6 +189,12 @@
 		let min_max_time = []
 		filters.selectAll('#pixel_filter g.time_slider g.parameter-value').each((d) => min_max_time.push(d.value))
 
+		let min_max_averageRating = []
+		filters.selectAll('#pixel_filter g.averageRating_slider g.parameter-value').each((d) => min_max_averageRating.push(d.value))
+	
+		let min_max_numVotes = []
+		filters.selectAll('#pixel_filter g.numVotes_slider g.parameter-value').each((d) => min_max_numVotes.push(d.value))
+
 		let filtered_data = data.filter( d => { 
 			
 			// match counrtry
@@ -193,9 +215,12 @@
 			let d_match = d.duration > min_max_duration[0] && d.duration < min_max_duration[1] ? true : false
 			// match time
 			let t_match = d.date_added > min_max_time[0] && d.date_added < min_max_time[1] ? true : false
+			// match averageRating
+			let r_match = d.averageRating > min_max_averageRating[0] && d.averageRating < min_max_averageRating[1] ? true : false
+			// match vote Amount 
+			let a_match = d.numVotes > min_max_numVotes[0] && d.numVotes < min_max_numVotes[1] ? true : false
 
-
-			return c_match && g_match  && d_match && t_match;// && d.type === type
+			return c_match && g_match && d_match && t_match && r_match && a_match;// && d.type === type
 		})
 
 		const amount = filtered_data.length
