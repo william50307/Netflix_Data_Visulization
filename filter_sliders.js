@@ -11,7 +11,7 @@
 // 		.tickFormat(d3.timeFormat('%Y'))
 // 		.default([min, d3.timeParse("%Y")('2021')])
 // 		.displayValue(false)
-// 		.fill('#2196f3')
+// 		.fill('black')
 // 		.on('onchange', function(val){
 // 			d3.select(`#${filter_id} #time_min`).text(d3.timeFormat('%Y-%B')(val[0]));
 // 			d3.select(`#${filter_id} #time_max`).text(d3.timeFormat('%Y-%B')(val[1]));
@@ -47,16 +47,19 @@ class Time_Histogram_Slider{
 		//d3.select(`#${this.filter_id} #date_added svg`).remove()
 
 		// bottom space for slider
-
+		console.log(this.filter_id);
 		this.x = d3.scaleLinear()
-			.domain([0, d3.max(this.data)]) 
+			.domain([this.min, new Date(this.max)]) 
 			.range([0, this.width])
 
 		this.distribustion_slider = d3
 			.select(`#${this.filter_id} #date_added`)
 			.append('svg')
-				.attr('width', this.width + this.margin.left + this.margin.right)
-				.attr('height', this.height + this.margin.top + this.margin.bottom)
+				// .attr('width', this.width + this.margin.left + this.margin.right)
+				// .attr('height', this.height + this.margin.top + this.margin.bottom)
+				.attr('preserveAspectRatio', 'xMinYMin meet')
+				.attr('viewBox', '0 0 1050 600')
+				.classed('svg-content', true)
 			.append('g')
 			.attr('transform', `translate(${this.margin.left},${this.margin.top})`)
 
@@ -71,7 +74,6 @@ class Time_Histogram_Slider{
 			.domain([0, d3.max(this.bins, d => d.length )])
 			
 		// draw y axis
-		this.yAxis = this.distribustion_slider.append('g').call(d3.axisRight(this.y).ticks(3));
 
 		// draw histgram rects 
 		this.distribustion_slider
@@ -82,7 +84,7 @@ class Time_Histogram_Slider{
 			.attr('y', d => this.y(d.length))
 					.attr("width", d => this.x(d.x1) - this.x(d.x0))
 					.attr("height", d => this.height - this.y(d.length) )
-					.style("fill", "#69b3a2")
+					.style("fill", "#D4011D")
 					.style('stroke', 'white')
 					.style('stroke-width', '0.5px')
 
@@ -96,13 +98,12 @@ class Time_Histogram_Slider{
 			.tickFormat(d3.timeFormat('%Y'))
 			.default([this.min, d3.timeParse("%Y")(this.max)])
 			.displayValue(false)
-			.fill('#2196f3')
+			.fill('black')
 			.on('onchange', function(val){
-				d3.select(`#${this.filter_id} #time_min`).text(d3.timeFormat('%Y-%B')(val[0]));
-				d3.select(`#${this.filter_id} #time_max`).text(d3.timeFormat('%Y-%B')(val[1]));
+				d3.select(`#date_added #time_min`).text(d3.timeFormat('%Y-%m')(val[0]));
+				d3.select(`#date_added #time_max`).text(d3.timeFormat('%Y-%m')(val[1]));
 				update()
 		});
-
 		// draw time slider
 		this.distribustion_slider
 			.append('g')
@@ -124,7 +125,6 @@ class Time_Histogram_Slider{
 		// we have to ignore condition when data is empty, due to some misery bug :(  
 		if(data.length !== 0){
 			this.y.domain([0, d3.max(bins, d => d.length)])
-			this.yAxis.call(d3.axisRight(this.y).ticks(2));
 		}
 
 		// redraw histgram rects 
@@ -136,7 +136,7 @@ class Time_Histogram_Slider{
 		.attr('y', d => this.y(d.length))
 				.attr("width", d => this.x(d.x1) - this.x(d.x0))
 				.attr("height", d => this.height - this.y(d.length) )
-				.style("fill", "#69b3a2")
+				.style("fill", "#D4011D")
 				.style('stroke', 'white')
 				.style('stroke-width', '0.5px')
 
@@ -176,8 +176,11 @@ class Duration_Histogram_Slider{
 		this.distribustion_slider = d3
 			.select(`#${this.filter_id} #duration`)
 			.append('svg')
-				.attr('width', this.width + this.margin.left + this.margin.right)
-				.attr('height', this.height + this.margin.top + this.margin.bottom)
+				// .attr('width', this.width + this.margin.left + this.margin.right)
+				// .attr('height', this.height + this.margin.top + this.margin.bottom)
+				.attr('preserveAspectRatio', 'xMinYMin meet')
+				.attr('viewBox', '0 0 1050 600')
+				.classed('svg-content', true)
 			.append('g')
 			.attr('transform', `translate(${this.margin.left},${this.margin.top})`)
 
@@ -192,7 +195,6 @@ class Duration_Histogram_Slider{
 			.domain([0, d3.max(this.bins, d => d.length )])
 			
 		// draw y axis
-		this.yAxis = this.distribustion_slider.append('g').call(d3.axisRight(this.y).ticks(3));
 
 		// draw histgram rects 
 		this.distribustion_slider
@@ -203,7 +205,7 @@ class Duration_Histogram_Slider{
 			.attr('y', d => this.y(d.length))
 					.attr("width", d => this.x(d.x1) - this.x(d.x0))
 					.attr("height", d => this.height - this.y(d.length) )
-					.style("fill", "#69b3a2")
+					.style("fill", "#D4011D")
 					.style('stroke', 'white')
 					.style('stroke-width', '0.5px')
 
@@ -215,10 +217,10 @@ class Duration_Histogram_Slider{
 			.width(this.width)
 			.default([this.min, this.max])
 			.displayValue(false)
-			.fill('#2196f3')
+			.fill('black')
 			.on('onchange', function(val){
-				d3.select(`#${this.filter_id} #duration_min`).text(val[0]);
-				d3.select(`#${this.filter_id} #duration_max`).text(val[1]);
+				d3.select(`#duration #duration_min`).text(val[0]);
+				d3.select(`#duration #duration_max`).text(val[1]);
 				update()
 			});
 
@@ -243,7 +245,6 @@ class Duration_Histogram_Slider{
 		// we have to ignore condition when data is empty, due to some misery bug :(  
 		if(data.length !== 0){
 			this.y.domain([0, d3.max(bins, d => d.length)])
-			this.yAxis.call(d3.axisRight(this.y).ticks(2));
 		}
 
 		// redraw histgram rects 
@@ -255,7 +256,7 @@ class Duration_Histogram_Slider{
 		.attr('y', d => this.y(d.length))
 				.attr("width", d => this.x(d.x1) - this.x(d.x0))
 				.attr("height", d => this.height - this.y(d.length) )
-				.style("fill", "#69b3a2")
+				.style("fill", "#D4011D")
 				.style('stroke', 'white')
 				.style('stroke-width', '0.5px')
 
@@ -314,7 +315,7 @@ class Duration_Histogram_Slider{
 // 		.attr('y', d => y(d.length))
 //         .attr("width", d => x(d.x1) - x(d.x0))
 //         .attr("height", d => height - y(d.length) )
-// 				.style("fill", "#69b3a2")
+// 				.style("fill", "#D4011D")
 // 				.style('stroke', 'white')
 // 				.style('stroke-width', '0.5px')
 
@@ -327,7 +328,7 @@ class Duration_Histogram_Slider{
 // 		.width(width)
 // 		.default([min, max])
 // 		.displayValue(false)
-// 		.fill('#2196f3')
+// 		.fill('black')
 // 		.on('onchange', function(val){
 // 			d3.select(`#${filter_id} #duration_min`).text(val[0]);
 // 			d3.select(`#${filter_id} #duration_max`).text(val[1]);
@@ -355,7 +356,7 @@ function averageRating_slider(filter_id, update){
 		//.tickFormat(d3.timeFormat('%Y'))
 		.default([0, 10])
 		.displayValue(false)
-		.fill('#2196f3')
+		.fill('black')
 		.on('onchange', function(val){
 			d3.select(`${filter_id} #averageRating_min`).text(d3.format('.1f')(val[0]));
 			d3.select(`${filter_id} #averageRating_max`).text(d3.format('.1f')(val[1]));
@@ -365,8 +366,11 @@ function averageRating_slider(filter_id, update){
 	// slider
 	d3.select(`#${filter_id} #averageRating`)
 	.append('svg')
-	.attr('width', 1000)
-	.attr('height', 100)
+	// .attr('width', 1000)
+	// .attr('height', 100)
+	.attr('preserveAspectRatio', 'xMinYMin meet')
+    .attr('viewBox', '0 0 1050 600')
+    .classed('svg-content', true)
 	// .tickFormat()
 	.append('g')
 	.attr('transform', 'translate(30,30)')
@@ -398,8 +402,11 @@ class AverageRating_Histogram_Slider{
 		this.slider_svg = d3
 			.select(`#${this.filter_id} #averageRating`)
 			.append('svg')
-				.attr('width', this.width + this.margin.left + this.margin.right)
-				.attr('height', this.height + this.margin.top + this.margin.bottom)
+				// .attr('width', this.width + this.margin.left + this.margin.right)
+				// .attr('height', this.height + this.margin.top + this.margin.bottom)
+				.attr('preserveAspectRatio', 'xMinYMin meet')
+				.attr('viewBox', '0 0 1050 600')
+				.classed('svg-content', true)
 			.append('g')
 			.attr('transform', `translate(${this.margin.left},${this.margin.top})`)
 
@@ -414,7 +421,6 @@ class AverageRating_Histogram_Slider{
 			.domain([0, d3.max(this.bins, d => d.length )])
 			
 		// draw y axis
-		this.yAxis = this.slider_svg.append('g').call(d3.axisRight(this.y).ticks(3));
 
 		// draw histgram rects 
 		this.slider_svg
@@ -425,7 +431,7 @@ class AverageRating_Histogram_Slider{
 			.attr('y', d => this.y(d.length))
 					.attr("width", d => this.x(d.x1) - this.x(d.x0))
 					.attr("height", d => this.height - this.y(d.length) )
-					.style("fill", "#69b3a2")
+					.style("fill", "#D4011D")
 					.style('stroke', 'white')
 					.style('stroke-width', '0.5px')
 
@@ -439,10 +445,10 @@ class AverageRating_Histogram_Slider{
 			//.tickFormat(d3.timeFormat('%Y'))
 			.default([0, 10])
 			.displayValue(false)
-			.fill('#2196f3')
+			.fill('black')
 			.on('onchange', function(val){
-				d3.select(`${this.filter_id} #averageRating_min`).text(d3.format('.1f')(val[0]));
-				d3.select(`${this.filter_id} #averageRating_max`).text(d3.format('.1f')(val[1]));
+				d3.select(`#averageRating #averageRating_min`).text(d3.format('.1f')(val[0]));
+				d3.select(`#averageRating #averageRating_max`).text(d3.format('.1f')(val[1]));
 				update()
 			});
 
@@ -467,7 +473,6 @@ class AverageRating_Histogram_Slider{
 		// we have to ignore condition when data is empty, due to some misery bug :(  
 		if(data.length !== 0){
 			this.y.domain([0, d3.max(bins, d => d.length)])
-			this.yAxis.call(d3.axisRight(this.y).ticks(2));
 		}
 
 		// redraw histgram rects 
@@ -479,7 +484,7 @@ class AverageRating_Histogram_Slider{
 		.attr('y', d => this.y(d.length))
 				.attr("width", d => this.x(d.x1) - this.x(d.x0))
 				.attr("height", d => this.height - this.y(d.length) )
-				.style("fill", "#69b3a2")
+				.style("fill", "#D4011D")
 				.style('stroke', 'white')
 				.style('stroke-width', '0.5px')
 
@@ -506,7 +511,7 @@ function numVotes_slider(filter_id, min, max, update){
 		//.tickFormat(d3.timeFormat('%Y'))
 		.default([0, max])
 		//.displayValue(false)
-		.fill('#2196f3')
+		.fill('black')
 		.on('onchange', function(val){
 			let c = d3.format(',')
 			d3.select(`#${filter_id} #numVotes_min`).text(c(val[0]));
@@ -517,8 +522,11 @@ function numVotes_slider(filter_id, min, max, update){
 	// slider
 	d3.select(`#${filter_id} #numVotes`)
 	.append('svg')
-	.attr('width', 1000)
-	.attr('height', 100)
+	// .attr('width', 1000)
+	// .attr('height', 100)
+	.attr('preserveAspectRatio', 'xMinYMin meet')
+    .attr('viewBox', '0 0 1050 600')
+    .classed('svg-content', true)
 	// .tickFormat()
 	.append('g')
 	.attr('transform', 'translate(30,30)')
@@ -551,8 +559,12 @@ class numVotes_Histogram_Slider{
 		this.slider_svg = d3
 			.select(`#${this.filter_id} #numVotes`)
 			.append('svg')
-				.attr('width', this.width + this.margin.left + this.margin.right)
-				.attr('height', this.height + this.margin.top + this.margin.bottom)
+				// .attr('width', this.width + this.margin.left + this.margin.right)
+				// .attr('height', this.height + this.margin.top + this.margin.bottom)
+				.attr('preserveAspectRatio', 'xMinYMin meet')
+				.attr('viewBox', '0 0 1050 600')
+				.classed('svg-content', true)
+		
 			.append('g')
 			.attr('transform', `translate(${this.margin.left},${this.margin.top})`)
 
@@ -567,7 +579,6 @@ class numVotes_Histogram_Slider{
 			.domain([0, d3.max(this.bins, d => d.length )])
 			
 		// draw y axis
-		this.yAxis = this.slider_svg.append('g').call(d3.axisRight(this.y).ticks(3));
 
 		// draw histgram rects 
 		this.slider_svg
@@ -578,7 +589,7 @@ class numVotes_Histogram_Slider{
 			.attr('y', d => this.y(d.length))
 					.attr("width", d => this.x(d.x1) - this.x(d.x0))
 					.attr("height", d => this.height - this.y(d.length) )
-					.style("fill", "#69b3a2")
+					.style("fill", "#D4011D")
 					.style('stroke', 'white')
 					.style('stroke-width', '0.5px')
 
@@ -589,13 +600,14 @@ class numVotes_Histogram_Slider{
 			.max(this.max)
 			.step(0.1)
 			.width(this.width)
+			.tickFormat(d3.format('~s'))
 			//.tickFormat(d3.timeFormat('%Y'))
 			.default([0, this.max])
 			.displayValue(false)
-			.fill('#2196f3')
+			.fill('black')
 			.on('onchange', function(val){
-				d3.select(`#${this.filter_id} #numVotes_min`).text(d3.format('.1f')(val[0]));
-				d3.select(`#${this.filter_id} #numVotes_max`).text(d3.format('.1f')(val[1]));
+				d3.select(`#numVotes #numVotes_min`).text(d3.format('~s')(val[0]));
+				d3.select(`#numVotes #numVotes_max`).text(d3.format('~s')(val[1]));
 				update()
 			});
 
@@ -620,7 +632,6 @@ class numVotes_Histogram_Slider{
 		// we have to ignore condition when data is empty, due to some misery bug :(  
 		if(data.length !== 0){
 			this.y.domain([0, d3.max(bins, d => d.length)])
-			this.yAxis.call(d3.axisRight(this.y).ticks(2));
 		}
 
 		// redraw histgram rects 
@@ -632,7 +643,7 @@ class numVotes_Histogram_Slider{
 		.attr('y', d => this.y(d.length))
 				.attr("width", d => this.x(d.x1) - this.x(d.x0))
 				.attr("height", d => this.height - this.y(d.length) )
-				.style("fill", "#69b3a2")
+				.style("fill", "#D4011D")
 				.style('stroke', 'white')
 				.style('stroke-width', '0.5px')
 
