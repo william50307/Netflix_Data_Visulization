@@ -8,16 +8,20 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://d3js.org/d3.v6.js"></script>
     <script src="https://unpkg.com/d3-simple-slider"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-cloud/1.2.5/d3.layout.cloud.min.js" integrity="sha512-HjKxWye8lJGPu5q1u/ZYkHlJrJdm6KGr89E6tOrXeKm1mItb1xusPU8QPcKVhP8F9LjpZT7vsu1Fa+dQywP4eg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Joan&display=swap" rel="stylesheet">    <script src="utils.js"></script>
-   
-   <style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-cloud/1.2.5/d3.layout.cloud.min.js" integrity="sha512-HjKxWye8lJGPu5q1u/ZYkHlJrJdm6KGr89E6tOrXeKm1mItb1xusPU8QPcKVhP8F9LjpZT7vsu1Fa+dQywP4eg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-color@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-interpolate@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-scale-chromatic@3"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Joan&display=swap" rel="stylesheet" />
+    <script src="utils.js"></script>
+
+    <style>
       body {
         font-family: 'Joan', serif;
       }
-      #racingBar{
+      #racingBar {
         display: inline-block;
         position: relative;
         width: 100%;
@@ -25,7 +29,7 @@
         vertical-align: top;
         overflow: hidden;
       }
-	  #slider{
+      #slider {
         display: inline-block;
         position: relative;
         width: 100%;
@@ -39,21 +43,42 @@
         top: 0;
         left: 0;
       }
-	  .axis text{
-		  font-size: 16px;
-	  }
-	  .slider text {
-  font-size: 18px;
-}
-	.netflixList{
-		list-style-image: url('https://upload.wikimedia.org/wikipedia/commons/0/0c/Netflix_2015_N_logo.svg');
-	}
-	text{
-		font-family: Joan;
-	}
-	#parallel text{
-		color: white;
-	}
+      .axis text {
+        font-size: 16px;
+      }
+      .slider text {
+        font-size: 18px;
+      }
+      .netflixList {
+        list-style-image: url('https://upload.wikimedia.org/wikipedia/commons/0/0c/Netflix_2015_N_logo.svg');
+      }
+      text {
+        font-family: Joan;
+      }
+      #parallel text {
+        color: white;
+      }
+      .filterSlider {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        padding-bottom: 20%;
+        vertical-align: top;
+        overflow: hidden;
+      }
+      #pixel_filter .axis text {
+        font-size: 32px;
+      }
+      #pixel_filter .svg-content {
+        margin-top: 25px;
+      }
+      #numVotes text {
+        transform: rotate(-45deg);
+        text-anchor: end;
+      }
+      .image_group image {
+        cursor: pointer;
+      }
     </style>
   </head>
   <body class="py-5">
@@ -63,80 +88,153 @@
         <img src="logo.png" alt="" class="w-4/6 m-auto" />
       </div>
     </header>
-    <div class="container grid grid-cols-5 mx-auto mt-64 my-10 px-14">
-      <div class="col-span-2">
-		<img class="w-2/3 mx-auto" src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" alt="">  
-		<p class="text-xl mt-4">Netflixis an American subscription streaming service and production company. Launched on August 29, 1997, it offers a film and television series library through distribution deals as well as its own productions, known as Netflix Originals.</p>
-		<ul class="mt-5 mr-4">
-			<li class="relative ">
-				<div class="absolute block w-4 h-4 px-2 rounded-full bg-red-500  mt-2.5 left-[-6px]"></div>
-				<p class="py-1 border-l-2 pl-4 border-black">1997 :Reed Hastings and Marc Randolph have an idea to rent DVDs by mail. They test the concept by mailing themselves a DVD. The DVD arrives intact, and the idea for Netflix is born</p>
-			</li>
-			<li class="relative ">
-				<div class="absolute block w-4 h-4 px-2 rounded-full bg-red-500  mt-2.5 left-[-6px]"></div>
-				<p class="py-1 border-l-2 pl-4 border-black">2002 :Netflix makes its initial public offering (IPO), at a selling price of $1 a share under the NASDAQ ticker NFLX.</p>
-			</li>
-			<li class="relative ">
-				<div class="absolute block w-4 h-4 px-2 rounded-full bg-red-500  mt-2.5 left-[-6px]"></div>
-				<p class="py-1 border-l-2 pl-4 border-black">2007 :Streaming is introduced, allowing members to instantly watch series and films.</p>
-			</li>
-			<li class="relative ">
-				<div class="absolute block w-4 h-4 px-2 rounded-full bg-red-500  mt-2.5 left-[-6px]"></div>
-				<p class="py-1 border-l-2 pl-4 border-black">2013 :'House of Cards,' 'Hemlock Grove,' 'Arrested Development' and 'Orange Is the New Black' usher in the first slate of original series programming. 'House of Cards' goes on to win three Primetime Emmy awards - the first for an internet streaming service. The Profiles and My List features debut on streaming.</p>
-			</li>
-			<li class="relative ">
-				<div class="absolute block w-4 h-4 px-2 rounded-full bg-red-500  mt-2.5 left-[-6px]"></div>
-				<p class="py-1 border-l-2 pl-4 border-black">2017 :Membership hits 100 million members globally. Netflix wins its first Academy Award, for 'The White Helmets.'</p>
-			</li>
-			<li class="relative ">
-				<div class="absolute block w-4 h-4 px-2 rounded-full bg-red-500  mt-2.5 left-[-6px]"></div>
-				<p class="py-1 border-l-2 pl-4 border-black">2020 :op 10 lists debut, allowing members to see what’s popular for the first time. Netflix is the most-nominated studio at the Academy Awards and Emmys'</p>
-			</li>
-			<li class="relative ">
-				<div class="absolute block w-4 h-4 px-2 rounded-full bg-red-500  mt-2.5 left-[-6px]"></div>
-				<p class="py-1 border-l-2 pl-4 border-black">2021 :Membership surpasses 200 million.'</p>
-			</li>
-		</ul>
-		<p class="mt-2">For now, there are exceed 7000 TV shows and Movie have been on the NETFLIX，blablabla </p>
-	</div>
-      <div class="border-2 col-span-3">
+    <div class="container grid grid-cols-7 mx-auto mt-64 my-10 px-14">
+      <div class="col-span-3 mr-10">
+        <img class="w-2/3 mx-auto" src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" alt="" />
+        <p class="text-xl mt-4">Netflixis an American subscription streaming service and production company. Launched on August 29, 1997, it offers a film and television series library through distribution deals as well as its own productions, known as Netflix Originals.</p>
+        <ul class="mt-5 mr-4">
+          <li class="relative">
+            <div class="absolute block w-4 h-4 px-2 rounded-full bg-red-500 mt-2.5 left-[-6px]"></div>
+            <p class="py-1 border-l-2 pl-4 border-black">1997 :Reed Hastings and Marc Randolph have an idea to rent DVDs by mail. They test the concept by mailing themselves a DVD. The DVD arrives intact, and the idea for Netflix is born</p>
+          </li>
+          <li class="relative">
+            <div class="absolute block w-4 h-4 px-2 rounded-full bg-red-500 mt-2.5 left-[-6px]"></div>
+            <p class="py-1 border-l-2 pl-4 border-black">2002 :Netflix makes its initial public offering (IPO), at a selling price of $1 a share under the NASDAQ ticker NFLX.</p>
+          </li>
+          <li class="relative">
+            <div class="absolute block w-4 h-4 px-2 rounded-full bg-red-500 mt-2.5 left-[-6px]"></div>
+            <p class="py-1 border-l-2 pl-4 border-black">2007 :Streaming is introduced, allowing members to instantly watch series and films.</p>
+          </li>
+          <li class="relative">
+            <div class="absolute block w-4 h-4 px-2 rounded-full bg-red-500 mt-2.5 left-[-6px]"></div>
+            <p class="py-1 border-l-2 pl-4 border-black">2013 :'House of Cards,' 'Hemlock Grove,' 'Arrested Development' and 'Orange Is the New Black' usher in the first slate of original series programming. 'House of Cards' goes on to win three Primetime Emmy awards - the first for an internet streaming service. The Profiles and My List features debut on streaming.</p>
+          </li>
+          <li class="relative">
+            <div class="absolute block w-4 h-4 px-2 rounded-full bg-red-500 mt-2.5 left-[-6px]"></div>
+            <p class="py-1 border-l-2 pl-4 border-black">2017 :Membership hits 100 million members globally. Netflix wins its first Academy Award, for 'The White Helmets.'</p>
+          </li>
+          <li class="relative">
+            <div class="absolute block w-4 h-4 px-2 rounded-full bg-red-500 mt-2.5 left-[-6px]"></div>
+            <p class="py-1 border-l-2 pl-4 border-black">2020 :op 10 lists debut, allowing members to see what’s popular for the first time. Netflix is the most-nominated studio at the Academy Awards and Emmys'</p>
+          </li>
+          <li class="relative">
+            <div class="absolute block w-4 h-4 px-2 rounded-full bg-red-500 mt-2.5 left-[-6px]"></div>
+            <p class="py-1 border-l-2 pl-4 border-black">2021 :Membership surpasses 200 million.'</p>
+          </li>
+        </ul>
+        <p class="mt-2">For now, there are exceed 7000 TV shows and Movie have been on the NETFLIX，blablabla</p>
+      </div>
+      <div class="border-2 col-span-4">
         <div id="racingBar"></div>
         <div id="slider">
-          <div>
-            <span>From :</span>
-            <span id="slide_min">2008</span>
-            <span>To :</span>
-            <span id="slide_max">2021</span>
-            <button id="play"  class="bg-black text-[#D4011D] px-3 py-1 rounded-full font-bold">START</button>
-            <button id="stop" class="bg-black text-[#D4011D] px-3 py-1 rounded-full font-bold">STOP</button>
+          <div class="flex justify-between mx-10">
+            <div class="text-xl text-bold">
+              <p>
+                From :
+                <span id="slide_min" class="mr-10">2008</span>
+                To :
+                <span id="slide_max">2021</span>
+              </p>
+            </div>
+            <div>
+              <button id="play" class="bg-black text-[#D4011D] px-3 py-1 rounded-full font-bold">START</button>
+              <button id="stop" class="bg-black text-[#D4011D] px-3 py-1 rounded-full font-bold">STOP</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-	<div class="bg-gray-800"> 
-		<div class="container grid grid-cols-3 mx-auto py-10 px-14">
-			<div class="col-span-1 flex flex-col"> 
-				<img  class="object-contain  w-3/4 mx-auto" src="https://m.media-amazon.com/images/M/MV5BOTE0MjQ1NDU3OV5BMl5BanBnXkFtZTgwNTI4MTgwNzM@._V1_QL75_UX380_CR0,0,380,562_.jpg" alt="">
-				<p class="text-bold text-5xl text-white mx-auto mt-3">Sex Education</p>
-				<ul class="text-2xl text-white mt-5">
-					<li class="my-2">Country:xxxx</li>
-					<li class="my-2">IMDB:10</li>
-					<li class="my-2">Duration:40min</li>
-					<li class="my-2">Release Year：2018</li>
-				</ul>
-			</div>
-			<div class="col-span-2 flex flex-col">
-				<div id="wordCloud"></div>
-				<div id="parallel"></div>
-			</div>
-		</div>
-	</div>
+    <div class="grid grid-cols-7 container">
+      <div class="col-span-5 mx-auto">
+        <p class="text-5xl text-bold text-center">
+          Total amount :
+          <span id="amount"></span>
+        </p>
+        <div id="pixel"></div>
+      </div>
+      <div id="pixel_filter" class="col-span-2 relative">
+        <select class="select_countrys border-2 rounded-md border-gray-200 px-2 py-2 w-full" data-filter_type="country"></select>
+        <div class="selected_country flex flex-wrap"></div>
+
+        <select class="select_genres border-2 rounded-md border-gray-200 px-2 py-2 w-full" data-filter_type="genre" class="border-1 border-dark"></select>
+        <div class="selected_genre flex flex-wrap"></div>
+        <br />
+        <div id="duration" class="filterSlider">
+          <div class="flex justify-between">
+            <p>Duration</p>
+            <div>
+              <span id="duration_min">1</span>
+              ~
+              <span id="duration_max">312</span>
+            </div>
+          </div>
+        </div>
+
+        <div id="date_added" class="filterSlider">
+          <div class="flex justify-between">
+            <p>Added date</p>
+            <div>
+              <span id="time_min">2009-05</span>
+              ~
+              <span id="time_max">2021-01</span>
+            </div>
+          </div>
+        </div>
+
+        <div id="averageRating" class="filterSlider">
+          <div class="flex justify-between">
+            <p>IMDB score</p>
+            <div>
+              <span id="averageRating_min">0</span>
+              ~
+              <span id="averageRating_max">10</span>
+            </div>
+          </div>
+        </div>
+
+        <div id="numVotes" class="filterSlider">
+          <div class="flex justify-between">
+            <p>Rating count</p>
+            <div>
+              <span id="numVotes_min">0</span>
+              ~
+              <span id="numVotes_max">2.27405M</span>
+            </div>
+          </div>
+        </div>
+        <div class="absolute top-0 left-0 w-full">
+          <img src="" alt="" id="hoverImg" class="opacity-0 w-full object-cover" />
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-800">
+      <div class="container grid grid-cols-3 mx-auto py-10 px-14">
+        <div class="col-span-1 flex flex-col">
+          <img class="object-contain w-3/4 mx-auto" src="https://m.media-amazon.com/images/M/MV5BOTE0MjQ1NDU3OV5BMl5BanBnXkFtZTgwNTI4MTgwNzM@._V1_QL75_UX380_CR0,0,380,562_.jpg" alt="" />
+          <p class="text-bold text-5xl text-white mx-auto mt-3">Sex Education</p>
+          <ul class="text-2xl text-white mt-5">
+            <li class="my-2">Country:xxxx</li>
+            <li class="my-2">IMDB:10</li>
+            <li class="my-2">Duration:40min</li>
+            <li class="my-2">Release Year：2018</li>
+          </ul>
+        </div>
+        <div class="col-span-2 flex flex-col">
+          <div id="wordCloud"></div>
+          <div id="parallel"></div>
+        </div>
+      </div>
+    </div>
+    <script src="racing.js"></script>
     <script src="word_cloud.js"></script>
     <script src="parallel.js"></script>
-	<script>	
-		wordCloud()
-		parallel()
-
-	</script>
+    <script src="filter_sliders.js"></script>
+    <script src="pixel_chart.js"></script>
+    <script>
+      racingChart()
+      pixel_chart()
+      // wordCloud()
+      // parallel()
+    </script>
   </body>
 </html>
