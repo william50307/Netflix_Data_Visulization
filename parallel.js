@@ -1,10 +1,10 @@
-function parallel() {
-  const id = 'tt7767422'
+function parallel(id,data,genres_all) {
+  
+  // const id = 'tt7767422'
   // set the dimensions and margins of the graph
   const margin = { top: 30, right: 10, bottom: 10, left: 0 },
     width = 800 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom
-
   // append the svg object to the body of the page
   const svg = d3
     .select('#parallel')
@@ -12,43 +12,36 @@ function parallel() {
     .attr('width', width + margin.left + margin.right)
     .attr('height', height + margin.top + margin.bottom)
     .attr('class','mx-auto')
+    .attr('id','parallelSvg')
     .append('g')
     .attr('transform', `translate(${margin.left},${margin.top})`)
 
-  const genreChecked = document.querySelectorAll('input')
-
   // Parse the Data
-  d3.csv('https://raw.githubusercontent.com/zihong518/data_visualization/master/data.csv').then(function (data) {
     // Extract the list of dimensions we want to keep in the plot. Here I keep all except the column called Species
-    const type = 'TV Show'
-    data.map((x) => {
-      x.duration = x.duration.split(' ')[0]
-    })
-    
     //  把genre設置list
-    let genre = []
-    let temp = []
+    let genres = []
     data
-      .filter((x) => x.type === type)
       .map((x) => {
-        temp = temp.concat(x.listed_in.split(','))
+        x.matched_genres.map(genre=>{
+          if(!genres.includes(genre)){
+            genres.push(genre)
+          }
+        })
       })
+
     let tidyData = []
 
 
-    temp.map((x) => {
-      if (!genre.includes(x)) {
-        genre.push(x)
-      }
-    })
-    let genreSelected = [genre[1]]
+    // temp.map((x) => {
+    //   if (!genre.includes(x)) {
+    //     genre.push(x)
+    //   }
+    // })
 
     // 最後的data
     data
-      .filter((x) => x.type === type)
-
       .map((x) => {
-        let temp = x.listed_in.split(',')
+        let temp = x.matched_genres
         temp.map((genre) => {
           let data = {
             title: x.title,
@@ -62,14 +55,10 @@ function parallel() {
           tidyData.push(data)
         })
       })
-
-
-    // 設置color
-    let colorList = []
-    for (let i = 0; i < genre.length; i++) {
-      colorList.push(d3.hsl((360 / genre.length) * i, 0.75, 0.75))
-    }
-    let color = d3.scaleOrdinal().domain(genre).range(colorList)
+    const color = d3
+      .scaleOrdinal()
+      .domain(genres_all)
+      .range(genres_all.map((d, i) => d3.hsl((360 / 19) * i, 0.8, 0.6)))
 
     const dimensions = ['release_year', 'duration', 'averageRating', 'numVotes']
     // For each dimension, I build a linear scale. I store all in a y object
@@ -224,5 +213,5 @@ function parallel() {
         }, 300)
       }
     })
-  })
+
 }

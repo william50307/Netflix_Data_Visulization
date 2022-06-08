@@ -1,8 +1,8 @@
 function pixel_chart() {
   // set the dimensions and margins of the graph
-  const margin = { top: 30, right: 30, bottom: 70, left: 60 },
+  const margin = { top: 50, right: 30, bottom: 70, left: 60 },
     width = 800 - margin.left - margin.right,
-    height = 680 - margin.top - margin.bottom
+    height = 600 - margin.top - margin.bottom
 
   // append the svg object to the body of the page
   const svg = d3
@@ -35,6 +35,18 @@ function pixel_chart() {
         .map((d) => d.replaceAll(' ', '_'))
         .join(', ')
     })
+    let coverOpacity = 0.4
+
+
+    d3.select('#coverShow').on("change", function () {
+      if (d3.select('#coverShow').property('checked')) {
+        coverOpacity = 0.4
+      } else {
+        coverOpacity = 0
+      }
+      update()
+    })
+
 
     //const filter_variables = ['countrys', 'genres']
 
@@ -47,7 +59,11 @@ function pixel_chart() {
       .data(countrys_all)
       .join('option')
       .attr('class', 'country_para')
+      .property('selected', function (d) {
+        return d === 'Japan' ? true : false
+      })
       .text((d) => d)
+
 
 
     d3.select('#pixel_filter .select_countrys').on('change', add_and_update)
@@ -59,6 +75,9 @@ function pixel_chart() {
       .data(genres_all)
       .join('option')
       .attr('class', 'genre_para')
+      .property('selected', function (d) {
+        return d === 'Dramas' ? true : false
+      })
       .text((d) => d)
 
     d3.select('#pixel_filter .select_genres').on('change', add_and_update)
@@ -80,7 +99,7 @@ function pixel_chart() {
     const color = d3
       .scaleOrdinal()
       .domain(genres_all)
-      .range(genres_all.map((d,i) => d3.hsl((360 / 19) * i, 0.8, 0.6)))
+      .range(genres_all.map((d, i) => d3.hsl((360 / 19) * i, 0.8, 0.6)))
 
     add_selected_country('Japan')
 
@@ -132,6 +151,7 @@ function pixel_chart() {
         }
       }
     }
+
 
     function get_all_condition_and_prepare_data() {
       const filters = d3.select('#pixel_filter')
@@ -217,20 +237,19 @@ function pixel_chart() {
         ),
       )
 
-      return [map_data, selected_countrys, selected_genres, amount]
+      return [map_data, selected_countrys, selected_genres, amount, filtered_data]
     }
 
     // higlight seleted genres
     function groupHighlight(event, d) {
-
       const genre = d3.select(this).text()
-      d3.selectAll('g.image_gruop').style('opacity', 1)
-      d3.selectAll(`g.${genre}`).style('opacity', 0.5)
+      d3.selectAll('g.image_group').transition().duration(200).style('opacity', 0.2)
+      d3.selectAll(`g.${genre}`).transition().duration(200).style('opacity', 1)
     }
 
     // nohighlight
     function groupNoHighlight(event, d) {
-      d3.selectAll('g.image_gruop').style('opacity', 0.8)
+      d3.selectAll('g.image_group').transition().duration(200).style('opacity', 1)
     }
 
     // hightlight only one image (mouseover and mouseleave use the same function)
@@ -239,13 +258,17 @@ function pixel_chart() {
         const hoverImg = document.getElementById('hoverImg')
         hoverImg.src = d.image
         hoverImg.classList.add('opacity-100', 'transition', 'transition-all', 'duration-150', 'transition-opacity')
+
+        const hoverTitle = document.getElementById('hoverTitle')
+        hoverTitle.innerHTML = d.title
         d3.select(this)
-          .attr('width', x.bandwidth() * 1.2)
-          .attr('height', x.bandwidth() * 1.2)
-          .style('opacity', 0.8)
+          .transition()
+          .duration(300)
+          .style('opacity', 1)
       } else {
         document.getElementById('hoverImg').src = ''
-        d3.select(this).attr('width', x.bandwidth()).attr('height', x.bandwidth()).style('opacity', 0.8)
+        d3.select(this).transition().duration(300).style('opacity', coverOpacity)
+        hoverTitle.innerHTML = "&nbsp;"
       }
     }
 
@@ -263,7 +286,7 @@ function pixel_chart() {
         .selectAll('g.image_group')
         .data((d) => data.get(d))
         .join('g')
-        .attr('class', (d) => 'image_group')
+        .attr('class', d => `image_group ${d.listed_in.replaceAll(', ', ' ')}`)
 
       // append rects according selected genres
       image_group.each(function (d, i) {
@@ -291,7 +314,7 @@ function pixel_chart() {
         .on('mouseleave', highlight_over_or_leave)
         .transition()
         .duration(1500)
-        .style('opacity', 0.5)
+        .style('opacity', coverOpacity)
         .attr('preserveAspectRatio', 'xMidYMid slice')
         .attr('width', x.bandwidth())
         .attr('height', x.bandwidth())
@@ -322,14 +345,17 @@ function pixel_chart() {
       y.domain(d3.range(y_amount)).range([0, y_amount * x.bandwidth()])
 
       draw_images(filtered_data, x_amount, countrys, genres)
+      drawText(filtered_data)
+      imageClick()
+
     }
 
     function add_selected_country(value) {
-      let country_selected_block = d3.select('.selected_country').append('div').attr('data-country', value).attr('class','relative')
+      let country_selected_block = d3.select('.selected_country').append('div').attr('data-country', value).attr('class', 'relative')
 
-      country_selected_block.append('p').attr('class','px-3 py-1 mr-3 my-1 border-2 border-gray-200 bg-red-300 rounded-xl').text(value)
+      country_selected_block.append('p').attr('class', 'px-3 py-1 mr-3 my-1 border-2 border-gray-200 bg-red-300 rounded-xl').text(value)
 
-      country_selected_block.append('button').attr('data-country', value).attr('data-type','country').attr('class', ' absolute top-0 right-0 rounded-full w-5 text-xs h-5 text-center text-white bg-red-300 hover:bg-red-500 hover:duration-150 transition border-2 border-white font-sans	').text('X').on('click', remove)
+      country_selected_block.append('button').attr('data-country', value).attr('data-type', 'country').attr('class', ' absolute top-0 right-0 rounded-full w-5 text-xs h-5 text-center text-white bg-red-300 hover:bg-red-500 hover:duration-150 transition border-2 border-white font-sans	').text('X').on('click', remove)
     }
 
     function add_selected_genre(value) {
@@ -338,14 +364,14 @@ function pixel_chart() {
         .append('div')
         //.attr('class', value)
         .attr('data-genre', value)
-		.attr('class','relative ')
+        .attr('class', 'relative ')
 
 
-    //   country_selected_block.append('div').style('border-radius', '100%').style('background-color', color(value)).style('width', '15px').style('height', '15px').text('   ')
+      //   country_selected_block.append('div').style('border-radius', '100%').style('background-color', color(value)).style('width', '15px').style('height', '15px').text('   ')
 
-      country_selected_block.append('p').attr('class','py-1 px-3 mr-3 my-1 rounded-xl my-1 mt-2 border-2 border-gray-300').style('background-color', color(value)).text(value).on('mouseover', groupHighlight).on('mouseleave', groupNoHighlight)
+      country_selected_block.append('p').attr('class', 'py-1 px-3 mr-3 my-1 rounded-xl my-1 mt-2 border-2 border-gray-300').style('background-color', color(value)).text(value).on('mouseover', groupHighlight).on('mouseleave', groupNoHighlight)
 
-      country_selected_block.append('button').attr('data-genre', value).attr('data-type','genre').attr('class', 'absolute top-0 right-0 rounded-full w-5 text-xs h-5 text-white bg-red-300 hover:bg-red-500 hover:duration-150 transition border-2 border-white font-sans').text('X').on('click', remove)
+      country_selected_block.append('button').attr('data-genre', value).attr('data-type', 'genre').attr('class', 'absolute top-0 right-0 rounded-full w-5 text-xs h-5 text-white bg-red-300 hover:bg-red-500 hover:duration-150 transition border-2 border-white font-sans').text('X').on('click', remove)
     }
 
     // an event for countrys and genres
@@ -374,5 +400,46 @@ function pixel_chart() {
       d3.select(`div[data-${type}=${value}]`).remove()
       update()
     }
+
+    function drawText(data) {
+      svg.selectAll('g.view').data(data.keys()).append('text').text(d => d).attr('x', '0').attr('y', '-10').attr('font-size', 20)
+    }
+
+    function imageClick() {
+      svg.selectAll('g.image_group').on('click', jumpBelow)
+
+      function jumpBelow(event, d) {
+        const [...data] = get_all_condition_and_prepare_data()
+        const clickDetail = document.getElementById('clickDetail')
+        if(clickDetail.classList.contains('hidden')){
+          clickDetail.classList.remove('hidden')
+        }
+
+        
+        d3.select('[data-type="image"]').attr('src', d.image)
+        d3.select('[data-type="title"]').text(d.title)
+        d3.select('[data-type="clickCountry"]').text(d.country)
+        d3.select('[data-type="IMDB"]').text(d.averageRating)
+        d3.select('[data-type="Duration"]').text(`${d.duration} mins`)
+        d3.select('[data-type="Realease Year"]').text(d.release_year)
+        d3.select('[data-type="Decription"]').text(d.description)
+
+        d3.select('[data-type="IMDB amount"]').text(d.numVotes)
+        d3.select('[data-type="rating_group"]').text(d.rating_group)
+
+
+        d3.select('#wordCloudSvg').remove()
+        d3.select('#parallelSvg').remove()
+        d3.select('#networkSvg').remove()
+        // d3.select('')
+        wordCloud(d.tconst)
+        parallel(d.tconst, data[4],genres_all)
+        network(d.tconst)
+        clickDetail.scrollIntoView({behavior: "smooth", block: "start"});
+
+      }
+    }
+    imageClick()
+
   })
 }

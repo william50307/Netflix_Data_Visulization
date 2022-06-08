@@ -3,7 +3,7 @@ import csv
 
 from regex import P
 
-df = pd.read_csv('netflix_titles.csv')
+# df = pd.read_csv('netflix_titles.csv')
 
 '''
 na value count :
@@ -18,10 +18,10 @@ duration 3
 
 '''
 
-print(df.isna().sum())
+# print(df.isna().sum())
 
 
-print(df['rating'].value_counts())
+# print(df['rating'].value_counts())
 #print((df['rating'] == '84 min').sum())
 #print(df['rating'].value_counts())
 
@@ -47,28 +47,28 @@ NC-17 : 17歲以下不得觀賞
 '''
 movie_rating = ['G', 'PG', 'PG-13', 'R', 'NC-17']
 
-print(df['rating'].isin(tv_rating + movie_rating).count())
+# print(df['rating'].isin(tv_rating + movie_rating).count())
 
-d = {}
-for row in df['country'].dropna():
-    for c in row.split(', '):
-        if c not in d:
-            d[c] = 1
-        else:
-            d[c] += 1
+# d = {}
+# for row in df['country'].dropna():
+#     for c in row.split(', '):
+#         if c not in d:
+#             d[c] = 1
+#         else:
+#             d[c] += 1
 
 
 
-gen = {}
-for row in df['listed_in'].dropna():
-    for g in row.split(', '):
-        if g not in gen:
-            gen[g] = 1
-        else:
-            gen[g] += 1
+# gen = {}
+# for row in df['listed_in'].dropna():
+#     for g in row.split(', '):
+#         if g not in gen:
+#             gen[g] = 1
+#         else:
+#             gen[g] += 1
 
-print(len(gen))
-print(gen)
+# print(len(gen))
+# print(gen)
 
 
 # print(df['duration'])
@@ -95,6 +95,53 @@ print(gen)
 
 # df.to_csv('netflix_v2.csv', index=False)
 
-
+import json
 df = pd.read_csv('https://raw.githubusercontent.com/zihong518/data_visualization/master/data.csv')
-print(df['averageRating'])
+df = df[df['type'] == 'Movie']
+### numVote
+### score
+
+countrys = []
+for row in df['country'].dropna():
+    for c in row.split(', '):
+        if c not in countrys:
+            countrys.append(c)
+
+
+
+genres = []
+for row in df['listed_in'].dropna():
+    for g in row.split(', '):
+        if g not in genres:
+            genres.append(g)
+
+
+print(countrys)
+print(genres)
+
+
+def tool(country, genre):
+    mask = (df['country'].str.contains(country)) & (df['listed_in'].str.contains(genre))
+    if mask.sum() == 0:
+        return 0, 0
+    return df[mask]['averageRating'].mean(), df[mask]['numVotes'].mean()
+
+
+
+import csv
+
+with open('country_genre.csv', 'w', newline='') as csvfile:
+    writer = csv.writer(csvfile)
+
+    # 寫入一列資料
+    writer.writerow(['country', 'genre', 'averageRating', 'numVotes'])
+
+    # 寫入另外幾列資料
+    for c in countrys:
+        for g in genres:
+            rating, votes = tool(c, g)
+            writer.writerow([c, g, rating, votes])
+
+# t = pd.read_csv('country_genre.csv')
+# t.to_csv('testing.csv')
+# print(t)

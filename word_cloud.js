@@ -1,17 +1,18 @@
-function wordCloud() {
+function wordCloud(id) {
+
+
   const fill = d3.schemeCategory10
 
   const tokenize = function (words) {
-    console.log(words);
-    const countList = words.map(x=>x.size)
+
+    const countList = words.map(x => x.size)
     const max = Math.max(...countList)
     const min = Math.min(...countList)
-    console.log(max)
-    console.log(min)
-    return words.map(x=>{
+
+    return words.map(x => {
       return {
-        text:x.text,
-        size: selectSizeFactor(min, max, x.size) 
+        text: x.text,
+        size: selectSizeFactor(min, max, x.size)
       }
     })
   }
@@ -22,7 +23,6 @@ function wordCloud() {
     return (value - b) / a
   }
   // myWords = tokenize(test)
-  const id = 'tt7767422'
 
   const margin = { top: 10, right: 10, bottom: 10, left: 10 },
     width = 600 - margin.left - margin.right,
@@ -33,34 +33,36 @@ function wordCloud() {
     .append('svg')
     .attr('width', width + margin.left + margin.right)
     .attr('height', height + margin.top + margin.bottom)
+    .attr('id','wordCloudSvg')
+
     .attr('class', 'mx-auto')
     .append('g')
     .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')')
 
   // const id = ""
   d3.csv('https://raw.githubusercontent.com/zihong518/data_visualization/master/count_result.csv').then((data) => {
-    const dataSelect = data.filter(x=>{
-      return x.tconst ==id
+    const dataSelect = data.filter(x => {
+      return x.tconst == id
     })
-    let test = dataSelect[0].token_count.replace(/[{"'}()!\.;*\?]/g , "").split(",")
-    let myWords = [] 
-    test.map(x=>{
-      const  pair =  x.split(":")
-      const word = pair[0].replace(/[()!\.,:;*\?-]/g,'')
-              .replace(/\s+/g, '')
-          	  .replace(/\d+/g, '')
-      if(word ){
-        if(word.length>1){
+    let test = dataSelect[0].token_count.replace(/[{"'}()!\.;*\?]/g, "").split(",")
+    let myWords = []
+    test.map(x => {
+      const pair = x.split(":")
+      const word = pair[0].replace(/[()!\.,:;*\?-]/g, '')
+        .replace(/\s+/g, '')
+        .replace(/\d+/g, '')
+      if (word) {
+        if (word.length > 1) {
           myWords.push({
-            text:word,
-            size:parseInt(pair[1])
+            text: word,
+            size: parseInt(pair[1])
           })
         }
 
       }
     })
     myWords = tokenize(myWords)
-    console.log(myWords);
+
     const layout = d3.layout
       .cloud()
       .size([width, height])
