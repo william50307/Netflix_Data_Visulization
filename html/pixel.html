@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v6.js"></script>
+
+<!-- time slider -->
+<script src="https://unpkg.com/d3-simple-slider"></script> 
+
+<script src="utils.js"></script>
+<script src="filter_sliders.js"></script>
+<script src="pixel_chart.js"></script>
+
+<!-- Create a div where the graph will take place -->
+<p>Total amount : <span id='amount'> </span></p>
+<div id="my_dataviz"></div>
+
+<div id ='pixel_filter'>
+
+	<select class='select_countrys' data-filter_type ='country' ></select>
+	<div class='selected_country'></div>
+ 	<select class='select_genres' data-filter_type = 'genre'></select>
+	<div class='selected_genre'></div><br>
+
+	<div id='duration'>
+		<div class="flex justify-between">
+			<p>Duration</p>
+			<div>
+				<span>From : </span><span id='duration_min'>1</span>
+				<span>To : </span><span id='duration_max'>312</span>
+			</div>
+		</div>
+
+	</div>
+
+	<div id='date_added'>
+		<span>From : </span><span id='time_min'>2008</span>
+		<span>To : </span><span id='time_max'>2021</span>
+	</div>
+
+	<div id='averageRating'>
+		<span>From : </span><span id='averageRating_min'>0</span>
+		<span>To : </span><span id='averageRating_max'>10</span>
+	</div>
+
+	<div id='numVotes'>
+		<span>From : </span><span id='numVotes_min'>0</span>
+		<span>To : </span><span id='numVotes_max'>10</span>
+	</div>
+
+	<input id='country_search' type='text' placeholder="Search..">
+	<ul id="search_support"></ul>
+</div>
+
+<script>
+	pixel_chart();
+
+	// 記得轉換成小寫 .toLowerCase()
+	countrys = ['abc', 'aaa', 'cde', 'dbc', 'hh12asd']
+	
+	d3.select('#country_search').on('keyup', function(event, d){
+		
+		let v = d3.select(this).property('value').toLowerCase()
+		console.log(v)
+		if (v !== ''){
+			const matched = countrys.filter( d => {console.log(d.includes(v));return d.includes(v)})
+			d3.select('#search_support').selectAll('li').data(matched).join('li').text(d => d)
+		}
+		else{
+			d3.selectAll('#search_support li').remove()
+		}
+	})
+</script>

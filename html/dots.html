@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v6.js"></script>
+
+<!-- Create a div where the graph will take place -->
+<div id="my_dataviz"></div>
+<p>2</p>
+<select id='select_country'></select>
+<div id='selected_country'></div>
+
+
+<script>
+
+  // set the dimensions and margins of the graph
+  const margin = {top: 10, right: 30, bottom: 30, left: 60},
+      width = 460 - margin.left - margin.right,
+      height = 400 - margin.top - margin.bottom;
+  
+  // append the svg object to the body of the page
+  const svg = d3.select("#my_dataviz")
+    .append("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+      .attr("transform", `translate(${margin.left},${margin.top})`);
+  
+  //Read the data
+  d3.csv("netflix_titles.csv").then( function(raw_data) {
+    
+    // remove nan data and parse datetime string
+    data = raw_data.filter((element, i) => element.date_added && element.type === 'Movie' && element.country);
+    
+    const parseTime = d3.timeParse("%B %d, %Y");
+    data.forEach(element => {
+      // parse datetime data
+      element.date_added  = parseTime(element.date_added); 
+      element.duration = +element.duration.split(' ')[0];
+    });
+
+    let countrys = [];
+    let genres = [];
+    for(const d of data){
+
+      // country
+      for(const c of d.country.split(', ')){
+        if (!countrys.includes(c) && c){
+          countrys.push(c);
+        }
+      }
+
+      // genres
+      for(const g of d.listed_in.split(', ')){
+        if (!genres.includes(g) && g){
+          genres.push(g);
+        }
+      }
+    }
+
+    // Add X axis : it is a date format
+    const x = d3.scaleTime()
+      .domain(d3.extent(data, function(d) { return d.date_added }))
+      .range([ 0, width ]);
+    svg.append("g")
+      .attr("transform", `translate(0, ${height})`)
+      .call(d3.axisBottom(x));
+    
+    // Add Y axis
+    const y = d3.scaleLinear()
+      .domain(d3.extent(data, function (d) {return d.duration}))
+      .range([ height, 0 ]);
+    svg.append("g")
+      .call(d3.axisLeft(y));
+    
+    //const countrys = ["Mexico", 'Japan', 'Germany', 'Spain'];
+    const color = d3.scaleOrdinal()
+    .domain(countrys)
+    .range(d3.schemeSet1);
+
+
+    // Draw the data points 
+    const add_point = function(country){
+      country = country.replace('_', ' ')
+      data = raw_data.filter(element => element.country.split(', ').includes(country))
+
+      svg.selectAll(".t")
+        .data(data)
+        .join('circle')
+        .transition()
+        .duration(500)
+          .attr("fill", d => color(country))
+          .attr('class', country.replace(' ', '_'))
+          .attr("cx", function(d) {return x(d.date_added)})
+          .attr("cy", function(d) {return y(d.duration)})
+          .attr("r", 1.5)
+          .style('opacity', 1)
+    }
+
+    const remove_point = function(event, d){
+      const country = d3.select(this).attr('class')
+
+      // remove data points
+      d3.selectAll('circle.' + country).remove()
+      // remove selected para
+      d3.select('div.'+country).remove()
+    }
+
+    const highlight = function(event, d){
+      const country = d3.select(this).text()
+
+      // reduce opacity of all groups
+      d3.selectAll("circle").style("opacity", .05)
+      // expect the one that is hovered
+      d3.selectAll("."+country.replace(' ', '_')).style("opacity", 1)
+    }
+
+    const noHighlight = function(event, d){
+      d3.selectAll("circle").style("opacity", 1)
+    } 
+
+    
+    // show country option
+    d3.select('#select_country')
+      .selectAll('t')
+      .data(countrys)
+      .enter()
+      .append('option')
+      .attr('class', 'country_para')
+      .text((d) => d)
+
+    // binding event
+    d3.select('#select_country').on('change', function(event, d){
+      const country = d3.select(this).property('value')
+
+      // para
+      let para = d3.select('#selected_country')
+      .append('div')
+      .attr('class', country.replace(' ', '_'))
+
+      para
+      .append('p')
+      .text(country)
+      .on("mouseover", highlight)
+      .on("mouseleave", noHighlight)
+
+      para
+      .append('button')
+      .attr('class', country.replace(' ', '_'))
+      .text('remove')
+      .on('click', remove_point)
+    
+      add_point(country)
+    })
+    
+  })
+  </script>

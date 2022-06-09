@@ -1,0 +1,2381 @@
+country,genre,averageRating,numVotes
+United States,Documentaries,6.907951807228909,4926.238554216868
+United States,Children & Family Movies,5.959807073954984,49693.70739549839
+United States,Dramas,6.474811083123431,83741.93828715365
+United States,Independent Movies,6.265405405405405,50036.994594594595
+United States,International Movies,6.549659863945579,50293.86394557823
+United States,Comedies,5.932786885245905,68749.24262295081
+United States,Thrillers,5.942553191489363,85376.41843971632
+United States,Romantic Movies,6.120673076923077,66816.79326923077
+United States,Horror Movies,5.477720207253884,62786.64766839378
+United States,Sci-Fi & Fantasy,6.1000000000000005,189642.76506024096
+United States,Action & Adventure,6.071128608923886,156283.69553805774
+United States,Classic Movies,7.386666666666665,204931.73333333334
+United States,Anime Features,6.275,6383.75
+United States,Sports Movies,6.6911764705882355,45222.990196078434
+United States,Music & Musicals,6.664655172413796,26019.612068965518
+United States,Cult Movies,6.716326530612246,204023.32653061225
+United States,Faith & Spirituality,5.7918918918918925,14100.675675675675
+United States,LGBTQ Movies,6.505172413793104,33783.43103448276
+United States,Stand-Up Comedy,6.8047619047619055,2709.1428571428573
+United States,Movies,6.20330261136713,63442.13671274961
+Ghana,Documentaries,0,0
+Ghana,Children & Family Movies,0,0
+Ghana,Dramas,5.859999999999999,373.8
+Ghana,Independent Movies,6.7,698.0
+Ghana,International Movies,5.859999999999999,373.8
+Ghana,Comedies,5.15,128.5
+Ghana,Thrillers,0,0
+Ghana,Romantic Movies,0,0
+Ghana,Horror Movies,0,0
+Ghana,Sci-Fi & Fantasy,0,0
+Ghana,Action & Adventure,0,0
+Ghana,Classic Movies,0,0
+Ghana,Anime Features,0,0
+Ghana,Sports Movies,0,0
+Ghana,Music & Musicals,0,0
+Ghana,Cult Movies,0,0
+Ghana,Faith & Spirituality,0,0
+Ghana,LGBTQ Movies,0,0
+Ghana,Stand-Up Comedy,0,0
+Ghana,Movies,5.859999999999999,373.8
+Burkina Faso,Documentaries,0,0
+Burkina Faso,Children & Family Movies,0,0
+Burkina Faso,Dramas,7.0,683.0
+Burkina Faso,Independent Movies,7.0,683.0
+Burkina Faso,International Movies,7.0,683.0
+Burkina Faso,Comedies,0,0
+Burkina Faso,Thrillers,0,0
+Burkina Faso,Romantic Movies,0,0
+Burkina Faso,Horror Movies,0,0
+Burkina Faso,Sci-Fi & Fantasy,0,0
+Burkina Faso,Action & Adventure,0,0
+Burkina Faso,Classic Movies,0,0
+Burkina Faso,Anime Features,0,0
+Burkina Faso,Sports Movies,0,0
+Burkina Faso,Music & Musicals,0,0
+Burkina Faso,Cult Movies,0,0
+Burkina Faso,Faith & Spirituality,0,0
+Burkina Faso,LGBTQ Movies,0,0
+Burkina Faso,Stand-Up Comedy,0,0
+Burkina Faso,Movies,7.0,683.0
+United Kingdom,Documentaries,7.019444444444445,5187.842592592592
+United Kingdom,Children & Family Movies,6.354999999999999,69478.3
+United Kingdom,Dramas,6.679679144385028,91196.5935828877
+United Kingdom,Independent Movies,6.602857142857143,86269.67142857143
+United Kingdom,International Movies,6.5870129870129865,50705.02597402597
+United Kingdom,Comedies,6.31851851851852,88459.07407407407
+United Kingdom,Thrillers,6.28813559322034,106098.15254237287
+United Kingdom,Romantic Movies,6.677777777777777,101146.97222222222
+United Kingdom,Horror Movies,5.81923076923077,86154.61538461539
+United Kingdom,Sci-Fi & Fantasy,6.055882352941176,214339.4411764706
+United Kingdom,Action & Adventure,6.255555555555556,173373.02469135803
+United Kingdom,Classic Movies,7.466666666666667,173854.6
+United Kingdom,Anime Features,0,0
+United Kingdom,Sports Movies,6.910526315789473,7975.578947368421
+United Kingdom,Music & Musicals,6.924137931034482,48374.58620689655
+United Kingdom,Cult Movies,7.366666666666666,356388.1666666667
+United Kingdom,Faith & Spirituality,6.58,5910.4
+United Kingdom,LGBTQ Movies,6.385714285714285,37658.57142857143
+United Kingdom,Stand-Up Comedy,6.982352941176471,3125.705882352941
+United Kingdom,Movies,6.559866220735782,73721.95986622074
+Germany,Documentaries,6.800000000000002,2135.6
+Germany,Children & Family Movies,5.823076923076924,38987.846153846156
+Germany,Dramas,6.7430555555555545,98897.86111111111
+Germany,Independent Movies,7.026923076923077,93813.61538461539
+Germany,International Movies,6.641463414634146,45794.62195121951
+Germany,Comedies,6.227777777777778,77128.66666666667
+Germany,Thrillers,6.324137931034482,65527.93103448276
+Germany,Romantic Movies,6.129999999999999,63525.5
+Germany,Horror Movies,5.8374999999999995,99567.5
+Germany,Sci-Fi & Fantasy,6.253846153846155,247804.6923076923
+Germany,Action & Adventure,6.783870967741935,268903.70967741933
+Germany,Classic Movies,7.8,196922.0
+Germany,Anime Features,0,0
+Germany,Sports Movies,6.32,39817.6
+Germany,Music & Musicals,6.5249999999999995,91983.25
+Germany,Cult Movies,7.2,240475.33333333334
+Germany,Faith & Spirituality,6.4,2245.0
+Germany,LGBTQ Movies,5.4,1690.0
+Germany,Stand-Up Comedy,5.4,195.6
+Germany,Movies,6.4871794871794854,59650.37606837607
+Ethiopia,Documentaries,0,0
+Ethiopia,Children & Family Movies,0,0
+Ethiopia,Dramas,7.0,683.0
+Ethiopia,Independent Movies,7.0,683.0
+Ethiopia,International Movies,7.0,683.0
+Ethiopia,Comedies,0,0
+Ethiopia,Thrillers,0,0
+Ethiopia,Romantic Movies,0,0
+Ethiopia,Horror Movies,0,0
+Ethiopia,Sci-Fi & Fantasy,0,0
+Ethiopia,Action & Adventure,0,0
+Ethiopia,Classic Movies,0,0
+Ethiopia,Anime Features,0,0
+Ethiopia,Sports Movies,0,0
+Ethiopia,Music & Musicals,0,0
+Ethiopia,Cult Movies,0,0
+Ethiopia,Faith & Spirituality,0,0
+Ethiopia,LGBTQ Movies,0,0
+Ethiopia,Stand-Up Comedy,0,0
+Ethiopia,Movies,7.0,683.0
+Czech Republic,Documentaries,6.4,145.0
+Czech Republic,Children & Family Movies,5.6,85958.0
+Czech Republic,Dramas,6.42857142857143,13377.857142857143
+Czech Republic,Independent Movies,7.8,3428.0
+Czech Republic,International Movies,6.539999999999999,48154.2
+Czech Republic,Comedies,6.699999999999999,44693.0
+Czech Republic,Thrillers,6.1,39772.0
+Czech Republic,Romantic Movies,0,0
+Czech Republic,Horror Movies,5.2,112866.0
+Czech Republic,Sci-Fi & Fantasy,5.733333333333334,102239.0
+Czech Republic,Action & Adventure,6.459999999999999,261242.0
+Czech Republic,Classic Movies,0,0
+Czech Republic,Anime Features,0,0
+Czech Republic,Sports Movies,6.4,145.0
+Czech Republic,Music & Musicals,0,0
+Czech Republic,Cult Movies,7.1,353956.0
+Czech Republic,Faith & Spirituality,0,0
+Czech Republic,LGBTQ Movies,0,0
+Czech Republic,Stand-Up Comedy,0,0
+Czech Republic,Movies,6.349999999999999,56697.166666666664
+India,Documentaries,7.257142857142857,34936.333333333336
+India,Children & Family Movies,6.140000000000001,7130.1
+India,Dramas,6.577280858676205,10491.992844364937
+India,Independent Movies,6.7437956204379566,4127.737226277372
+India,International Movies,6.321650879566975,13295.899864682002
+India,Comedies,6.145454545454546,14734.167832167832
+India,Thrillers,6.246913580246912,21137.493827160495
+India,Romantic Movies,6.254807692307692,6776.298076923077
+India,Horror Movies,5.106451612903226,25634.612903225807
+India,Sci-Fi & Fantasy,5.822222222222223,38337.0
+India,Action & Adventure,6.068548387096776,21347.629032258064
+India,Classic Movies,7.188888888888889,7942.111111111111
+India,Anime Features,0,0
+India,Sports Movies,6.649999999999999,70206.1875
+India,Music & Musicals,6.039506172839506,21930.777777777777
+India,Cult Movies,6.640000000000001,11858.0
+India,Faith & Spirituality,6.800000000000001,151.0
+India,LGBTQ Movies,6.300000000000001,263.5
+India,Stand-Up Comedy,6.42,756.0
+India,Movies,6.343346007604556,13234.756653992396
+France,Documentaries,6.736842105263159,4569.368421052632
+France,Children & Family Movies,6.380000000000001,44862.2
+France,Dramas,6.622297297297298,49042.77027027027
+France,Independent Movies,6.716393442622952,68816.19672131147
+France,International Movies,6.436158192090396,30621.598870056496
+France,Comedies,6.224444444444445,54990.08888888889
+France,Thrillers,6.385714285714285,74928.90476190476
+France,Romantic Movies,6.29047619047619,45240.0
+France,Horror Movies,5.0875,50970.625
+France,Sci-Fi & Fantasy,6.2875,102924.5
+France,Action & Adventure,6.366666666666667,63795.805555555555
+France,Classic Movies,6.849999999999999,49041.666666666664
+France,Anime Features,0,0
+France,Sports Movies,7.32,10305.2
+France,Music & Musicals,6.3,9795.57142857143
+France,Cult Movies,5.5,126697.0
+France,Faith & Spirituality,6.566666666666667,5053.666666666667
+France,LGBTQ Movies,5.4,1753.0
+France,Stand-Up Comedy,5.7,134.0
+France,Movies,6.460425531914895,41056.54893617021
+China,Documentaries,6.683333333333334,1515.3333333333333
+China,Children & Family Movies,6.292307692307693,68107.92307692308
+China,Dramas,6.496875,23863.0
+China,Independent Movies,6.1,45645.0
+China,International Movies,6.369230769230768,23205.923076923078
+China,Comedies,6.236666666666666,40063.46666666667
+China,Thrillers,5.75,71478.5
+China,Romantic Movies,6.5375,37213.0
+China,Horror Movies,5.15,56730.0
+China,Sci-Fi & Fantasy,6.166666666666668,49221.083333333336
+China,Action & Adventure,6.203571428571429,34210.375
+China,Classic Movies,0,0
+China,Anime Features,0,0
+China,Sports Movies,7.0,547.0
+China,Music & Musicals,6.5,10899.0
+China,Cult Movies,7.7,137228.0
+China,Faith & Spirituality,0,0
+China,LGBTQ Movies,0,0
+China,Stand-Up Comedy,0,0
+China,Movies,6.348192771084336,32101.89156626506
+Canada,Documentaries,6.764705882352942,1581.0588235294117
+Canada,Children & Family Movies,5.8982758620689655,27232.689655172413
+Canada,Dramas,6.509090909090908,45818.36363636364
+Canada,Independent Movies,6.300000000000002,41486.19047619047
+Canada,International Movies,6.356603773584904,23876.509433962263
+Canada,Comedies,5.882051282051283,40753.0
+Canada,Thrillers,5.904166666666666,47583.645833333336
+Canada,Romantic Movies,5.677272727272728,21015.045454545456
+Canada,Horror Movies,5.582857142857144,71008.94285714286
+Canada,Sci-Fi & Fantasy,5.985714285714287,77715.60714285714
+Canada,Action & Adventure,5.828571428571429,62417.19047619047
+Canada,Classic Movies,0,0
+Canada,Anime Features,0,0
+Canada,Sports Movies,6.769999999999999,24164.9
+Canada,Music & Musicals,6.445454545454546,14315.454545454546
+Canada,Cult Movies,7.3,240520.8
+Canada,Faith & Spirituality,5.533333333333334,15757.333333333334
+Canada,LGBTQ Movies,6.633333333333334,2073.8333333333335
+Canada,Stand-Up Comedy,0,0
+Canada,Movies,6.073711340206185,41010.68041237113
+South Africa,Documentaries,7.257142857142858,8741.142857142857
+South Africa,Children & Family Movies,8.1,51885.0
+South Africa,Dramas,6.530000000000001,8068.2
+South Africa,Independent Movies,6.9,19602.0
+South Africa,International Movies,6.237142857142856,24521.8
+South Africa,Comedies,5.769230769230769,505.2307692307692
+South Africa,Thrillers,5.800000000000001,7735.0
+South Africa,Romantic Movies,5.222222222222222,601.8888888888889
+South Africa,Horror Movies,0,0
+South Africa,Sci-Fi & Fantasy,7.35,459536.5
+South Africa,Action & Adventure,6.27,122447.1
+South Africa,Classic Movies,0,0
+South Africa,Anime Features,0,0
+South Africa,Sports Movies,0,0
+South Africa,Music & Musicals,5.766666666666666,268.0
+South Africa,Cult Movies,0,0
+South Africa,Faith & Spirituality,4.4,4552.0
+South Africa,LGBTQ Movies,0,0
+South Africa,Stand-Up Comedy,5.9,204.0
+South Africa,Movies,6.237142857142856,24521.8
+Japan,Documentaries,6.45,3151.6666666666665
+Japan,Children & Family Movies,5.876923076923077,11879.0
+Japan,Dramas,6.582352941176473,58777.470588235294
+Japan,Independent Movies,6.542857142857144,61156.0
+Japan,International Movies,6.554054054054054,11196.918918918918
+Japan,Comedies,5.828571428571428,92966.71428571429
+Japan,Thrillers,6.133333333333333,19896.0
+Japan,Romantic Movies,7.050000000000001,112761.5
+Japan,Horror Movies,4.25,3574.0
+Japan,Sci-Fi & Fantasy,6.816666666666666,5975.0
+Japan,Action & Adventure,6.715384615384616,75949.61538461539
+Japan,Classic Movies,7.300000000000001,43663.5
+Japan,Anime Features,6.661290322580646,6780.870967741936
+Japan,Sports Movies,7.1,1029.0
+Japan,Music & Musicals,6.475,3862.75
+Japan,Cult Movies,7.5,416514.0
+Japan,Faith & Spirituality,0,0
+Japan,LGBTQ Movies,5.5,1827.0
+Japan,Stand-Up Comedy,0,0
+Japan,Movies,6.41864406779661,30368.406779661018
+Nigeria,Documentaries,7.55,11670.5
+Nigeria,Children & Family Movies,0,0
+Nigeria,Dramas,5.991379310344825,21581.327586206895
+Nigeria,Independent Movies,6.583333333333333,139392.5
+Nigeria,International Movies,5.914102564102563,5965.974358974359
+Nigeria,Comedies,5.963888888888889,24015.027777777777
+Nigeria,Thrillers,5.333333333333333,27287.333333333332
+Nigeria,Romantic Movies,6.08421052631579,3909.2105263157896
+Nigeria,Horror Movies,5.0,113.0
+Nigeria,Sci-Fi & Fantasy,0,0
+Nigeria,Action & Adventure,4.933333333333334,5879.666666666667
+Nigeria,Classic Movies,0,0
+Nigeria,Anime Features,0,0
+Nigeria,Sports Movies,0,0
+Nigeria,Music & Musicals,5.8,149.0
+Nigeria,Cult Movies,0,0
+Nigeria,Faith & Spirituality,6.6,123.0
+Nigeria,LGBTQ Movies,0,0
+Nigeria,Stand-Up Comedy,0,0
+Nigeria,Movies,5.948192771084336,15672.132530120482
+Spain,Documentaries,7.08,1048.0
+Spain,Children & Family Movies,6.485714285714286,37732.0
+Spain,Dramas,6.433870967741935,31585.516129032258
+Spain,Independent Movies,5.870588235294118,36939.41176470588
+Spain,International Movies,6.2855769230769205,15080.115384615385
+Spain,Comedies,6.0950000000000015,10345.8
+Spain,Thrillers,6.30294117647059,36087.470588235294
+Spain,Romantic Movies,6.444444444444444,5150.666666666667
+Spain,Horror Movies,5.6000000000000005,26021.666666666668
+Spain,Sci-Fi & Fantasy,6.3875,124653.625
+Spain,Action & Adventure,5.800000000000001,23798.555555555555
+Spain,Classic Movies,0,0
+Spain,Anime Features,0,0
+Spain,Sports Movies,6.625,4630.0
+Spain,Music & Musicals,5.65,2795.0
+Spain,Cult Movies,0,0
+Spain,Faith & Spirituality,6.25,5795.0
+Spain,LGBTQ Movies,6.133333333333333,2445.3333333333335
+Spain,Stand-Up Comedy,6.7,420.0
+Spain,Movies,6.283898305084742,21377.550847457627
+Australia,Documentaries,7.107142857142857,3040.9285714285716
+Australia,Children & Family Movies,5.769230769230769,13262.692307692309
+Australia,Dramas,6.608108108108107,58559.45945945946
+Australia,Independent Movies,6.7124999999999995,24129.625
+Australia,International Movies,6.662962962962963,45591.81481481482
+Australia,Comedies,6.107692307692308,70843.23076923077
+Australia,Thrillers,6.477777777777778,118530.33333333333
+Australia,Romantic Movies,6.94,41422.6
+Australia,Horror Movies,5.066666666666666,28160.0
+Australia,Sci-Fi & Fantasy,5.614285714285715,153996.57142857142
+Australia,Action & Adventure,6.092307692307693,127046.23076923077
+Australia,Classic Movies,6.860000000000001,63998.0
+Australia,Anime Features,0,0
+Australia,Sports Movies,6.442857142857143,2262.285714285714
+Australia,Music & Musicals,6.6000000000000005,1251.6666666666667
+Australia,Cult Movies,6.8,204229.0
+Australia,Faith & Spirituality,5.7,11822.0
+Australia,LGBTQ Movies,7.175000000000001,36184.5
+Australia,Stand-Up Comedy,7.3,5529.666666666667
+Australia,Movies,6.468421052631577,35796.36842105263
+Mexico,Documentaries,6.569230769230769,1053.6153846153845
+Mexico,Children & Family Movies,5.08,15699.6
+Mexico,Dramas,6.50625,42527.78125
+Mexico,Independent Movies,5.7625,25889.1875
+Mexico,International Movies,6.161224489795919,17305.102040816328
+Mexico,Comedies,5.84,9085.85
+Mexico,Thrillers,8.5,14942.0
+Mexico,Romantic Movies,5.85,42111.75
+Mexico,Horror Movies,4.783333333333334,55552.166666666664
+Mexico,Sci-Fi & Fantasy,7.139999999999999,252650.8
+Mexico,Action & Adventure,6.25,96152.25
+Mexico,Classic Movies,7.1,17855.0
+Mexico,Anime Features,0,0
+Mexico,Sports Movies,5.75,43776.0
+Mexico,Music & Musicals,6.866666666666667,37.333333333333336
+Mexico,Cult Movies,0,0
+Mexico,Faith & Spirituality,6.2,81.0
+Mexico,LGBTQ Movies,4.3,897.0
+Mexico,Stand-Up Comedy,6.359999999999999,332.5
+Mexico,Movies,6.104761904761905,29755.873015873014
+Italy,Documentaries,6.407692307692307,1718.1538461538462
+Italy,Children & Family Movies,4.766666666666667,20988.333333333332
+Italy,Dramas,6.753571428571429,58721.82142857143
+Italy,Independent Movies,6.166666666666667,4538.333333333333
+Italy,International Movies,6.383333333333333,23461.5
+Italy,Comedies,5.8100000000000005,14792.0
+Italy,Thrillers,6.4125,55301.875
+Italy,Romantic Movies,6.316666666666666,81181.83333333333
+Italy,Horror Movies,5.033333333333333,7838.0
+Italy,Sci-Fi & Fantasy,6.5,357993.0
+Italy,Action & Adventure,6.466666666666666,180006.0
+Italy,Classic Movies,7.433333333333334,124547.33333333333
+Italy,Anime Features,0,0
+Italy,Sports Movies,6.5,3387.75
+Italy,Music & Musicals,5.85,1536.0
+Italy,Cult Movies,0,0
+Italy,Faith & Spirituality,6.4,2245.0
+Italy,LGBTQ Movies,8.4,158871.0
+Italy,Stand-Up Comedy,5.85,131.0
+Italy,Movies,6.345283018867923,35123.52830188679
+Romania,Documentaries,0,0
+Romania,Children & Family Movies,0,0
+Romania,Dramas,7.071428571428571,56673.57142857143
+Romania,Independent Movies,0,0
+Romania,International Movies,5.7625,6529.25
+Romania,Comedies,4.6000000000000005,73605.33333333333
+Romania,Thrillers,6.366666666666667,7716.333333333333
+Romania,Romantic Movies,6.633333333333334,49980.0
+Romania,Horror Movies,0,0
+Romania,Sci-Fi & Fantasy,5.1,1989.0
+Romania,Action & Adventure,0,0
+Romania,Classic Movies,0,0
+Romania,Anime Features,0,0
+Romania,Sports Movies,0,0
+Romania,Music & Musicals,6.35,1149.0
+Romania,Cult Movies,0,0
+Romania,Faith & Spirituality,0,0
+Romania,LGBTQ Movies,0,0
+Romania,Stand-Up Comedy,0,0
+Romania,Movies,6.01,20178.7
+Hong Kong,Documentaries,7.9,3064.0
+Hong Kong,Children & Family Movies,6.233333333333333,88313.66666666667
+Hong Kong,Dramas,6.661290322580645,71052.7741935484
+Hong Kong,Independent Movies,6.95,12365.0
+Hong Kong,International Movies,6.444117647058823,16941.16176470588
+Hong Kong,Comedies,6.018518518518518,18306.037037037036
+Hong Kong,Thrillers,6.566666666666667,432012.0
+Hong Kong,Romantic Movies,6.266666666666667,36516.77777777778
+Hong Kong,Horror Movies,0,0
+Hong Kong,Sci-Fi & Fantasy,6.366666666666667,2495.6666666666665
+Hong Kong,Action & Adventure,6.505454545454546,34651.6
+Hong Kong,Classic Movies,7.6,103396.0
+Hong Kong,Anime Features,0,0
+Hong Kong,Sports Movies,5.2,194.0
+Hong Kong,Music & Musicals,7.5,8573.0
+Hong Kong,Cult Movies,7.333333333333333,166221.66666666666
+Hong Kong,Faith & Spirituality,0,0
+Hong Kong,LGBTQ Movies,0,0
+Hong Kong,Stand-Up Comedy,0,0
+Hong Kong,Movies,6.476623376623376,27553.44155844156
+New Zealand,Documentaries,5.866666666666667,1576.6666666666667
+New Zealand,Children & Family Movies,7.3,228776.0
+New Zealand,Dramas,6.790909090909091,61545.27272727273
+New Zealand,Independent Movies,7.233333333333334,31330.0
+New Zealand,International Movies,6.788888888888888,102164.88888888889
+New Zealand,Comedies,6.85,66815.5
+New Zealand,Thrillers,0,0
+New Zealand,Romantic Movies,6.9,108016.0
+New Zealand,Horror Movies,6.5,158755.0
+New Zealand,Sci-Fi & Fantasy,7.616666666666667,749165.0
+New Zealand,Action & Adventure,7.5857142857142845,630477.5714285715
+New Zealand,Classic Movies,7.5,87360.0
+New Zealand,Anime Features,0,0
+New Zealand,Sports Movies,5.366666666666667,1090.3333333333333
+New Zealand,Music & Musicals,0,0
+New Zealand,Cult Movies,0,0
+New Zealand,Faith & Spirituality,0,0
+New Zealand,LGBTQ Movies,0,0
+New Zealand,Stand-Up Comedy,0,0
+New Zealand,Movies,6.526666666666667,100181.0
+Brazil,Documentaries,7.128571428571428,4486.0
+Brazil,Children & Family Movies,4.166666666666667,798.6666666666666
+Brazil,Dramas,6.34,46556.05
+Brazil,Independent Movies,6.99090909090909,78512.81818181818
+Brazil,International Movies,6.3354838709677415,29445.83870967742
+Brazil,Comedies,5.566666666666666,6675.6
+Brazil,Thrillers,6.433333333333333,10894.666666666666
+Brazil,Romantic Movies,6.0,802.0
+Brazil,Horror Movies,0,0
+Brazil,Sci-Fi & Fantasy,0,0
+Brazil,Action & Adventure,6.566666666666666,25040.333333333332
+Brazil,Classic Movies,0,0
+Brazil,Anime Features,0,0
+Brazil,Sports Movies,7.3,307.0
+Brazil,Music & Musicals,3.2,481.5
+Brazil,Cult Movies,0,0
+Brazil,Faith & Spirituality,5.266666666666667,16188.666666666666
+Brazil,LGBTQ Movies,6.7,650.5
+Brazil,Stand-Up Comedy,5.55,136.5
+Brazil,Movies,6.226315789473685,27035.86842105263
+Greece,Documentaries,7.2,2923.0
+Greece,Children & Family Movies,0,0
+Greece,Dramas,6.2,51321.666666666664
+Greece,Independent Movies,5.7,3835.5
+Greece,International Movies,7.1,248750.0
+Greece,Comedies,7.1,248750.0
+Greece,Thrillers,0,0
+Greece,Romantic Movies,7.1,248750.0
+Greece,Horror Movies,0,0
+Greece,Sci-Fi & Fantasy,6.6,80357.0
+Greece,Action & Adventure,6.1,52855.5
+Greece,Classic Movies,0,0
+Greece,Anime Features,0,0
+Greece,Sports Movies,0,0
+Greece,Music & Musicals,0,0
+Greece,Cult Movies,0,0
+Greece,Faith & Spirituality,0,0
+Greece,LGBTQ Movies,7.2,2923.0
+Greece,Stand-Up Comedy,0,0
+Greece,Movies,6.425000000000001,64836.0
+Colombia,Documentaries,8.1,212.0
+Colombia,Children & Family Movies,0,0
+Colombia,Dramas,5.04,669.8
+Colombia,Independent Movies,5.3999999999999995,870.0
+Colombia,International Movies,5.7250000000000005,452.75
+Colombia,Comedies,5.375,200.0
+Colombia,Thrillers,0,0
+Colombia,Romantic Movies,4.7,56.0
+Colombia,Horror Movies,0,0
+Colombia,Sci-Fi & Fantasy,0,0
+Colombia,Action & Adventure,6.1,78045.0
+Colombia,Classic Movies,0,0
+Colombia,Anime Features,0,0
+Colombia,Sports Movies,0,0
+Colombia,Music & Musicals,0,0
+Colombia,Cult Movies,0,0
+Colombia,Faith & Spirituality,0,0
+Colombia,LGBTQ Movies,0,0
+Colombia,Stand-Up Comedy,4.966666666666666,66.0
+Colombia,Movies,5.7250000000000005,452.75
+Belgium,Documentaries,7.216666666666668,5426.0
+Belgium,Children & Family Movies,5.95,25984.5
+Belgium,Dramas,6.555,23863.925
+Belgium,Independent Movies,6.93846153846154,55610.0
+Belgium,International Movies,6.264705882352942,12846.843137254902
+Belgium,Comedies,5.984210526315789,29504.63157894737
+Belgium,Thrillers,6.054545454545454,16009.363636363636
+Belgium,Romantic Movies,5.666666666666667,11121.333333333334
+Belgium,Horror Movies,4.949999999999999,6045.5
+Belgium,Sci-Fi & Fantasy,5.8,46792.333333333336
+Belgium,Action & Adventure,6.081818181818182,21058.0
+Belgium,Classic Movies,6.9,368.0
+Belgium,Anime Features,0,0
+Belgium,Sports Movies,0,0
+Belgium,Music & Musicals,6.9,6777.0
+Belgium,Cult Movies,0,0
+Belgium,Faith & Spirituality,0,0
+Belgium,LGBTQ Movies,7.15,7940.5
+Belgium,Stand-Up Comedy,0,0
+Belgium,Movies,6.332307692307693,19981.876923076925
+Switzerland,Documentaries,7.2,8052.333333333333
+Switzerland,Children & Family Movies,0,0
+Switzerland,Dramas,6.650000000000001,14694.75
+Switzerland,Independent Movies,7.85,10562.5
+Switzerland,International Movies,6.908333333333335,10818.416666666666
+Switzerland,Comedies,6.8,40003.666666666664
+Switzerland,Thrillers,6.5,2277.0
+Switzerland,Romantic Movies,0,0
+Switzerland,Horror Movies,0,0
+Switzerland,Sci-Fi & Fantasy,3.7,14582.0
+Switzerland,Action & Adventure,4.9,52727.0
+Switzerland,Classic Movies,0,0
+Switzerland,Anime Features,0,0
+Switzerland,Sports Movies,0,0
+Switzerland,Music & Musicals,0,0
+Switzerland,Cult Movies,0,0
+Switzerland,Faith & Spirituality,6.4,2245.0
+Switzerland,LGBTQ Movies,0,0
+Switzerland,Stand-Up Comedy,0,0
+Switzerland,Movies,6.908333333333335,10818.416666666666
+Bulgaria,Documentaries,0,0
+Bulgaria,Children & Family Movies,5.2,1513.0
+Bulgaria,Dramas,7.1,17282.0
+Bulgaria,Independent Movies,3.4,11988.0
+Bulgaria,International Movies,6.125,20362.75
+Bulgaria,Comedies,0,0
+Bulgaria,Thrillers,6.266666666666667,23106.666666666668
+Bulgaria,Romantic Movies,0,0
+Bulgaria,Horror Movies,3.4,11988.0
+Bulgaria,Sci-Fi & Fantasy,6.0,56711.0
+Bulgaria,Action & Adventure,6.175,19492.75
+Bulgaria,Classic Movies,0,0
+Bulgaria,Anime Features,0,0
+Bulgaria,Sports Movies,0,0
+Bulgaria,Music & Musicals,0,0
+Bulgaria,Cult Movies,0,0
+Bulgaria,Faith & Spirituality,0,0
+Bulgaria,LGBTQ Movies,0,0
+Bulgaria,Stand-Up Comedy,0,0
+Bulgaria,Movies,5.516666666666667,15825.333333333334
+,Documentaries,6.890491283676706,5241.698890649763
+,Children & Family Movies,5.94579207920792,40188.15099009901
+,Dramas,6.4716395864106415,41156.17626784835
+,Independent Movies,6.375075075075071,35625.66366366366
+,International Movies,6.27872753763964,14804.18601262749
+,Comedies,5.983458083832336,39281.511227544914
+,Thrillers,6.043280632411064,56949.28853754941
+,Romantic Movies,6.166011787819254,32725.19449901768
+,Horror Movies,5.460645161290319,45075.46129032258
+,Sci-Fi & Fantasy,6.03254716981132,153865.68867924527
+,Action & Adventure,6.070182841068912,92755.58227848102
+,Classic Movies,7.316666666666668,159528.26470588235
+,Anime Features,6.661290322580646,6780.870967741936
+,Sports Movies,6.618604651162787,32149.18023255814
+,Music & Musicals,6.371595330739299,19631.400778210118
+,Cult Movies,6.7639344262295085,182346.7868852459
+,Faith & Spirituality,5.905882352941178,11375.35294117647
+,LGBTQ Movies,6.447727272727272,24930.420454545456
+,Stand-Up Comedy,6.657641921397382,2304.6288209606987
+,Movies,6.235189504373177,32351.531195335276
+Algeria,Documentaries,0,0
+Algeria,Children & Family Movies,0,0
+Algeria,Dramas,6.949999999999999,1520.0
+Algeria,Independent Movies,6.6,449.0
+Algeria,International Movies,6.949999999999999,1520.0
+Algeria,Comedies,0,0
+Algeria,Thrillers,0,0
+Algeria,Romantic Movies,0,0
+Algeria,Horror Movies,0,0
+Algeria,Sci-Fi & Fantasy,0,0
+Algeria,Action & Adventure,0,0
+Algeria,Classic Movies,0,0
+Algeria,Anime Features,0,0
+Algeria,Sports Movies,0,0
+Algeria,Music & Musicals,0,0
+Algeria,Cult Movies,0,0
+Algeria,Faith & Spirituality,0,0
+Algeria,LGBTQ Movies,0,0
+Algeria,Stand-Up Comedy,0,0
+Algeria,Movies,6.949999999999999,1520.0
+Poland,Documentaries,7.9,4182.0
+Poland,Children & Family Movies,0,0
+Poland,Dramas,6.072222222222223,54378.444444444445
+Poland,Independent Movies,7.033333333333334,269824.3333333333
+Poland,International Movies,6.08,50082.65
+Poland,Comedies,6.08,2950.2
+Poland,Thrillers,6.216666666666666,13464.333333333334
+Poland,Romantic Movies,4.766666666666667,29053.333333333332
+Poland,Horror Movies,6.0,19700.0
+Poland,Sci-Fi & Fantasy,6.4,18625.0
+Poland,Action & Adventure,4.933333333333333,2388.0
+Poland,Classic Movies,7.0,509.0
+Poland,Anime Features,0,0
+Poland,Sports Movies,0,0
+Poland,Music & Musicals,0,0
+Poland,Cult Movies,7.5,3395.0
+Poland,Faith & Spirituality,0,0
+Poland,LGBTQ Movies,0,0
+Poland,Stand-Up Comedy,0,0
+Poland,Movies,6.1,45661.681818181816
+Israel,Documentaries,7.2,2877.6666666666665
+Israel,Children & Family Movies,0,0
+Israel,Dramas,6.388888888888889,8107.777777777777
+Israel,Independent Movies,6.975,7903.75
+Israel,International Movies,6.938461538461539,6033.538461538462
+Israel,Comedies,6.9,1806.5
+Israel,Thrillers,5.733333333333334,37653.0
+Israel,Romantic Movies,0,0
+Israel,Horror Movies,6.050000000000001,50128.5
+Israel,Sci-Fi & Fantasy,6.4,18625.0
+Israel,Action & Adventure,5.6,5242.0
+Israel,Classic Movies,0,0
+Israel,Anime Features,0,0
+Israel,Sports Movies,7.4,814.0
+Israel,Music & Musicals,0,0
+Israel,Cult Movies,0,0
+Israel,Faith & Spirituality,6.5,773.0
+Israel,LGBTQ Movies,0,0
+Israel,Stand-Up Comedy,0,0
+Israel,Movies,6.786666666666667,12457.2
+Saudi Arabia,Documentaries,0,0
+Saudi Arabia,Children & Family Movies,0,0
+Saudi Arabia,Dramas,5.775,5729.0
+Saudi Arabia,Independent Movies,7.5,20295.0
+Saudi Arabia,International Movies,5.928571428571429,3579.5714285714284
+Saudi Arabia,Comedies,5.375,848.25
+Saudi Arabia,Thrillers,0,0
+Saudi Arabia,Romantic Movies,6.550000000000001,1343.5
+Saudi Arabia,Horror Movies,0,0
+Saudi Arabia,Sci-Fi & Fantasy,0,0
+Saudi Arabia,Action & Adventure,5.6,385.0
+Saudi Arabia,Classic Movies,0,0
+Saudi Arabia,Anime Features,0,0
+Saudi Arabia,Sports Movies,0,0
+Saudi Arabia,Music & Musicals,5.6,385.0
+Saudi Arabia,Cult Movies,0,0
+Saudi Arabia,Faith & Spirituality,0,0
+Saudi Arabia,LGBTQ Movies,0,0
+Saudi Arabia,Stand-Up Comedy,0,0
+Saudi Arabia,Movies,5.928571428571429,3579.5714285714284
+Thailand,Documentaries,6.575,263.25
+Thailand,Children & Family Movies,6.7,69.0
+Thailand,Dramas,6.628571428571428,56554.857142857145
+Thailand,Independent Movies,0,0
+Thailand,International Movies,6.189285714285714,9572.0
+Thailand,Comedies,6.719999999999999,1946.8
+Thailand,Thrillers,5.599999999999999,7811.666666666667
+Thailand,Romantic Movies,6.616666666666667,26478.833333333332
+Thailand,Horror Movies,5.658333333333334,6994.666666666667
+Thailand,Sci-Fi & Fantasy,0,0
+Thailand,Action & Adventure,5.8428571428571425,15072.714285714286
+Thailand,Classic Movies,0,0
+Thailand,Anime Features,0,0
+Thailand,Sports Movies,6.6,274.5
+Thailand,Music & Musicals,6.533333333333334,407.6666666666667
+Thailand,Cult Movies,0,0
+Thailand,Faith & Spirituality,7.0,1450.0
+Thailand,LGBTQ Movies,5.95,1075.0
+Thailand,Stand-Up Comedy,0,0
+Thailand,Movies,6.079999999999999,9282.7
+Indonesia,Documentaries,8.3,12842.0
+Indonesia,Children & Family Movies,6.050000000000001,417.5
+Indonesia,Dramas,6.5875,1888.125
+Indonesia,Independent Movies,6.9,486.0
+Indonesia,International Movies,6.552727272727273,3363.4727272727273
+Indonesia,Comedies,6.1692307692307695,1785.3846153846155
+Indonesia,Thrillers,0,0
+Indonesia,Romantic Movies,6.38421052631579,2666.7894736842104
+Indonesia,Horror Movies,6.328571428571428,11132.57142857143
+Indonesia,Sci-Fi & Fantasy,5.65,26074.5
+Indonesia,Action & Adventure,6.133333333333334,12397.666666666666
+Indonesia,Classic Movies,0,0
+Indonesia,Anime Features,0,0
+Indonesia,Sports Movies,0,0
+Indonesia,Music & Musicals,6.5,132.0
+Indonesia,Cult Movies,0,0
+Indonesia,Faith & Spirituality,5.7,399.0
+Indonesia,LGBTQ Movies,0,0
+Indonesia,Stand-Up Comedy,0,0
+Indonesia,Movies,6.505263157894737,3779.7894736842104
+Egypt,Documentaries,7.5,31338.5
+Egypt,Children & Family Movies,5.4,389.0
+Egypt,Dramas,6.340624999999999,13664.8125
+Egypt,Independent Movies,5.75,773.0
+Egypt,International Movies,5.936111111111112,8869.736111111111
+Egypt,Comedies,5.582500000000001,3700.45
+Egypt,Thrillers,6.699999999999999,4888.5
+Egypt,Romantic Movies,6.6,2714.3333333333335
+Egypt,Horror Movies,6.1000000000000005,5214.333333333333
+Egypt,Sci-Fi & Fantasy,0,0
+Egypt,Action & Adventure,5.941666666666666,9819.333333333334
+Egypt,Classic Movies,7.414285714285714,13795.42857142857
+Egypt,Anime Features,0,0
+Egypt,Sports Movies,7.05,374.5
+Egypt,Music & Musicals,4.933333333333334,252.0
+Egypt,Cult Movies,0,0
+Egypt,Faith & Spirituality,0,0
+Egypt,LGBTQ Movies,0,0
+Egypt,Stand-Up Comedy,0,0
+Egypt,Movies,5.969333333333333,8568.186666666666
+Denmark,Documentaries,7.3,5097.6
+Denmark,Children & Family Movies,5.95,5732.0
+Denmark,Dramas,6.721428571428572,23108.285714285714
+Denmark,Independent Movies,6.514285714285715,51734.57142857143
+Denmark,International Movies,6.963157894736843,20394.526315789473
+Denmark,Comedies,0,0
+Denmark,Thrillers,5.85,48980.0
+Denmark,Romantic Movies,6.45,8709.5
+Denmark,Horror Movies,0,0
+Denmark,Sci-Fi & Fantasy,0,0
+Denmark,Action & Adventure,6.35,32614.5
+Denmark,Classic Movies,0,0
+Denmark,Anime Features,0,0
+Denmark,Sports Movies,7.3,2305.0
+Denmark,Music & Musicals,0,0
+Denmark,Cult Movies,5.7,111947.0
+Denmark,Faith & Spirituality,0,0
+Denmark,LGBTQ Movies,0,0
+Denmark,Stand-Up Comedy,0,0
+Denmark,Movies,6.795833333333333,22302.291666666668
+Kuwait,Documentaries,0,0
+Kuwait,Children & Family Movies,0,0
+Kuwait,Dramas,7.25,86.5
+Kuwait,Independent Movies,0,0
+Kuwait,International Movies,6.76,2338.2
+Kuwait,Comedies,7.2,2886.0
+Kuwait,Thrillers,5.0,147.0
+Kuwait,Romantic Movies,0,0
+Kuwait,Horror Movies,0,0
+Kuwait,Sci-Fi & Fantasy,5.0,147.0
+Kuwait,Action & Adventure,8.2,11272.0
+Kuwait,Classic Movies,0,0
+Kuwait,Anime Features,0,0
+Kuwait,Sports Movies,0,0
+Kuwait,Music & Musicals,0,0
+Kuwait,Cult Movies,0,0
+Kuwait,Faith & Spirituality,0,0
+Kuwait,LGBTQ Movies,0,0
+Kuwait,Stand-Up Comedy,0,0
+Kuwait,Movies,6.76,2338.2
+Netherlands,Documentaries,7.0,3329.0
+Netherlands,Children & Family Movies,5.08,2387.4
+Netherlands,Dramas,6.4624999999999995,6103.9375
+Netherlands,Independent Movies,6.2,7861.666666666667
+Netherlands,International Movies,6.372727272727273,13638.848484848484
+Netherlands,Comedies,5.285714285714285,36248.57142857143
+Netherlands,Thrillers,6.45,38818.0
+Netherlands,Romantic Movies,5.6,63859.0
+Netherlands,Horror Movies,0,0
+Netherlands,Sci-Fi & Fantasy,0,0
+Netherlands,Action & Adventure,6.1,20762.0
+Netherlands,Classic Movies,0,0
+Netherlands,Anime Features,0,0
+Netherlands,Sports Movies,0,0
+Netherlands,Music & Musicals,6.5,3569.0
+Netherlands,Cult Movies,0,0
+Netherlands,Faith & Spirituality,0,0
+Netherlands,LGBTQ Movies,7.15,7940.5
+Netherlands,Stand-Up Comedy,0,0
+Netherlands,Movies,6.325714285714285,13171.857142857143
+Singapore,Documentaries,0,0
+Singapore,Children & Family Movies,0,0
+Singapore,Dramas,6.75,61036.5
+Singapore,Independent Movies,5.4,236.0
+Singapore,International Movies,6.008333333333333,1724.3333333333333
+Singapore,Comedies,0,0
+Singapore,Thrillers,5.199999999999999,2346.5
+Singapore,Romantic Movies,7.6,2095.0
+Singapore,Horror Movies,4.8,1186.3333333333333
+Singapore,Sci-Fi & Fantasy,5.3,21761.0
+Singapore,Action & Adventure,6.5,78383.2
+Singapore,Classic Movies,0,0
+Singapore,Anime Features,0,0
+Singapore,Sports Movies,0,0
+Singapore,Music & Musicals,0,0
+Singapore,Cult Movies,7.4,359784.0
+Singapore,Faith & Spirituality,0,0
+Singapore,LGBTQ Movies,0,0
+Singapore,Stand-Up Comedy,4.3,56.0
+Singapore,Movies,6.115384615384615,29267.384615384617
+Malaysia,Documentaries,0,0
+Malaysia,Children & Family Movies,7.3,384.0
+Malaysia,Dramas,6.55,621.3
+Malaysia,Independent Movies,0,0
+Malaysia,International Movies,5.866666666666666,598.6666666666666
+Malaysia,Comedies,5.449999999999999,364.5
+Malaysia,Thrillers,0,0
+Malaysia,Romantic Movies,7.5,204.0
+Malaysia,Horror Movies,5.225,728.25
+Malaysia,Sci-Fi & Fantasy,0,0
+Malaysia,Action & Adventure,5.68,859.2
+Malaysia,Classic Movies,0,0
+Malaysia,Anime Features,0,0
+Malaysia,Sports Movies,0,0
+Malaysia,Music & Musicals,0,0
+Malaysia,Cult Movies,0,0
+Malaysia,Faith & Spirituality,0,0
+Malaysia,LGBTQ Movies,0,0
+Malaysia,Stand-Up Comedy,0,0
+Malaysia,Movies,5.956250000000001,585.25
+South Korea,Documentaries,6.6,122.5
+South Korea,Children & Family Movies,4.924999999999999,5964.5
+South Korea,Dramas,6.634782608695652,15808.782608695652
+South Korea,Independent Movies,7.5,62280.0
+South Korea,International Movies,6.473170731707317,25244.829268292684
+South Korea,Comedies,5.66,11601.533333333333
+South Korea,Thrillers,6.207692307692308,21341.69230769231
+South Korea,Romantic Movies,6.9,3206.0
+South Korea,Horror Movies,6.375,63579.0
+South Korea,Sci-Fi & Fantasy,6.366666666666667,6272.0
+South Korea,Action & Adventure,6.766666666666666,57813.4
+South Korea,Classic Movies,0,0
+South Korea,Anime Features,0,0
+South Korea,Sports Movies,0,0
+South Korea,Music & Musicals,6.2,21.0
+South Korea,Cult Movies,7.1,353956.0
+South Korea,Faith & Spirituality,0,0
+South Korea,LGBTQ Movies,6.4,850.0
+South Korea,Stand-Up Comedy,5.1,68.0
+South Korea,Movies,6.220408163265306,22097.020408163266
+Vietnam,Documentaries,5.7,1037.0
+Vietnam,Children & Family Movies,0,0
+Vietnam,Dramas,6.15,2237.25
+Vietnam,Independent Movies,0,0
+Vietnam,International Movies,6.016666666666667,1727.0
+Vietnam,Comedies,6.199999999999999,1805.0
+Vietnam,Thrillers,0,0
+Vietnam,Romantic Movies,6.9,879.0
+Vietnam,Horror Movies,0,0
+Vietnam,Sci-Fi & Fantasy,0,0
+Vietnam,Action & Adventure,6.05,2545.5
+Vietnam,Classic Movies,0,0
+Vietnam,Anime Features,0,0
+Vietnam,Sports Movies,0,0
+Vietnam,Music & Musicals,5.7,1037.0
+Vietnam,Cult Movies,0,0
+Vietnam,Faith & Spirituality,0,0
+Vietnam,LGBTQ Movies,0,0
+Vietnam,Stand-Up Comedy,0,0
+Vietnam,Movies,6.016666666666667,1727.0
+Hungary,Documentaries,0,0
+Hungary,Children & Family Movies,0,0
+Hungary,Dramas,7.019999999999999,40327.6
+Hungary,Independent Movies,0,0
+Hungary,International Movies,6.966666666666666,10295.666666666666
+Hungary,Comedies,0,0
+Hungary,Thrillers,7.4,2484.0
+Hungary,Romantic Movies,7.5,27327.0
+Hungary,Horror Movies,7.0,266556.0
+Hungary,Sci-Fi & Fantasy,6.65,162618.0
+Hungary,Action & Adventure,6.233333333333333,122311.33333333333
+Hungary,Classic Movies,0,0
+Hungary,Anime Features,0,0
+Hungary,Sports Movies,0,0
+Hungary,Music & Musicals,0,0
+Hungary,Cult Movies,0,0
+Hungary,Faith & Spirituality,0,0
+Hungary,LGBTQ Movies,0,0
+Hungary,Stand-Up Comedy,0,0
+Hungary,Movies,6.975,74360.75
+Lebanon,Documentaries,5.8999999999999995,3072.6666666666665
+Lebanon,Children & Family Movies,7.0,4718.0
+Lebanon,Dramas,6.831249999999999,1618.0625
+Lebanon,Independent Movies,7.5,3208.0
+Lebanon,International Movies,6.688888888888887,1719.611111111111
+Lebanon,Comedies,6.760000000000001,938.2
+Lebanon,Thrillers,0,0
+Lebanon,Romantic Movies,6.6000000000000005,600.3333333333334
+Lebanon,Horror Movies,0,0
+Lebanon,Sci-Fi & Fantasy,0,0
+Lebanon,Action & Adventure,0,0
+Lebanon,Classic Movies,6.4,107.0
+Lebanon,Anime Features,0,0
+Lebanon,Sports Movies,0,0
+Lebanon,Music & Musicals,6.4,603.0
+Lebanon,Cult Movies,0,0
+Lebanon,Faith & Spirituality,0,0
+Lebanon,LGBTQ Movies,0,0
+Lebanon,Stand-Up Comedy,0,0
+Lebanon,Movies,6.704999999999998,1790.15
+Syria,Documentaries,0,0
+Syria,Children & Family Movies,0,0
+Syria,Dramas,6.7,132.0
+Syria,Independent Movies,6.7,132.0
+Syria,International Movies,0,0
+Syria,Comedies,6.7,132.0
+Syria,Thrillers,0,0
+Syria,Romantic Movies,0,0
+Syria,Horror Movies,0,0
+Syria,Sci-Fi & Fantasy,0,0
+Syria,Action & Adventure,0,0
+Syria,Classic Movies,0,0
+Syria,Anime Features,0,0
+Syria,Sports Movies,0,0
+Syria,Music & Musicals,0,0
+Syria,Cult Movies,0,0
+Syria,Faith & Spirituality,0,0
+Syria,LGBTQ Movies,0,0
+Syria,Stand-Up Comedy,0,0
+Syria,Movies,6.7,132.0
+Philippines,Documentaries,6.1,2800.0
+Philippines,Children & Family Movies,6.9,12557.5
+Philippines,Dramas,6.654347826086958,3049.5652173913045
+Philippines,Independent Movies,6.5,17503.666666666668
+Philippines,International Movies,6.398529411764707,3082.426470588235
+Philippines,Comedies,6.086956521739131,346.30434782608694
+Philippines,Thrillers,7.3,1723.0
+Philippines,Romantic Movies,6.6400000000000015,3543.9
+Philippines,Horror Movies,5.875000000000001,798.25
+Philippines,Sci-Fi & Fantasy,0,0
+Philippines,Action & Adventure,4.74,931.2
+Philippines,Classic Movies,0,0
+Philippines,Anime Features,0,0
+Philippines,Sports Movies,6.7,300.0
+Philippines,Music & Musicals,6.5,305.0
+Philippines,Cult Movies,0,0
+Philippines,Faith & Spirituality,0,0
+Philippines,LGBTQ Movies,5.675,366.75
+Philippines,Stand-Up Comedy,0,0
+Philippines,Movies,6.394202898550726,3040.304347826087
+United Arab Emirates,Documentaries,5.583333333333333,2652.6666666666665
+United Arab Emirates,Children & Family Movies,5.55,3937.75
+United Arab Emirates,Dramas,5.778947368421052,11342.473684210527
+United Arab Emirates,Independent Movies,6.666666666666667,12186.666666666666
+United Arab Emirates,International Movies,5.25,2245.1666666666665
+United Arab Emirates,Comedies,4.96,9206.1
+United Arab Emirates,Thrillers,6.6,17384.0
+United Arab Emirates,Romantic Movies,5.0,33.0
+United Arab Emirates,Horror Movies,4.2,69.0
+United Arab Emirates,Sci-Fi & Fantasy,4.166666666666667,42132.666666666664
+United Arab Emirates,Action & Adventure,3.95,62138.0
+United Arab Emirates,Classic Movies,0,0
+United Arab Emirates,Anime Features,0,0
+United Arab Emirates,Sports Movies,5.7,1924.0
+United Arab Emirates,Music & Musicals,2.3,153.0
+United Arab Emirates,Cult Movies,0,0
+United Arab Emirates,Faith & Spirituality,0,0
+United Arab Emirates,LGBTQ Movies,0,0
+United Arab Emirates,Stand-Up Comedy,0,0
+United Arab Emirates,Movies,5.266666666666667,2577.6666666666665
+Sweden,Documentaries,7.240000000000002,8968.4
+Sweden,Children & Family Movies,0,0
+Sweden,Dramas,6.661538461538462,53945.153846153844
+Sweden,Independent Movies,6.6800000000000015,54497.2
+Sweden,International Movies,6.73125,13090.0625
+Sweden,Comedies,6.266666666666666,41808.0
+Sweden,Thrillers,6.125,149400.0
+Sweden,Romantic Movies,5.9,4220.0
+Sweden,Horror Movies,0,0
+Sweden,Sci-Fi & Fantasy,0,0
+Sweden,Action & Adventure,6.35,32614.5
+Sweden,Classic Movies,0,0
+Sweden,Anime Features,0,0
+Sweden,Sports Movies,6.8,4399.0
+Sweden,Music & Musicals,7.699999999999999,25412.333333333332
+Sweden,Cult Movies,5.7,111947.0
+Sweden,Faith & Spirituality,0,0
+Sweden,LGBTQ Movies,0,0
+Sweden,Stand-Up Comedy,0,0
+Sweden,Movies,6.683333333333334,24395.444444444445
+Argentina,Documentaries,6.55,764.3333333333334
+Argentina,Children & Family Movies,5.800000000000001,5355.0
+Argentina,Dramas,6.277777777777778,3096.6296296296296
+Argentina,Independent Movies,6.033333333333332,2248.8333333333335
+Argentina,International Movies,6.292307692307693,3024.948717948718
+Argentina,Comedies,6.480000000000001,9219.6
+Argentina,Thrillers,6.128571428571428,2673.5714285714284
+Argentina,Romantic Movies,5.4,7244.0
+Argentina,Horror Movies,6.1000000000000005,9213.333333333334
+Argentina,Sci-Fi & Fantasy,7.3,4251.0
+Argentina,Action & Adventure,6.45,390.5
+Argentina,Classic Movies,0,0
+Argentina,Anime Features,0,0
+Argentina,Sports Movies,6.8,3861.3333333333335
+Argentina,Music & Musicals,5.95,1078.75
+Argentina,Cult Movies,0,0
+Argentina,Faith & Spirituality,0,0
+Argentina,LGBTQ Movies,6.5,795.0
+Argentina,Stand-Up Comedy,6.366666666666666,373.3333333333333
+Argentina,Movies,6.2682926829268295,3138.609756097561
+Mauritius,Documentaries,0,0
+Mauritius,Children & Family Movies,5.4,1000.0
+Mauritius,Dramas,0,0
+Mauritius,Independent Movies,0,0
+Mauritius,International Movies,0,0
+Mauritius,Comedies,5.4,1000.0
+Mauritius,Thrillers,0,0
+Mauritius,Romantic Movies,0,0
+Mauritius,Horror Movies,0,0
+Mauritius,Sci-Fi & Fantasy,0,0
+Mauritius,Action & Adventure,0,0
+Mauritius,Classic Movies,0,0
+Mauritius,Anime Features,0,0
+Mauritius,Sports Movies,0,0
+Mauritius,Music & Musicals,0,0
+Mauritius,Cult Movies,0,0
+Mauritius,Faith & Spirituality,0,0
+Mauritius,LGBTQ Movies,0,0
+Mauritius,Stand-Up Comedy,0,0
+Mauritius,Movies,5.4,1000.0
+Austria,Documentaries,6.8999999999999995,7575.666666666667
+Austria,Children & Family Movies,0,0
+Austria,Dramas,6.26,28331.0
+Austria,Independent Movies,6.233333333333333,45683.333333333336
+Austria,International Movies,5.525000000000001,17884.125
+Austria,Comedies,0,0
+Austria,Thrillers,4.05,628.5
+Austria,Romantic Movies,0,0
+Austria,Horror Movies,4.5,154.0
+Austria,Sci-Fi & Fantasy,3.6,1103.0
+Austria,Action & Adventure,0,0
+Austria,Classic Movies,0,0
+Austria,Anime Features,0,0
+Austria,Sports Movies,8.1,19275.0
+Austria,Music & Musicals,0,0
+Austria,Cult Movies,0,0
+Austria,Faith & Spirituality,0,0
+Austria,LGBTQ Movies,0,0
+Austria,Stand-Up Comedy,0,0
+Austria,Movies,5.811111111111113,18038.666666666668
+Russia,Documentaries,7.45,525.5
+Russia,Children & Family Movies,6.2,3974.0
+Russia,Dramas,6.4,19877.5
+Russia,Independent Movies,0,0
+Russia,International Movies,6.880000000000001,26999.2
+Russia,Comedies,6.2,3974.0
+Russia,Thrillers,5.6,74760.0
+Russia,Romantic Movies,0,0
+Russia,Horror Movies,5.6,74760.0
+Russia,Sci-Fi & Fantasy,5.800000000000001,77605.5
+Russia,Action & Adventure,5.8999999999999995,67897.0
+Russia,Classic Movies,0,0
+Russia,Anime Features,0,0
+Russia,Sports Movies,7.4,814.0
+Russia,Music & Musicals,0,0
+Russia,Cult Movies,0,0
+Russia,Faith & Spirituality,0,0
+Russia,LGBTQ Movies,0,0
+Russia,Stand-Up Comedy,0,0
+Russia,Movies,6.6000000000000005,30532.85714285714
+Turkey,Documentaries,0,0
+Turkey,Children & Family Movies,5.0,744.5
+Turkey,Dramas,6.745,10499.5
+Turkey,Independent Movies,8.2,30.0
+Turkey,International Movies,5.894,6563.34
+Turkey,Comedies,5.541666666666667,5780.416666666667
+Turkey,Thrillers,8.1,3075.0
+Turkey,Romantic Movies,5.884615384615386,6311.0
+Turkey,Horror Movies,6.199999999999999,4290.5
+Turkey,Sci-Fi & Fantasy,0,0
+Turkey,Action & Adventure,4.1,8803.5
+Turkey,Classic Movies,0,0
+Turkey,Anime Features,0,0
+Turkey,Sports Movies,4.75,4344.5
+Turkey,Music & Musicals,5.0,3170.0
+Turkey,Cult Movies,0,0
+Turkey,Faith & Spirituality,0,0
+Turkey,LGBTQ Movies,0,0
+Turkey,Stand-Up Comedy,0,0
+Turkey,Movies,5.898076923076923,6810.615384615385
+Taiwan,Documentaries,7.2,471.0
+Taiwan,Children & Family Movies,0,0
+Taiwan,Dramas,6.85,3741.2
+Taiwan,Independent Movies,6.966666666666666,3720.6666666666665
+Taiwan,International Movies,6.464705882352941,18009.529411764706
+Taiwan,Comedies,6.8,2857.3333333333335
+Taiwan,Thrillers,5.8,1572.0
+Taiwan,Romantic Movies,6.7,133203.5
+Taiwan,Horror Movies,5.7,819.5
+Taiwan,Sci-Fi & Fantasy,0,0
+Taiwan,Action & Adventure,6.5,88964.0
+Taiwan,Classic Movies,0,0
+Taiwan,Anime Features,0,0
+Taiwan,Sports Movies,7.2,471.0
+Taiwan,Music & Musicals,7.1,4349.0
+Taiwan,Cult Movies,0,0
+Taiwan,Faith & Spirituality,0,0
+Taiwan,LGBTQ Movies,7.2,5778.0
+Taiwan,Stand-Up Comedy,0,0
+Taiwan,Movies,6.536842105263159,16222.052631578947
+Cameroon,Documentaries,0,0
+Cameroon,Children & Family Movies,0,0
+Cameroon,Dramas,6.4,624.0
+Cameroon,Independent Movies,0,0
+Cameroon,International Movies,6.4,624.0
+Cameroon,Comedies,0,0
+Cameroon,Thrillers,0,0
+Cameroon,Romantic Movies,0,0
+Cameroon,Horror Movies,0,0
+Cameroon,Sci-Fi & Fantasy,0,0
+Cameroon,Action & Adventure,0,0
+Cameroon,Classic Movies,0,0
+Cameroon,Anime Features,0,0
+Cameroon,Sports Movies,0,0
+Cameroon,Music & Musicals,0,0
+Cameroon,Cult Movies,0,0
+Cameroon,Faith & Spirituality,0,0
+Cameroon,LGBTQ Movies,0,0
+Cameroon,Stand-Up Comedy,0,0
+Cameroon,Movies,6.4,624.0
+Ireland,Documentaries,6.816666666666666,1600.8333333333333
+Ireland,Children & Family Movies,6.9,16627.0
+Ireland,Dramas,6.907142857142858,60135.92857142857
+Ireland,Independent Movies,7.014285714285714,94221.28571428571
+Ireland,International Movies,6.599999999999999,31850.833333333332
+Ireland,Comedies,6.566666666666666,67170.16666666667
+Ireland,Thrillers,7.0,84999.0
+Ireland,Romantic Movies,6.725,103709.5
+Ireland,Horror Movies,4.966666666666667,7616.0
+Ireland,Sci-Fi & Fantasy,0,0
+Ireland,Action & Adventure,6.6000000000000005,45849.666666666664
+Ireland,Classic Movies,0,0
+Ireland,Anime Features,0,0
+Ireland,Sports Movies,7.25,3295.0
+Ireland,Music & Musicals,0,0
+Ireland,Cult Movies,0,0
+Ireland,Faith & Spirituality,6.9,108.0
+Ireland,LGBTQ Movies,0,0
+Ireland,Stand-Up Comedy,0,0
+Ireland,Movies,6.622222222222222,46737.666666666664
+"United Kingdom,",Documentaries,7.395833333333335,12343.416666666666
+"United Kingdom,",Children & Family Movies,6.619047619047619,89163.09523809524
+"United Kingdom,",Dramas,6.826016260162604,101292.66666666667
+"United Kingdom,",Independent Movies,6.95609756097561,105504.58536585367
+"United Kingdom,",International Movies,6.746341463414635,72121.65853658537
+"United Kingdom,",Comedies,6.1951219512195115,86829.63414634146
+"United Kingdom,",Thrillers,6.374285714285714,80529.34285714285
+"United Kingdom,",Romantic Movies,6.637500000000002,84399.58333333333
+"United Kingdom,",Horror Movies,6.22,109866.7
+"United Kingdom,",Sci-Fi & Fantasy,6.204347826086954,176657.86956521738
+"United Kingdom,",Action & Adventure,6.365306122448979,161914.97959183675
+"United Kingdom,",Classic Movies,7.4125000000000005,146612.125
+"United Kingdom,",Anime Features,0,0
+"United Kingdom,",Sports Movies,6.8,26136.4
+"United Kingdom,",Music & Musicals,6.778571428571429,53464.642857142855
+"United Kingdom,",Cult Movies,7.7,454014.0
+"United Kingdom,",Faith & Spirituality,6.625,4186.0
+"United Kingdom,",LGBTQ Movies,6.866666666666666,85393.66666666667
+"United Kingdom,",Stand-Up Comedy,0,0
+"United Kingdom,",Movies,6.728205128205131,88852.92948717948
+Qatar,Documentaries,0,0
+Qatar,Children & Family Movies,7.0,4718.0
+Qatar,Dramas,6.839999999999999,3461.6
+Qatar,Independent Movies,7.166666666666667,4609.333333333333
+Qatar,International Movies,6.966666666666666,7204.833333333333
+Qatar,Comedies,7.35,2414.0
+Qatar,Thrillers,6.699999999999999,14000.5
+Qatar,Romantic Movies,0,0
+Qatar,Horror Movies,6.8,27211.0
+Qatar,Sci-Fi & Fantasy,0,0
+Qatar,Action & Adventure,0,0
+Qatar,Classic Movies,0,0
+Qatar,Anime Features,0,0
+Qatar,Sports Movies,0,0
+Qatar,Music & Musicals,0,0
+Qatar,Cult Movies,0,0
+Qatar,Faith & Spirituality,0,0
+Qatar,LGBTQ Movies,0,0
+Qatar,Stand-Up Comedy,0,0
+Qatar,Movies,6.971428571428571,6849.571428571428
+Chile,Documentaries,0,0
+Chile,Children & Family Movies,0,0
+Chile,Dramas,6.339999999999999,7144.3
+Chile,Independent Movies,6.242857142857142,14632.857142857143
+Chile,International Movies,6.0,5682.923076923077
+Chile,Comedies,4.333333333333333,456.6666666666667
+Chile,Thrillers,6.15,47312.5
+Chile,Romantic Movies,0,0
+Chile,Horror Movies,5.0,49361.333333333336
+Chile,Sci-Fi & Fantasy,0,0
+Chile,Action & Adventure,4.8,11796.0
+Chile,Classic Movies,0,0
+Chile,Anime Features,0,0
+Chile,Sports Movies,0,0
+Chile,Music & Musicals,0,0
+Chile,Cult Movies,0,0
+Chile,Faith & Spirituality,0,0
+Chile,LGBTQ Movies,0,0
+Chile,Stand-Up Comedy,4.933333333333334,62.666666666666664
+Chile,Movies,5.8125,13872.625
+Cambodia,Documentaries,0,0
+Cambodia,Children & Family Movies,6.0,9025.0
+Cambodia,Dramas,7.033333333333334,76058.66666666667
+Cambodia,Independent Movies,0,0
+Cambodia,International Movies,5.900000000000001,2490.3333333333335
+Cambodia,Comedies,6.55,109042.5
+Cambodia,Thrillers,0,0
+Cambodia,Romantic Movies,0,0
+Cambodia,Horror Movies,0,0
+Cambodia,Sci-Fi & Fantasy,5.4,5079.0
+Cambodia,Action & Adventure,5.4,3272.5
+Cambodia,Classic Movies,0,0
+Cambodia,Anime Features,0,0
+Cambodia,Sports Movies,0,0
+Cambodia,Music & Musicals,0,0
+Cambodia,Cult Movies,0,0
+Cambodia,Faith & Spirituality,0,0
+Cambodia,LGBTQ Movies,0,0
+Cambodia,Stand-Up Comedy,0,0
+Cambodia,Movies,5.925000000000001,4124.0
+Portugal,Documentaries,0,0
+Portugal,Children & Family Movies,0,0
+Portugal,Dramas,6.5200000000000005,2647.2
+Portugal,Independent Movies,6.6,1385.0
+Portugal,International Movies,6.7,2668.3333333333335
+Portugal,Comedies,5.4,1095.0
+Portugal,Thrillers,0,0
+Portugal,Romantic Movies,6.0,2096.0
+Portugal,Horror Movies,0,0
+Portugal,Sci-Fi & Fantasy,0,0
+Portugal,Action & Adventure,0,0
+Portugal,Classic Movies,0,0
+Portugal,Anime Features,0,0
+Portugal,Sports Movies,7.5,6236.0
+Portugal,Music & Musicals,0,0
+Portugal,Cult Movies,0,0
+Portugal,Faith & Spirituality,6.5,3135.0
+Portugal,LGBTQ Movies,0,0
+Portugal,Stand-Up Comedy,0,0
+Portugal,Movies,6.525,2525.25
+Cayman Islands,Documentaries,0,0
+Cayman Islands,Children & Family Movies,5.6,3483.0
+Cayman Islands,Dramas,0,0
+Cayman Islands,Independent Movies,0,0
+Cayman Islands,International Movies,0,0
+Cayman Islands,Comedies,5.6,3483.0
+Cayman Islands,Thrillers,0,0
+Cayman Islands,Romantic Movies,0,0
+Cayman Islands,Horror Movies,0,0
+Cayman Islands,Sci-Fi & Fantasy,0,0
+Cayman Islands,Action & Adventure,0,0
+Cayman Islands,Classic Movies,0,0
+Cayman Islands,Anime Features,0,0
+Cayman Islands,Sports Movies,0,0
+Cayman Islands,Music & Musicals,0,0
+Cayman Islands,Cult Movies,0,0
+Cayman Islands,Faith & Spirituality,0,0
+Cayman Islands,LGBTQ Movies,0,0
+Cayman Islands,Stand-Up Comedy,0,0
+Cayman Islands,Movies,5.6,3483.0
+Norway,Documentaries,7.2,5092.666666666667
+Norway,Children & Family Movies,7.1,2381.0
+Norway,Dramas,6.854545454545454,53098.545454545456
+Norway,Independent Movies,6.9,1582.5
+Norway,International Movies,6.421428571428571,8818.357142857143
+Norway,Comedies,5.1,2307.0
+Norway,Thrillers,6.266666666666667,163886.66666666666
+Norway,Romantic Movies,5.9,4220.0
+Norway,Horror Movies,5.1,11830.0
+Norway,Sci-Fi & Fantasy,0,0
+Norway,Action & Adventure,5.949999999999999,19742.25
+Norway,Classic Movies,0,0
+Norway,Anime Features,0,0
+Norway,Sports Movies,0,0
+Norway,Music & Musicals,0,0
+Norway,Cult Movies,0,0
+Norway,Faith & Spirituality,0,0
+Norway,LGBTQ Movies,0,0
+Norway,Stand-Up Comedy,0,0
+Norway,Movies,6.36875,8636.3125
+Iceland,Documentaries,0,0
+Iceland,Children & Family Movies,0,0
+Iceland,Dramas,6.5,28825.0
+Iceland,Independent Movies,6.366666666666667,18435.333333333332
+Iceland,International Movies,6.9,3046.0
+Iceland,Comedies,0,0
+Iceland,Thrillers,6.8,33372.0
+Iceland,Romantic Movies,6.6,55447.0
+Iceland,Horror Movies,0,0
+Iceland,Sci-Fi & Fantasy,5.0,7454.0
+Iceland,Action & Adventure,6.6,55447.0
+Iceland,Classic Movies,0,0
+Iceland,Anime Features,0,0
+Iceland,Sports Movies,0,0
+Iceland,Music & Musicals,0,0
+Iceland,Cult Movies,0,0
+Iceland,Faith & Spirituality,0,0
+Iceland,LGBTQ Movies,0,0
+Iceland,Stand-Up Comedy,7.8,1514.0
+Iceland,Movies,6.425000000000001,27688.25
+Serbia,Documentaries,0,0
+Serbia,Children & Family Movies,0,0
+Serbia,Dramas,6.3,2154.3333333333335
+Serbia,Independent Movies,0,0
+Serbia,International Movies,6.7,2123.0
+Serbia,Comedies,0,0
+Serbia,Thrillers,5.5,2217.0
+Serbia,Romantic Movies,0,0
+Serbia,Horror Movies,0,0
+Serbia,Sci-Fi & Fantasy,3.3,1819.0
+Serbia,Action & Adventure,4.75,47532.0
+Serbia,Classic Movies,0,0
+Serbia,Anime Features,0,0
+Serbia,Sports Movies,0,0
+Serbia,Music & Musicals,0,0
+Serbia,Cult Movies,0,0
+Serbia,Faith & Spirituality,0,0
+Serbia,LGBTQ Movies,0,0
+Serbia,Stand-Up Comedy,0,0
+Serbia,Movies,6.7,2123.0
+Malta,Documentaries,0,0
+Malta,Children & Family Movies,0,0
+Malta,Dramas,5.3,20862.0
+Malta,Independent Movies,0,0
+Malta,International Movies,0,0
+Malta,Comedies,0,0
+Malta,Thrillers,6.6,426365.0
+Malta,Romantic Movies,5.3,20862.0
+Malta,Horror Movies,0,0
+Malta,Sci-Fi & Fantasy,0,0
+Malta,Action & Adventure,0,0
+Malta,Classic Movies,0,0
+Malta,Anime Features,0,0
+Malta,Sports Movies,0,0
+Malta,Music & Musicals,0,0
+Malta,Cult Movies,0,0
+Malta,Faith & Spirituality,0,0
+Malta,LGBTQ Movies,0,0
+Malta,Stand-Up Comedy,0,0
+Malta,Movies,5.3,20862.0
+Kenya,Documentaries,8.0,117.0
+Kenya,Children & Family Movies,0,0
+Kenya,Dramas,6.550000000000001,5042.0
+Kenya,Independent Movies,0,0
+Kenya,International Movies,6.866666666666667,25174.333333333332
+Kenya,Comedies,7.5,75348.0
+Kenya,Thrillers,6.550000000000001,87.5
+Kenya,Romantic Movies,7.5,75348.0
+Kenya,Horror Movies,0,0
+Kenya,Sci-Fi & Fantasy,0,0
+Kenya,Action & Adventure,0,0
+Kenya,Classic Movies,0,0
+Kenya,Anime Features,0,0
+Kenya,Sports Movies,0,0
+Kenya,Music & Musicals,0,0
+Kenya,Cult Movies,0,0
+Kenya,Faith & Spirituality,0,0
+Kenya,LGBTQ Movies,0,0
+Kenya,Stand-Up Comedy,0,0
+Kenya,Movies,6.866666666666667,25174.333333333332
+Luxembourg,Documentaries,0,0
+Luxembourg,Children & Family Movies,7.066666666666666,15553.0
+Luxembourg,Dramas,6.6375,20740.375
+Luxembourg,Independent Movies,6.9,32475.5
+Luxembourg,International Movies,6.816666666666666,26592.833333333332
+Luxembourg,Comedies,0,0
+Luxembourg,Thrillers,6.6,18676.0
+Luxembourg,Romantic Movies,0,0
+Luxembourg,Horror Movies,0,0
+Luxembourg,Sci-Fi & Fantasy,6.4,18625.0
+Luxembourg,Action & Adventure,6.033333333333334,24005.666666666668
+Luxembourg,Classic Movies,0,0
+Luxembourg,Anime Features,0,0
+Luxembourg,Sports Movies,0,0
+Luxembourg,Music & Musicals,0,0
+Luxembourg,Cult Movies,0,0
+Luxembourg,Faith & Spirituality,0,0
+Luxembourg,LGBTQ Movies,0,0
+Luxembourg,Stand-Up Comedy,0,0
+Luxembourg,Movies,6.800000000000001,21454.88888888889
+Namibia,Documentaries,8.6,2003.0
+Namibia,Children & Family Movies,0,0
+Namibia,Dramas,7.2,65.0
+Namibia,Independent Movies,0,0
+Namibia,International Movies,7.9,1034.0
+Namibia,Comedies,0,0
+Namibia,Thrillers,0,0
+Namibia,Romantic Movies,0,0
+Namibia,Horror Movies,0,0
+Namibia,Sci-Fi & Fantasy,0,0
+Namibia,Action & Adventure,0,0
+Namibia,Classic Movies,0,0
+Namibia,Anime Features,0,0
+Namibia,Sports Movies,0,0
+Namibia,Music & Musicals,0,0
+Namibia,Cult Movies,0,0
+Namibia,Faith & Spirituality,0,0
+Namibia,LGBTQ Movies,0,0
+Namibia,Stand-Up Comedy,0,0
+Namibia,Movies,7.9,1034.0
+Angola,Documentaries,0,0
+Angola,Children & Family Movies,0,0
+Angola,Dramas,0,0
+Angola,Independent Movies,0,0
+Angola,International Movies,3.8,981.0
+Angola,Comedies,0,0
+Angola,Thrillers,0,0
+Angola,Romantic Movies,0,0
+Angola,Horror Movies,0,0
+Angola,Sci-Fi & Fantasy,0,0
+Angola,Action & Adventure,3.8,981.0
+Angola,Classic Movies,0,0
+Angola,Anime Features,0,0
+Angola,Sports Movies,0,0
+Angola,Music & Musicals,0,0
+Angola,Cult Movies,0,0
+Angola,Faith & Spirituality,0,0
+Angola,LGBTQ Movies,0,0
+Angola,Stand-Up Comedy,0,0
+Angola,Movies,3.8,981.0
+Uruguay,Documentaries,6.480000000000001,774.8
+Uruguay,Children & Family Movies,0,0
+Uruguay,Dramas,6.36,1884.6
+Uruguay,Independent Movies,6.1,377.0
+Uruguay,International Movies,6.444444444444445,1422.2222222222222
+Uruguay,Comedies,6.3999999999999995,2447.0
+Uruguay,Thrillers,0,0
+Uruguay,Romantic Movies,0,0
+Uruguay,Horror Movies,0,0
+Uruguay,Sci-Fi & Fantasy,0,0
+Uruguay,Action & Adventure,0,0
+Uruguay,Classic Movies,0,0
+Uruguay,Anime Features,0,0
+Uruguay,Sports Movies,7.1,55.0
+Uruguay,Music & Musicals,6.4,301.0
+Uruguay,Cult Movies,0,0
+Uruguay,Faith & Spirituality,0,0
+Uruguay,LGBTQ Movies,0,0
+Uruguay,Stand-Up Comedy,0,0
+Uruguay,Movies,6.444444444444445,1422.2222222222222
+Peru,Documentaries,7.433333333333333,873.6666666666666
+Peru,Children & Family Movies,0,0
+Peru,Dramas,7.5,1735.0
+Peru,Independent Movies,0,0
+Peru,International Movies,6.75,1117.0
+Peru,Comedies,6.1,2001.0
+Peru,Thrillers,0,0
+Peru,Romantic Movies,6.1,2001.0
+Peru,Horror Movies,4.6,345.0
+Peru,Sci-Fi & Fantasy,0,0
+Peru,Action & Adventure,0,0
+Peru,Classic Movies,0,0
+Peru,Anime Features,0,0
+Peru,Sports Movies,0,0
+Peru,Music & Musicals,0,0
+Peru,Cult Movies,0,0
+Peru,Faith & Spirituality,0,0
+Peru,LGBTQ Movies,0,0
+Peru,Stand-Up Comedy,0,0
+Peru,Movies,6.75,1117.0
+Mozambique,Documentaries,0,0
+Mozambique,Children & Family Movies,0,0
+Mozambique,Dramas,6.2,71764.0
+Mozambique,Independent Movies,0,0
+Mozambique,International Movies,6.2,71764.0
+Mozambique,Comedies,0,0
+Mozambique,Thrillers,6.2,71764.0
+Mozambique,Romantic Movies,0,0
+Mozambique,Horror Movies,0,0
+Mozambique,Sci-Fi & Fantasy,0,0
+Mozambique,Action & Adventure,0,0
+Mozambique,Classic Movies,0,0
+Mozambique,Anime Features,0,0
+Mozambique,Sports Movies,0,0
+Mozambique,Music & Musicals,0,0
+Mozambique,Cult Movies,0,0
+Mozambique,Faith & Spirituality,0,0
+Mozambique,LGBTQ Movies,0,0
+Mozambique,Stand-Up Comedy,0,0
+Mozambique,Movies,6.2,71764.0
+"Cambodia,",Documentaries,0,0
+"Cambodia,",Children & Family Movies,0,0
+"Cambodia,",Dramas,7.033333333333334,76058.66666666667
+"Cambodia,",Independent Movies,0,0
+"Cambodia,",International Movies,6.9,926.0
+"Cambodia,",Comedies,7.1,209060.0
+"Cambodia,",Thrillers,0,0
+"Cambodia,",Romantic Movies,0,0
+"Cambodia,",Horror Movies,0,0
+"Cambodia,",Sci-Fi & Fantasy,0,0
+"Cambodia,",Action & Adventure,0,0
+"Cambodia,",Classic Movies,0,0
+"Cambodia,",Anime Features,0,0
+"Cambodia,",Sports Movies,0,0
+"Cambodia,",Music & Musicals,0,0
+"Cambodia,",Cult Movies,0,0
+"Cambodia,",Faith & Spirituality,0,0
+"Cambodia,",LGBTQ Movies,0,0
+"Cambodia,",Stand-Up Comedy,0,0
+"Cambodia,",Movies,6.9,926.0
+Jordan,Documentaries,6.1,2800.0
+Jordan,Children & Family Movies,0,0
+Jordan,Dramas,6.92,4811.0
+Jordan,Independent Movies,7.5,20295.0
+Jordan,International Movies,6.785714285714286,7723.714285714285
+Jordan,Comedies,6.199999999999999,996.0
+Jordan,Thrillers,7.449999999999999,13633.0
+Jordan,Romantic Movies,0,0
+Jordan,Horror Movies,6.8,27211.0
+Jordan,Sci-Fi & Fantasy,0,0
+Jordan,Action & Adventure,0,0
+Jordan,Classic Movies,0,0
+Jordan,Anime Features,0,0
+Jordan,Sports Movies,0,0
+Jordan,Music & Musicals,0,0
+Jordan,Cult Movies,0,0
+Jordan,Faith & Spirituality,0,0
+Jordan,LGBTQ Movies,0,0
+Jordan,Stand-Up Comedy,0,0
+Jordan,Movies,6.785714285714286,7723.714285714285
+Zimbabwe,Documentaries,8.0,1184.5
+Zimbabwe,Children & Family Movies,0,0
+Zimbabwe,Dramas,0,0
+Zimbabwe,Independent Movies,0,0
+Zimbabwe,International Movies,7.333333333333333,904.3333333333334
+Zimbabwe,Comedies,6.0,344.0
+Zimbabwe,Thrillers,0,0
+Zimbabwe,Romantic Movies,6.0,344.0
+Zimbabwe,Horror Movies,0,0
+Zimbabwe,Sci-Fi & Fantasy,0,0
+Zimbabwe,Action & Adventure,0,0
+Zimbabwe,Classic Movies,0,0
+Zimbabwe,Anime Features,0,0
+Zimbabwe,Sports Movies,0,0
+Zimbabwe,Music & Musicals,0,0
+Zimbabwe,Cult Movies,0,0
+Zimbabwe,Faith & Spirituality,0,0
+Zimbabwe,LGBTQ Movies,0,0
+Zimbabwe,Stand-Up Comedy,0,0
+Zimbabwe,Movies,7.333333333333333,904.3333333333334
+Pakistan,Documentaries,0,0
+Pakistan,Children & Family Movies,7.2,633.0
+Pakistan,Dramas,6.3599999999999985,4511.5
+Pakistan,Independent Movies,6.8,1064.6666666666667
+Pakistan,International Movies,6.46923076923077,4133.153846153846
+Pakistan,Comedies,7.1,10176.25
+Pakistan,Thrillers,0,0
+Pakistan,Romantic Movies,6.175000000000001,1223.0
+Pakistan,Horror Movies,6.5,6427.0
+Pakistan,Sci-Fi & Fantasy,0,0
+Pakistan,Action & Adventure,0,0
+Pakistan,Classic Movies,0,0
+Pakistan,Anime Features,0,0
+Pakistan,Sports Movies,0,0
+Pakistan,Music & Musicals,5.25,178.5
+Pakistan,Cult Movies,0,0
+Pakistan,Faith & Spirituality,0,0
+Pakistan,LGBTQ Movies,0,0
+Pakistan,Stand-Up Comedy,0,0
+Pakistan,Movies,6.521428571428572,3883.1428571428573
+Bangladesh,Documentaries,0,0
+Bangladesh,Children & Family Movies,0,0
+Bangladesh,Dramas,7.166666666666667,1130.0
+Bangladesh,Independent Movies,7.166666666666667,1130.0
+Bangladesh,International Movies,7.300000000000001,1360.5
+Bangladesh,Comedies,6.9,669.0
+Bangladesh,Thrillers,0,0
+Bangladesh,Romantic Movies,0,0
+Bangladesh,Horror Movies,0,0
+Bangladesh,Sci-Fi & Fantasy,0,0
+Bangladesh,Action & Adventure,0,0
+Bangladesh,Classic Movies,0,0
+Bangladesh,Anime Features,0,0
+Bangladesh,Sports Movies,0,0
+Bangladesh,Music & Musicals,0,0
+Bangladesh,Cult Movies,0,0
+Bangladesh,Faith & Spirituality,0,0
+Bangladesh,LGBTQ Movies,0,0
+Bangladesh,Stand-Up Comedy,0,0
+Bangladesh,Movies,7.166666666666667,1130.0
+Guatemala,Documentaries,6.6,221.0
+Guatemala,Children & Family Movies,0,0
+Guatemala,Dramas,0,0
+Guatemala,Independent Movies,0,0
+Guatemala,International Movies,6.6,221.0
+Guatemala,Comedies,0,0
+Guatemala,Thrillers,0,0
+Guatemala,Romantic Movies,0,0
+Guatemala,Horror Movies,0,0
+Guatemala,Sci-Fi & Fantasy,0,0
+Guatemala,Action & Adventure,0,0
+Guatemala,Classic Movies,0,0
+Guatemala,Anime Features,0,0
+Guatemala,Sports Movies,0,0
+Guatemala,Music & Musicals,0,0
+Guatemala,Cult Movies,0,0
+Guatemala,Faith & Spirituality,0,0
+Guatemala,LGBTQ Movies,0,0
+Guatemala,Stand-Up Comedy,0,0
+Guatemala,Movies,6.6,221.0
+Senegal,Documentaries,6.0,110.0
+Senegal,Children & Family Movies,0,0
+Senegal,Dramas,6.7,9348.0
+Senegal,Independent Movies,6.7,9348.0
+Senegal,International Movies,6.7,9348.0
+Senegal,Comedies,0,0
+Senegal,Thrillers,0,0
+Senegal,Romantic Movies,0,0
+Senegal,Horror Movies,0,0
+Senegal,Sci-Fi & Fantasy,0,0
+Senegal,Action & Adventure,0,0
+Senegal,Classic Movies,0,0
+Senegal,Anime Features,0,0
+Senegal,Sports Movies,0,0
+Senegal,Music & Musicals,0,0
+Senegal,Cult Movies,0,0
+Senegal,Faith & Spirituality,0,0
+Senegal,LGBTQ Movies,0,0
+Senegal,Stand-Up Comedy,0,0
+Senegal,Movies,6.7,9348.0
+Finland,Documentaries,7.533333333333334,26927.666666666668
+Finland,Children & Family Movies,6.4,28293.0
+Finland,Dramas,5.85,933.5
+Finland,Independent Movies,0,0
+Finland,International Movies,6.550000000000001,15501.5
+Finland,Comedies,5.7,19326.0
+Finland,Thrillers,0,0
+Finland,Romantic Movies,0,0
+Finland,Horror Movies,0,0
+Finland,Sci-Fi & Fantasy,0,0
+Finland,Action & Adventure,5.0,10359.0
+Finland,Classic Movies,0,0
+Finland,Anime Features,0,0
+Finland,Sports Movies,5.7,552.0
+Finland,Music & Musicals,8.2,67742.0
+Finland,Cult Movies,0,0
+Finland,Faith & Spirituality,0,0
+Finland,LGBTQ Movies,0,0
+Finland,Stand-Up Comedy,0,0
+Finland,Movies,6.528571428571428,17328.85714285714
+Iraq,Documentaries,6.199999999999999,1745.5
+Iraq,Children & Family Movies,0,0
+Iraq,Dramas,0,0
+Iraq,Independent Movies,0,0
+Iraq,International Movies,6.199999999999999,1745.5
+Iraq,Comedies,0,0
+Iraq,Thrillers,0,0
+Iraq,Romantic Movies,0,0
+Iraq,Horror Movies,0,0
+Iraq,Sci-Fi & Fantasy,0,0
+Iraq,Action & Adventure,0,0
+Iraq,Classic Movies,0,0
+Iraq,Anime Features,0,0
+Iraq,Sports Movies,0,0
+Iraq,Music & Musicals,0,0
+Iraq,Cult Movies,0,0
+Iraq,Faith & Spirituality,0,0
+Iraq,LGBTQ Movies,0,0
+Iraq,Stand-Up Comedy,0,0
+Iraq,Movies,6.199999999999999,1745.5
+Malawi,Documentaries,0,0
+Malawi,Children & Family Movies,7.6,37023.0
+Malawi,Dramas,7.6,37023.0
+Malawi,Independent Movies,7.6,37023.0
+Malawi,International Movies,0,0
+Malawi,Comedies,0,0
+Malawi,Thrillers,0,0
+Malawi,Romantic Movies,0,0
+Malawi,Horror Movies,0,0
+Malawi,Sci-Fi & Fantasy,0,0
+Malawi,Action & Adventure,0,0
+Malawi,Classic Movies,0,0
+Malawi,Anime Features,0,0
+Malawi,Sports Movies,0,0
+Malawi,Music & Musicals,0,0
+Malawi,Cult Movies,0,0
+Malawi,Faith & Spirituality,0,0
+Malawi,LGBTQ Movies,0,0
+Malawi,Stand-Up Comedy,0,0
+Malawi,Movies,7.6,37023.0
+Paraguay,Documentaries,0,0
+Paraguay,Children & Family Movies,0,0
+Paraguay,Dramas,0,0
+Paraguay,Independent Movies,0,0
+Paraguay,International Movies,5.9,724.0
+Paraguay,Comedies,0,0
+Paraguay,Thrillers,0,0
+Paraguay,Romantic Movies,0,0
+Paraguay,Horror Movies,0,0
+Paraguay,Sci-Fi & Fantasy,0,0
+Paraguay,Action & Adventure,5.9,724.0
+Paraguay,Classic Movies,0,0
+Paraguay,Anime Features,0,0
+Paraguay,Sports Movies,0,0
+Paraguay,Music & Musicals,0,0
+Paraguay,Cult Movies,0,0
+Paraguay,Faith & Spirituality,0,0
+Paraguay,LGBTQ Movies,0,0
+Paraguay,Stand-Up Comedy,0,0
+Paraguay,Movies,5.9,724.0
+Iran,Documentaries,0,0
+Iran,Children & Family Movies,0,0
+Iran,Dramas,7.133333333333333,84915.0
+Iran,Independent Movies,6.550000000000001,6548.0
+Iran,International Movies,7.166666666666667,91572.66666666667
+Iran,Comedies,0,0
+Iran,Thrillers,6.8,27211.0
+Iran,Romantic Movies,0,0
+Iran,Horror Movies,6.8,27211.0
+Iran,Sci-Fi & Fantasy,0,0
+Iran,Action & Adventure,0,0
+Iran,Classic Movies,6.7,7238.0
+Iran,Anime Features,0,0
+Iran,Sports Movies,0,0
+Iran,Music & Musicals,0,0
+Iran,Cult Movies,0,0
+Iran,Faith & Spirituality,0,0
+Iran,LGBTQ Movies,0,0
+Iran,Stand-Up Comedy,0,0
+Iran,Movies,7.050000000000001,70489.0
+"United States,",Documentaries,6.827450980392157,2890.8039215686276
+"United States,",Children & Family Movies,5.936507936507937,57421.01587301587
+"United States,",Dramas,6.808823529411764,140217.45098039217
+"United States,",Independent Movies,6.53235294117647,62876.91176470588
+"United States,",International Movies,6.55,69593.9375
+"United States,",Comedies,6.061445783132532,97471.19277108433
+"United States,",Thrillers,6.271999999999999,171821.32
+"United States,",Romantic Movies,6.544000000000002,112772.72
+"United States,",Horror Movies,5.642857142857144,95490.28571428571
+"United States,",Sci-Fi & Fantasy,6.240816326530611,210695.73469387754
+"United States,",Action & Adventure,6.351851851851853,205127.40740740742
+"United States,",Classic Movies,7.557142857142857,170557.7142857143
+"United States,",Anime Features,5.1,1245.0
+"United States,",Sports Movies,7.153846153846152,57187.61538461538
+"United States,",Music & Musicals,6.933333333333334,84210.75
+"United States,",Cult Movies,6.8,256523.5
+"United States,",Faith & Spirituality,6.180000000000001,11361.4
+"United States,",LGBTQ Movies,6.3999999999999995,43141.0
+"United States,",Stand-Up Comedy,8.1,10742.0
+"United States,",Movies,6.278468899521531,84503.32057416267
+Albania,Documentaries,0,0
+Albania,Children & Family Movies,0,0
+Albania,Dramas,6.2,1595.0
+Albania,Independent Movies,0,0
+Albania,International Movies,6.2,1595.0
+Albania,Comedies,0,0
+Albania,Thrillers,0,0
+Albania,Romantic Movies,0,0
+Albania,Horror Movies,0,0
+Albania,Sci-Fi & Fantasy,0,0
+Albania,Action & Adventure,0,0
+Albania,Classic Movies,0,0
+Albania,Anime Features,0,0
+Albania,Sports Movies,0,0
+Albania,Music & Musicals,0,0
+Albania,Cult Movies,0,0
+Albania,Faith & Spirituality,0,0
+Albania,LGBTQ Movies,0,0
+Albania,Stand-Up Comedy,0,0
+Albania,Movies,6.2,1595.0
+Soviet Union,Documentaries,0,0
+Soviet Union,Children & Family Movies,0,0
+Soviet Union,Dramas,6.25,841.0
+Soviet Union,Independent Movies,0,0
+Soviet Union,International Movies,5.733333333333334,573.6666666666666
+Soviet Union,Comedies,0,0
+Soviet Union,Thrillers,0,0
+Soviet Union,Romantic Movies,5.9,300.0
+Soviet Union,Horror Movies,0,0
+Soviet Union,Sci-Fi & Fantasy,4.7,39.0
+Soviet Union,Action & Adventure,4.7,39.0
+Soviet Union,Classic Movies,0,0
+Soviet Union,Anime Features,0,0
+Soviet Union,Sports Movies,0,0
+Soviet Union,Music & Musicals,6.6,1382.0
+Soviet Union,Cult Movies,0,0
+Soviet Union,Faith & Spirituality,0,0
+Soviet Union,LGBTQ Movies,0,0
+Soviet Union,Stand-Up Comedy,0,0
+Soviet Union,Movies,5.733333333333334,573.6666666666666
+Georgia,Documentaries,0,0
+Georgia,Children & Family Movies,0,0
+Georgia,Dramas,7.4,3845.0
+Georgia,Independent Movies,7.4,3845.0
+Georgia,International Movies,7.4,3845.0
+Georgia,Comedies,0,0
+Georgia,Thrillers,0,0
+Georgia,Romantic Movies,0,0
+Georgia,Horror Movies,0,0
+Georgia,Sci-Fi & Fantasy,0,0
+Georgia,Action & Adventure,0,0
+Georgia,Classic Movies,0,0
+Georgia,Anime Features,0,0
+Georgia,Sports Movies,0,0
+Georgia,Music & Musicals,0,0
+Georgia,Cult Movies,0,0
+Georgia,Faith & Spirituality,0,0
+Georgia,LGBTQ Movies,0,0
+Georgia,Stand-Up Comedy,0,0
+Georgia,Movies,7.4,3845.0
+Morocco,Documentaries,0,0
+Morocco,Children & Family Movies,0,0
+Morocco,Dramas,6.6000000000000005,4602.5
+Morocco,Independent Movies,6.2,2744.0
+Morocco,International Movies,6.4,4927.0
+Morocco,Comedies,0,0
+Morocco,Thrillers,0,0
+Morocco,Romantic Movies,0,0
+Morocco,Horror Movies,0,0
+Morocco,Sci-Fi & Fantasy,0,0
+Morocco,Action & Adventure,6.6,7110.0
+Morocco,Classic Movies,0,0
+Morocco,Anime Features,0,0
+Morocco,Sports Movies,0,0
+Morocco,Music & Musicals,0,0
+Morocco,Cult Movies,0,0
+Morocco,Faith & Spirituality,7.25,2120.5
+Morocco,LGBTQ Movies,0,0
+Morocco,Stand-Up Comedy,0,0
+Morocco,Movies,6.4,4927.0
+Slovakia,Documentaries,0,0
+Slovakia,Children & Family Movies,0,0
+Slovakia,Dramas,7.0,2528.0
+Slovakia,Independent Movies,0,0
+Slovakia,International Movies,7.0,2528.0
+Slovakia,Comedies,0,0
+Slovakia,Thrillers,0,0
+Slovakia,Romantic Movies,0,0
+Slovakia,Horror Movies,0,0
+Slovakia,Sci-Fi & Fantasy,0,0
+Slovakia,Action & Adventure,0,0
+Slovakia,Classic Movies,0,0
+Slovakia,Anime Features,0,0
+Slovakia,Sports Movies,0,0
+Slovakia,Music & Musicals,0,0
+Slovakia,Cult Movies,0,0
+Slovakia,Faith & Spirituality,0,0
+Slovakia,LGBTQ Movies,0,0
+Slovakia,Stand-Up Comedy,0,0
+Slovakia,Movies,7.0,2528.0
+Ukraine,Documentaries,8.3,18612.0
+Ukraine,Children & Family Movies,0,0
+Ukraine,Dramas,0,0
+Ukraine,Independent Movies,0,0
+Ukraine,International Movies,8.3,18612.0
+Ukraine,Comedies,0,0
+Ukraine,Thrillers,0,0
+Ukraine,Romantic Movies,0,0
+Ukraine,Horror Movies,0,0
+Ukraine,Sci-Fi & Fantasy,0,0
+Ukraine,Action & Adventure,0,0
+Ukraine,Classic Movies,0,0
+Ukraine,Anime Features,0,0
+Ukraine,Sports Movies,0,0
+Ukraine,Music & Musicals,0,0
+Ukraine,Cult Movies,0,0
+Ukraine,Faith & Spirituality,0,0
+Ukraine,LGBTQ Movies,0,0
+Ukraine,Stand-Up Comedy,0,0
+Ukraine,Movies,8.3,18612.0
+Bermuda,Documentaries,7.9,1982.0
+Bermuda,Children & Family Movies,0,0
+Bermuda,Dramas,0,0
+Bermuda,Independent Movies,0,0
+Bermuda,International Movies,0,0
+Bermuda,Comedies,0,0
+Bermuda,Thrillers,0,0
+Bermuda,Romantic Movies,0,0
+Bermuda,Horror Movies,0,0
+Bermuda,Sci-Fi & Fantasy,0,0
+Bermuda,Action & Adventure,0,0
+Bermuda,Classic Movies,0,0
+Bermuda,Anime Features,0,0
+Bermuda,Sports Movies,0,0
+Bermuda,Music & Musicals,0,0
+Bermuda,Cult Movies,0,0
+Bermuda,Faith & Spirituality,0,0
+Bermuda,LGBTQ Movies,0,0
+Bermuda,Stand-Up Comedy,0,0
+Bermuda,Movies,0,0
+Ecuador,Documentaries,7.9,1982.0
+Ecuador,Children & Family Movies,0,0
+Ecuador,Dramas,0,0
+Ecuador,Independent Movies,0,0
+Ecuador,International Movies,0,0
+Ecuador,Comedies,0,0
+Ecuador,Thrillers,0,0
+Ecuador,Romantic Movies,0,0
+Ecuador,Horror Movies,0,0
+Ecuador,Sci-Fi & Fantasy,0,0
+Ecuador,Action & Adventure,0,0
+Ecuador,Classic Movies,0,0
+Ecuador,Anime Features,0,0
+Ecuador,Sports Movies,0,0
+Ecuador,Music & Musicals,0,0
+Ecuador,Cult Movies,0,0
+Ecuador,Faith & Spirituality,0,0
+Ecuador,LGBTQ Movies,0,0
+Ecuador,Stand-Up Comedy,0,0
+Ecuador,Movies,0,0
+Armenia,Documentaries,6.1,2800.0
+Armenia,Children & Family Movies,0,0
+Armenia,Dramas,0,0
+Armenia,Independent Movies,0,0
+Armenia,International Movies,6.1,2800.0
+Armenia,Comedies,0,0
+Armenia,Thrillers,0,0
+Armenia,Romantic Movies,0,0
+Armenia,Horror Movies,0,0
+Armenia,Sci-Fi & Fantasy,0,0
+Armenia,Action & Adventure,0,0
+Armenia,Classic Movies,0,0
+Armenia,Anime Features,0,0
+Armenia,Sports Movies,0,0
+Armenia,Music & Musicals,0,0
+Armenia,Cult Movies,0,0
+Armenia,Faith & Spirituality,0,0
+Armenia,LGBTQ Movies,0,0
+Armenia,Stand-Up Comedy,0,0
+Armenia,Movies,6.1,2800.0
+Mongolia,Documentaries,6.1,2800.0
+Mongolia,Children & Family Movies,0,0
+Mongolia,Dramas,0,0
+Mongolia,Independent Movies,0,0
+Mongolia,International Movies,6.1,2800.0
+Mongolia,Comedies,0,0
+Mongolia,Thrillers,0,0
+Mongolia,Romantic Movies,0,0
+Mongolia,Horror Movies,0,0
+Mongolia,Sci-Fi & Fantasy,0,0
+Mongolia,Action & Adventure,0,0
+Mongolia,Classic Movies,0,0
+Mongolia,Anime Features,0,0
+Mongolia,Sports Movies,0,0
+Mongolia,Music & Musicals,0,0
+Mongolia,Cult Movies,0,0
+Mongolia,Faith & Spirituality,0,0
+Mongolia,LGBTQ Movies,0,0
+Mongolia,Stand-Up Comedy,0,0
+Mongolia,Movies,6.1,2800.0
+Bahamas,Documentaries,0,0
+Bahamas,Children & Family Movies,0,0
+Bahamas,Dramas,0,0
+Bahamas,Independent Movies,0,0
+Bahamas,International Movies,0,0
+Bahamas,Comedies,0,0
+Bahamas,Thrillers,0,0
+Bahamas,Romantic Movies,0,0
+Bahamas,Horror Movies,0,0
+Bahamas,Sci-Fi & Fantasy,0,0
+Bahamas,Action & Adventure,8.0,645537.0
+Bahamas,Classic Movies,0,0
+Bahamas,Anime Features,0,0
+Bahamas,Sports Movies,0,0
+Bahamas,Music & Musicals,0,0
+Bahamas,Cult Movies,0,0
+Bahamas,Faith & Spirituality,0,0
+Bahamas,LGBTQ Movies,0,0
+Bahamas,Stand-Up Comedy,0,0
+Bahamas,Movies,0,0
+Sri Lanka,Documentaries,6.9,45.0
+Sri Lanka,Children & Family Movies,0,0
+Sri Lanka,Dramas,0,0
+Sri Lanka,Independent Movies,0,0
+Sri Lanka,International Movies,6.9,45.0
+Sri Lanka,Comedies,0,0
+Sri Lanka,Thrillers,0,0
+Sri Lanka,Romantic Movies,0,0
+Sri Lanka,Horror Movies,0,0
+Sri Lanka,Sci-Fi & Fantasy,0,0
+Sri Lanka,Action & Adventure,0,0
+Sri Lanka,Classic Movies,0,0
+Sri Lanka,Anime Features,0,0
+Sri Lanka,Sports Movies,0,0
+Sri Lanka,Music & Musicals,0,0
+Sri Lanka,Cult Movies,0,0
+Sri Lanka,Faith & Spirituality,0,0
+Sri Lanka,LGBTQ Movies,0,0
+Sri Lanka,Stand-Up Comedy,0,0
+Sri Lanka,Movies,6.9,45.0
+Latvia,Documentaries,0,0
+Latvia,Children & Family Movies,0,0
+Latvia,Dramas,6.0,1315.0
+Latvia,Independent Movies,0,0
+Latvia,International Movies,6.0,1315.0
+Latvia,Comedies,0,0
+Latvia,Thrillers,0,0
+Latvia,Romantic Movies,0,0
+Latvia,Horror Movies,0,0
+Latvia,Sci-Fi & Fantasy,0,0
+Latvia,Action & Adventure,0,0
+Latvia,Classic Movies,0,0
+Latvia,Anime Features,0,0
+Latvia,Sports Movies,0,0
+Latvia,Music & Musicals,0,0
+Latvia,Cult Movies,0,0
+Latvia,Faith & Spirituality,0,0
+Latvia,LGBTQ Movies,0,0
+Latvia,Stand-Up Comedy,0,0
+Latvia,Movies,6.0,1315.0
+Liechtenstein,Documentaries,0,0
+Liechtenstein,Children & Family Movies,0,0
+Liechtenstein,Dramas,7.9,75800.0
+Liechtenstein,Independent Movies,0,0
+Liechtenstein,International Movies,0,0
+Liechtenstein,Comedies,0,0
+Liechtenstein,Thrillers,0,0
+Liechtenstein,Romantic Movies,7.9,75800.0
+Liechtenstein,Horror Movies,0,0
+Liechtenstein,Sci-Fi & Fantasy,0,0
+Liechtenstein,Action & Adventure,0,0
+Liechtenstein,Classic Movies,7.9,75800.0
+Liechtenstein,Anime Features,0,0
+Liechtenstein,Sports Movies,0,0
+Liechtenstein,Music & Musicals,0,0
+Liechtenstein,Cult Movies,0,0
+Liechtenstein,Faith & Spirituality,0,0
+Liechtenstein,LGBTQ Movies,0,0
+Liechtenstein,Stand-Up Comedy,0,0
+Liechtenstein,Movies,7.9,75800.0
+Venezuela,Documentaries,6.85,100.5
+Venezuela,Children & Family Movies,0,0
+Venezuela,Dramas,0,0
+Venezuela,Independent Movies,0,0
+Venezuela,International Movies,7.3,10.0
+Venezuela,Comedies,0,0
+Venezuela,Thrillers,0,0
+Venezuela,Romantic Movies,0,0
+Venezuela,Horror Movies,0,0
+Venezuela,Sci-Fi & Fantasy,0,0
+Venezuela,Action & Adventure,0,0
+Venezuela,Classic Movies,0,0
+Venezuela,Anime Features,0,0
+Venezuela,Sports Movies,0,0
+Venezuela,Music & Musicals,0,0
+Venezuela,Cult Movies,0,0
+Venezuela,Faith & Spirituality,0,0
+Venezuela,LGBTQ Movies,0,0
+Venezuela,Stand-Up Comedy,0,0
+Venezuela,Movies,7.3,10.0
+Nicaragua,Documentaries,7.1,863.0
+Nicaragua,Children & Family Movies,0,0
+Nicaragua,Dramas,0,0
+Nicaragua,Independent Movies,0,0
+Nicaragua,International Movies,0,0
+Nicaragua,Comedies,0,0
+Nicaragua,Thrillers,0,0
+Nicaragua,Romantic Movies,0,0
+Nicaragua,Horror Movies,0,0
+Nicaragua,Sci-Fi & Fantasy,0,0
+Nicaragua,Action & Adventure,0,0
+Nicaragua,Classic Movies,0,0
+Nicaragua,Anime Features,0,0
+Nicaragua,Sports Movies,0,0
+Nicaragua,Music & Musicals,0,0
+Nicaragua,Cult Movies,0,0
+Nicaragua,Faith & Spirituality,0,0
+Nicaragua,LGBTQ Movies,0,0
+Nicaragua,Stand-Up Comedy,0,0
+Nicaragua,Movies,0,0
+Croatia,Documentaries,0,0
+Croatia,Children & Family Movies,0,0
+Croatia,Dramas,6.6,6703.0
+Croatia,Independent Movies,7.0,7288.5
+Croatia,International Movies,7.4,2842.5
+Croatia,Comedies,7.8,3428.0
+Croatia,Thrillers,0,0
+Croatia,Romantic Movies,0,0
+Croatia,Horror Movies,0,0
+Croatia,Sci-Fi & Fantasy,0,0
+Croatia,Action & Adventure,0,0
+Croatia,Classic Movies,0,0
+Croatia,Anime Features,0,0
+Croatia,Sports Movies,0,0
+Croatia,Music & Musicals,0,0
+Croatia,Cult Movies,0,0
+Croatia,Faith & Spirituality,0,0
+Croatia,LGBTQ Movies,0,0
+Croatia,Stand-Up Comedy,0,0
+Croatia,Movies,7.0,5611.333333333333
+Slovenia,Documentaries,0,0
+Slovenia,Children & Family Movies,0,0
+Slovenia,Dramas,7.0,2257.0
+Slovenia,Independent Movies,7.8,3428.0
+Slovenia,International Movies,7.4,2842.5
+Slovenia,Comedies,7.8,3428.0
+Slovenia,Thrillers,0,0
+Slovenia,Romantic Movies,0,0
+Slovenia,Horror Movies,0,0
+Slovenia,Sci-Fi & Fantasy,0,0
+Slovenia,Action & Adventure,0,0
+Slovenia,Classic Movies,0,0
+Slovenia,Anime Features,0,0
+Slovenia,Sports Movies,0,0
+Slovenia,Music & Musicals,0,0
+Slovenia,Cult Movies,0,0
+Slovenia,Faith & Spirituality,0,0
+Slovenia,LGBTQ Movies,0,0
+Slovenia,Stand-Up Comedy,0,0
+Slovenia,Movies,7.4,2842.5
+Nepal,Documentaries,0,0
+Nepal,Children & Family Movies,0,0
+Nepal,Dramas,0,0
+Nepal,Independent Movies,0,0
+Nepal,International Movies,5.1,10197.0
+Nepal,Comedies,5.1,10197.0
+Nepal,Thrillers,0,0
+Nepal,Romantic Movies,0,0
+Nepal,Horror Movies,0,0
+Nepal,Sci-Fi & Fantasy,0,0
+Nepal,Action & Adventure,5.1,10197.0
+Nepal,Classic Movies,0,0
+Nepal,Anime Features,0,0
+Nepal,Sports Movies,0,0
+Nepal,Music & Musicals,0,0
+Nepal,Cult Movies,0,0
+Nepal,Faith & Spirituality,0,0
+Nepal,LGBTQ Movies,0,0
+Nepal,Stand-Up Comedy,0,0
+Nepal,Movies,5.1,10197.0
+Samoa,Documentaries,7.4,651.0
+Samoa,Children & Family Movies,0,0
+Samoa,Dramas,0,0
+Samoa,Independent Movies,0,0
+Samoa,International Movies,0,0
+Samoa,Comedies,0,0
+Samoa,Thrillers,0,0
+Samoa,Romantic Movies,0,0
+Samoa,Horror Movies,0,0
+Samoa,Sci-Fi & Fantasy,0,0
+Samoa,Action & Adventure,0,0
+Samoa,Classic Movies,0,0
+Samoa,Anime Features,0,0
+Samoa,Sports Movies,7.4,651.0
+Samoa,Music & Musicals,0,0
+Samoa,Cult Movies,0,0
+Samoa,Faith & Spirituality,0,0
+Samoa,LGBTQ Movies,0,0
+Samoa,Stand-Up Comedy,0,0
+Samoa,Movies,7.4,651.0
+West Germany,Documentaries,0,0
+West Germany,Children & Family Movies,7.8,196922.0
+West Germany,Dramas,0,0
+West Germany,Independent Movies,0,0
+West Germany,International Movies,7.1,28036.0
+West Germany,Comedies,7.8,196922.0
+West Germany,Thrillers,7.1,28036.0
+West Germany,Romantic Movies,0,0
+West Germany,Horror Movies,7.1,28036.0
+West Germany,Sci-Fi & Fantasy,0,0
+West Germany,Action & Adventure,0,0
+West Germany,Classic Movies,7.8,196922.0
+West Germany,Anime Features,0,0
+West Germany,Sports Movies,0,0
+West Germany,Music & Musicals,0,0
+West Germany,Cult Movies,0,0
+West Germany,Faith & Spirituality,0,0
+West Germany,LGBTQ Movies,0,0
+West Germany,Stand-Up Comedy,0,0
+West Germany,Movies,7.449999999999999,112479.0
+Botswana,Documentaries,7.6,399.0
+Botswana,Children & Family Movies,0,0
+Botswana,Dramas,0,0
+Botswana,Independent Movies,0,0
+Botswana,International Movies,0,0
+Botswana,Comedies,0,0
+Botswana,Thrillers,0,0
+Botswana,Romantic Movies,0,0
+Botswana,Horror Movies,0,0
+Botswana,Sci-Fi & Fantasy,0,0
+Botswana,Action & Adventure,0,0
+Botswana,Classic Movies,0,0
+Botswana,Anime Features,0,0
+Botswana,Sports Movies,0,0
+Botswana,Music & Musicals,0,0
+Botswana,Cult Movies,0,0
+Botswana,Faith & Spirituality,0,0
+Botswana,LGBTQ Movies,0,0
+Botswana,Stand-Up Comedy,0,0
+Botswana,Movies,0,0
+Vatican City,Documentaries,6.4,2245.0
+Vatican City,Children & Family Movies,0,0
+Vatican City,Dramas,0,0
+Vatican City,Independent Movies,0,0
+Vatican City,International Movies,6.4,2245.0
+Vatican City,Comedies,0,0
+Vatican City,Thrillers,0,0
+Vatican City,Romantic Movies,0,0
+Vatican City,Horror Movies,0,0
+Vatican City,Sci-Fi & Fantasy,0,0
+Vatican City,Action & Adventure,0,0
+Vatican City,Classic Movies,0,0
+Vatican City,Anime Features,0,0
+Vatican City,Sports Movies,0,0
+Vatican City,Music & Musicals,0,0
+Vatican City,Cult Movies,0,0
+Vatican City,Faith & Spirituality,6.4,2245.0
+Vatican City,LGBTQ Movies,0,0
+Vatican City,Stand-Up Comedy,0,0
+Vatican City,Movies,6.4,2245.0
+Jamaica,Documentaries,0,0
+Jamaica,Children & Family Movies,0,0
+Jamaica,Dramas,6.0,479.0
+Jamaica,Independent Movies,0,0
+Jamaica,International Movies,6.0,479.0
+Jamaica,Comedies,0,0
+Jamaica,Thrillers,0,0
+Jamaica,Romantic Movies,0,0
+Jamaica,Horror Movies,0,0
+Jamaica,Sci-Fi & Fantasy,0,0
+Jamaica,Action & Adventure,0,0
+Jamaica,Classic Movies,0,0
+Jamaica,Anime Features,0,0
+Jamaica,Sports Movies,6.0,479.0
+Jamaica,Music & Musicals,0,0
+Jamaica,Cult Movies,0,0
+Jamaica,Faith & Spirituality,0,0
+Jamaica,LGBTQ Movies,0,0
+Jamaica,Stand-Up Comedy,0,0
+Jamaica,Movies,6.0,479.0
+Kazakhstan,Documentaries,0,0
+Kazakhstan,Children & Family Movies,4.4,97.0
+Kazakhstan,Dramas,0,0
+Kazakhstan,Independent Movies,0,0
+Kazakhstan,International Movies,0,0
+Kazakhstan,Comedies,0,0
+Kazakhstan,Thrillers,0,0
+Kazakhstan,Romantic Movies,0,0
+Kazakhstan,Horror Movies,0,0
+Kazakhstan,Sci-Fi & Fantasy,0,0
+Kazakhstan,Action & Adventure,0,0
+Kazakhstan,Classic Movies,0,0
+Kazakhstan,Anime Features,0,0
+Kazakhstan,Sports Movies,0,0
+Kazakhstan,Music & Musicals,0,0
+Kazakhstan,Cult Movies,0,0
+Kazakhstan,Faith & Spirituality,0,0
+Kazakhstan,LGBTQ Movies,0,0
+Kazakhstan,Stand-Up Comedy,0,0
+Kazakhstan,Movies,4.4,97.0
+Lithuania,Documentaries,0,0
+Lithuania,Children & Family Movies,0,0
+Lithuania,Dramas,6.5,4840.0
+Lithuania,Independent Movies,0,0
+Lithuania,International Movies,6.5,4840.0
+Lithuania,Comedies,0,0
+Lithuania,Thrillers,0,0
+Lithuania,Romantic Movies,0,0
+Lithuania,Horror Movies,0,0
+Lithuania,Sci-Fi & Fantasy,0,0
+Lithuania,Action & Adventure,0,0
+Lithuania,Classic Movies,0,0
+Lithuania,Anime Features,0,0
+Lithuania,Sports Movies,0,0
+Lithuania,Music & Musicals,0,0
+Lithuania,Cult Movies,0,0
+Lithuania,Faith & Spirituality,0,0
+Lithuania,LGBTQ Movies,0,0
+Lithuania,Stand-Up Comedy,0,0
+Lithuania,Movies,6.5,4840.0
+Afghanistan,Documentaries,7.0,621.0
+Afghanistan,Children & Family Movies,0,0
+Afghanistan,Dramas,0,0
+Afghanistan,Independent Movies,0,0
+Afghanistan,International Movies,7.0,621.0
+Afghanistan,Comedies,0,0
+Afghanistan,Thrillers,0,0
+Afghanistan,Romantic Movies,0,0
+Afghanistan,Horror Movies,0,0
+Afghanistan,Sci-Fi & Fantasy,0,0
+Afghanistan,Action & Adventure,0,0
+Afghanistan,Classic Movies,0,0
+Afghanistan,Anime Features,0,0
+Afghanistan,Sports Movies,0,0
+Afghanistan,Music & Musicals,0,0
+Afghanistan,Cult Movies,0,0
+Afghanistan,Faith & Spirituality,0,0
+Afghanistan,LGBTQ Movies,0,0
+Afghanistan,Stand-Up Comedy,0,0
+Afghanistan,Movies,7.0,621.0
+Somalia,Documentaries,0,0
+Somalia,Children & Family Movies,0,0
+Somalia,Dramas,6.7,10009.0
+Somalia,Independent Movies,0,0
+Somalia,International Movies,0,0
+Somalia,Comedies,0,0
+Somalia,Thrillers,0,0
+Somalia,Romantic Movies,0,0
+Somalia,Horror Movies,0,0
+Somalia,Sci-Fi & Fantasy,0,0
+Somalia,Action & Adventure,0,0
+Somalia,Classic Movies,0,0
+Somalia,Anime Features,0,0
+Somalia,Sports Movies,0,0
+Somalia,Music & Musicals,0,0
+Somalia,Cult Movies,0,0
+Somalia,Faith & Spirituality,0,0
+Somalia,LGBTQ Movies,0,0
+Somalia,Stand-Up Comedy,0,0
+Somalia,Movies,0,0
+Sudan,Documentaries,0,0
+Sudan,Children & Family Movies,0,0
+Sudan,Dramas,6.7,10009.0
+Sudan,Independent Movies,0,0
+Sudan,International Movies,0,0
+Sudan,Comedies,0,0
+Sudan,Thrillers,0,0
+Sudan,Romantic Movies,0,0
+Sudan,Horror Movies,0,0
+Sudan,Sci-Fi & Fantasy,0,0
+Sudan,Action & Adventure,0,0
+Sudan,Classic Movies,0,0
+Sudan,Anime Features,0,0
+Sudan,Sports Movies,0,0
+Sudan,Music & Musicals,0,0
+Sudan,Cult Movies,0,0
+Sudan,Faith & Spirituality,0,0
+Sudan,LGBTQ Movies,0,0
+Sudan,Stand-Up Comedy,0,0
+Sudan,Movies,0,0
+Panama,Documentaries,7.1,1029.0
+Panama,Children & Family Movies,0,0
+Panama,Dramas,0,0
+Panama,Independent Movies,0,0
+Panama,International Movies,0,0
+Panama,Comedies,0,0
+Panama,Thrillers,0,0
+Panama,Romantic Movies,0,0
+Panama,Horror Movies,0,0
+Panama,Sci-Fi & Fantasy,0,0
+Panama,Action & Adventure,0,0
+Panama,Classic Movies,0,0
+Panama,Anime Features,0,0
+Panama,Sports Movies,7.1,1029.0
+Panama,Music & Musicals,0,0
+Panama,Cult Movies,0,0
+Panama,Faith & Spirituality,0,0
+Panama,LGBTQ Movies,0,0
+Panama,Stand-Up Comedy,0,0
+Panama,Movies,7.1,1029.0
+Uganda,Documentaries,6.5,81.0
+Uganda,Children & Family Movies,0,0
+Uganda,Dramas,0,0
+Uganda,Independent Movies,0,0
+Uganda,International Movies,0,0
+Uganda,Comedies,0,0
+Uganda,Thrillers,0,0
+Uganda,Romantic Movies,0,0
+Uganda,Horror Movies,0,0
+Uganda,Sci-Fi & Fantasy,0,0
+Uganda,Action & Adventure,0,0
+Uganda,Classic Movies,0,0
+Uganda,Anime Features,0,0
+Uganda,Sports Movies,0,0
+Uganda,Music & Musicals,0,0
+Uganda,Cult Movies,0,0
+Uganda,Faith & Spirituality,0,0
+Uganda,LGBTQ Movies,0,0
+Uganda,Stand-Up Comedy,0,0
+Uganda,Movies,0,0
+East Germany,Documentaries,0,0
+East Germany,Children & Family Movies,7.8,196922.0
+East Germany,Dramas,0,0
+East Germany,Independent Movies,0,0
+East Germany,International Movies,0,0
+East Germany,Comedies,7.8,196922.0
+East Germany,Thrillers,0,0
+East Germany,Romantic Movies,0,0
+East Germany,Horror Movies,0,0
+East Germany,Sci-Fi & Fantasy,0,0
+East Germany,Action & Adventure,0,0
+East Germany,Classic Movies,7.8,196922.0
+East Germany,Anime Features,0,0
+East Germany,Sports Movies,0,0
+East Germany,Music & Musicals,0,0
+East Germany,Cult Movies,0,0
+East Germany,Faith & Spirituality,0,0
+East Germany,LGBTQ Movies,0,0
+East Germany,Stand-Up Comedy,0,0
+East Germany,Movies,7.8,196922.0
+Montenegro,Documentaries,0,0
+Montenegro,Children & Family Movies,0,0
+Montenegro,Dramas,7.0,2257.0
+Montenegro,Independent Movies,0,0
+Montenegro,International Movies,7.0,2257.0
+Montenegro,Comedies,0,0
+Montenegro,Thrillers,0,0
+Montenegro,Romantic Movies,0,0
+Montenegro,Horror Movies,0,0
+Montenegro,Sci-Fi & Fantasy,0,0
+Montenegro,Action & Adventure,0,0
+Montenegro,Classic Movies,0,0
+Montenegro,Anime Features,0,0
+Montenegro,Sports Movies,0,0
+Montenegro,Music & Musicals,0,0
+Montenegro,Cult Movies,0,0
+Montenegro,Faith & Spirituality,0,0
+Montenegro,LGBTQ Movies,0,0
+Montenegro,Stand-Up Comedy,0,0
+Montenegro,Movies,7.0,2257.0
