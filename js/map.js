@@ -85,7 +85,6 @@ function map() {
 				.style("position", "absolute")
 
 			const showTooltip = function (event, d) {
-				console.log(tooltip);
 				d3.selectAll(".country") //show the tooltip
 					.transition()
 					.duration(200)

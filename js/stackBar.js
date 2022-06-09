@@ -15,12 +15,10 @@ function stackBar() {
 
 
 
-	////////////////////////testing////////////////////////////////
 	function show_radar(data, choosecolor) {
 
 		// const color = d3.scaleOrdinal()
 		// 		.range(["#EDC951","#CC333F","#00A0B0"]);
-		console.log(choosecolor);
 		const radarChartOptions = {
 			margin: margin,
 			maxValue: 0.5,
@@ -39,12 +37,22 @@ function stackBar() {
 	//   .append("g")
 	//     .attr("transform", `translate(${width},${margin.top})`);
 
-	////////////////////////testing////////////////////////////////
 
 	// Parse the Data
 	d3.csv("https://raw.githubusercontent.com/zihong518/data_visualization/master/data.csv").then(function (data) {
 
 		data = data.filter(ele => ele.country && ele.listed_in && ele.type === 'Movie')
+
+		data.forEach(function (element){
+			element.listed_in = element.listed_in
+        .split(', ')
+        .map((d) => d.replaceAll(' ', '_').replaceAll('&', 'and'))
+        .join(', ')
+      element.country = element.country
+        .split(', ')
+        .map((d) => d.replaceAll(' ', '_'))
+        .join(', ')
+		});
 
 		// List of subgroups = header of the csv files = soil condition here
 
@@ -246,8 +254,7 @@ function stackBar() {
 			const iscountry = d3.select(this).attr('id').includes('country') ? true : false
 			const value = d3.select(this).property('value')
 
-			console.log(iscountry)
-			console.log(value)
+
 
 			if (iscountry) {
 				// show selected country
@@ -303,12 +310,9 @@ function stackBar() {
 			d3.selectAll('#stackBar_filter div#selected_countrys div').each(function () { countrys.push(d3.select(this).attr('data-country')) })
 			d3.selectAll('#stackBar_filter div#selected_genres div').each(function () { genres.push(d3.select(this).attr('data-genre')) })
 
-			console.log(countrys)
-			console.log(genres)
 			// get new data according countrys and genres
 			const [new_data, keys] = prepare_data(countrys, genres)
-			console.log(new_data)
-			console.log(keys)
+
 			const stackedData = d3.stack()
 				.keys(keys)
 				(new_data)
@@ -322,9 +326,7 @@ function stackBar() {
 
 
 			// find the max value, ref: http://using-d3js.com/05_06_stacks.html
-			console.log(stackedData)
 			y.domain([0, d3.max(stackedData[stackedData.length - 1].map(d => d[1]))])
-			console.log(y.domain())
 			yAxis
 				.transition()
 				.duration(1000)
@@ -342,9 +344,7 @@ function stackBar() {
 		function removeStackedBar(event, d) {
 			// remove selected para
 			const country = d3.select(this).attr('id')
-			console.log(country)
 
-			console.log(country)
 			d3.select('#stackBar_filter div.' + country).remove()
 
 			// get all currently selected country
@@ -353,10 +353,8 @@ function stackBar() {
 			d3.selectAll('#stackBar_filter div#selected_countrys div').each(function () { countrys.push(d3.select(this).attr('data-country')) })
 			d3.selectAll('#stackBar_filter div#selected_genres div').each(function () { genres.push(d3.select(this).attr('data-genre')) })
 
-			console.log(countrys)
-			console.log(genres)
+
 			const [new_data, keys] = prepare_data(countrys, genres)
-			console.log(new_data)
 			const stackedData = d3.stack()
 				.keys(countrys)
 				(new_data)
@@ -370,7 +368,6 @@ function stackBar() {
 
 			// find the max value, ref: http://using-d3js.com/05_06_stacks.html
 			y.domain([0, d3.max(stackedData[stackedData.length - 1].map(d => d[1]))])
-			console.log(y.domain())
 			yAxis
 				.transition()
 				.duration(1000)

@@ -82,7 +82,6 @@ function racingChart() {
       .tickFormat(d3.timeFormat('%Y'))
       .default([d3.min(dateList), d3.timeParse('%Y')('2021')])
       .on('onchange', function (val) {
-        console.log(val)
         d3.select('#slide_min').text(d3.timeFormat('%Y')(val[0]))
         d3.select('#slide_max').text(d3.timeFormat('%Y')(val[1]))
       })

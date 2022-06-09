@@ -259,7 +259,6 @@ function pixel_chart() {
     // hightlight only one image (mouseover and mouseleave use the same function)
     function highlight_over_or_leave(event, d) {
       if (event.type === 'mouseover') {
-        console.log('object');
         const hoverImg = document.getElementById('hoverImg')
         hoverImg.src = d.image
         hoverImg.classList.add('opacity-100', 'transition', 'transition-all', 'duration-150', 'transition-opacity')

@@ -29,7 +29,6 @@ function network(selectId) {
         return dict
 
     })
-    console.log(dataFirst);
     // 做出名字的node
     let nodes = []
     let filmList = []
@@ -90,9 +89,7 @@ function network(selectId) {
           }
         })
       })
-    console.log(nodes)
     if (nodes==false){
-      console.log('object');
       document.getElementById('networkAlert').innerHTML="Sorry, we don't have the casts data of this movie"
       d3.select('#networkSvg').remove()
       return 
@@ -146,7 +143,6 @@ function network(selectId) {
         })
       return image
     }
-    console.log(nodes);
     Promise.all(nodes.filter(node => node.type == "character").map(d => getImage(d.name))).then(function (images) {
       // console.log(images);
       // Let's list the force we wanna apply on the network
