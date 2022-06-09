@@ -1,7 +1,7 @@
-function RadarChart(id, data, options) {
+function RadarChart(id, data, options,chooseColor) {
 	var cfg = {
-	 w: 600,				//Width of the circle
-	 h: 600,				//Height of the circle
+	 w: ((window.screen.width- 500  )/10 *3),				//Width of the circle
+	 h: 700,				//Height of the circle
 	 margin: {top: 20, right: 20, bottom: 20, left: 20}, //The margins of the SVG
 	 levels: 3,				//How many levels or inner circles should there be drawn
 	 maxValue: 0, 			//What is the value that the biggest circle will represent
@@ -14,7 +14,7 @@ function RadarChart(id, data, options) {
 	 roundStrokes: false,	//If true the area and stroke will follow a round path (cardinal-closed)
 	 color: d3.scaleOrdinal().range(["#EDC951","#CC333F","#00A0B0"])	//Color function
 	};
-	
+	console.log(chooseColor)
 	//Put all of the options into a variable called cfg
 	if('undefined' !== typeof options){
 	  for(var i in options){
@@ -28,7 +28,7 @@ function RadarChart(id, data, options) {
 	var allAxis = (data[0].map(function(i, j){return i.axis})),	//Names of each axis
 		total = allAxis.length,					//The number of different axes
 		radius = Math.min(cfg.w/2, cfg.h/2), 	//Radius of the outermost circle
-		Format = d3.format('%'),			 	//Percentage formatting
+		Format = d3.format('.2%'),			 	//Percentage formatting
 		angleSlice = Math.PI * 2 / total;		//The width in radians of each "slice"
 	
 	//Scale for the radius
@@ -42,7 +42,6 @@ function RadarChart(id, data, options) {
 
 	//Remove whatever chart with the same id/class was present before
 	d3.select(id).select("svg").remove();
-	
 	//Initiate the radar chart SVG
 	var svg = d3.select(id).append("svg")
 			.attr("width",  cfg.w + cfg.margin.left + cfg.margin.right)
@@ -151,7 +150,7 @@ function RadarChart(id, data, options) {
 		.append("path")
 		.attr("class", "radarArea")
 		.attr("d", function(d,i) { return radarLine(d); })
-		.style("fill", function(d,i) { return cfg.color(i); })
+		.style("fill", chooseColor )
 		.style("fill-opacity", cfg.opacityArea)
 		.on('mouseover', function (d,i){
 			//Dim all blobs
@@ -175,7 +174,7 @@ function RadarChart(id, data, options) {
 		.attr("class", "radarStroke")
 		.attr("d", function(d,i) { return radarLine(d); })
 		.style("stroke-width", cfg.strokeWidth + "px")
-		.style("stroke", function(d,i) { return cfg.color(i); })
+		.style("stroke", chooseColor)
 		.style("fill", "none")
 		.style("filter" , "url(#glow)");		
 	
@@ -187,7 +186,7 @@ function RadarChart(id, data, options) {
 		.attr("r", cfg.dotRadius)
 		.attr("cx", function(d,i){ return rScale(d.value) * Math.cos(angleSlice*i - Math.PI/2); })
 		.attr("cy", function(d,i){ return rScale(d.value) * Math.sin(angleSlice*i - Math.PI/2); })
-		.style("fill", function(d,i,j) { return cfg.color(j); })
+		.style("fill", chooseColor )
 		.style("fill-opacity", 0.8);
 
 	/////////////////////////////////////////////////////////

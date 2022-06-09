@@ -9,6 +9,17 @@ function get_all_countrys(data){
 		}
 	}
 
+	countrys_all = countrys_all.map(function(c){
+		let amount = 0
+		data.map( function(d){
+			if (d.country.split(', ').includes(c)){
+				amount += 1;
+			}
+		})
+		return {'country' : c , 'amount' : amount}
+	})
+
+	countrys_all.sort((a, b) => b.amount - a.amount)
 	return countrys_all;
 }
 
@@ -23,5 +34,5 @@ function get_all_genres(data){
 	}
 	}
 	
-	return genres_all
+	return genres_all.sort()
 }

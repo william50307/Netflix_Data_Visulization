@@ -55,10 +55,11 @@ function parallel(id,data,genres_all) {
           tidyData.push(data)
         })
       })
+
     const color = d3
       .scaleOrdinal()
-      .domain(genres_all)
-      .range(genres_all.map((d, i) => d3.hsl((360 / 19) * i, 0.8, 0.6)))
+      .domain(['none'].concat(genres_all))
+      .range(['#ffffff'].concat(genres_all.map((d, i) => d3.hsl((360 / 19) * i, 0.8, 0.6))))
 
     const dimensions = ['release_year', 'duration', 'averageRating', 'numVotes']
     // For each dimension, I build a linear scale. I store all in a y object

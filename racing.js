@@ -79,7 +79,6 @@ function racingChart() {
       .step(1000 * 60 * 60 * 24 * 366) // not 365
       .width(800)
       .fill('#D4011D')
-      .handle('M 0 0 v -10 a 10,10 0 0,0 -10,10 a10,10 0 0,0 10,10 a10,10 0 0,0 10,-10  a10,10 0 0,0 -20,0')
       .tickFormat(d3.timeFormat('%Y'))
       .default([d3.min(dateList), d3.timeParse('%Y')('2021')])
       .on('onchange', function (val) {
@@ -92,6 +91,16 @@ function racingChart() {
     d3.select('#slider').append('svg').attr('class', 'mt-7').attr('preserveAspectRatio', 'xMinYMin meet').attr('viewBox', '0 0 875 600').classed('svg-content', true).append('g').attr('transform', 'translate(30,30)').call(sliderRange)
     // start playing racing bar chart
     d3.select('#play').on('click', function (event, d) {
+      event.target.disabled = true
+      if(event.target.disabled==true){
+        event.target.classList.remove('bg-neutral-700',	 'hover:bg-black',  'text-white','duration-200' ,'hover:text-[#D4011D]')
+        event.target.classList.add('bg-white','border-gray-200','cursor-not-allowed','border','duration-200','text-gray-100')
+        const stop = document.getElementById('stop')
+        stop.disabled =false
+        stop.classList.remove('bg-white','border-gray-200','cursor-not-allowed','border','duration-200','text-gray-100')    
+        stop.classList.add('bg-neutral-700',	 'hover:bg-black',  'text-white' ,'duration-200' ,'hover:text-[#D4011D]')
+      }
+
       const [start, end] = sliderRange.value().map((d) => new Date(d))
       if (!flag) {
         // if the racing bar stoped
@@ -110,6 +119,17 @@ function racingChart() {
 
     // click the stop button to stop racing bar chart
     d3.select('#stop').on('click', function (event, d) {
+      event.target.disabled = true
+      if(event.target.disabled==true){
+        event.target.classList.remove('bg-neutral-700',	 'hover:bg-black',  'text-white','duration-200' ,'hover:text-[#D4011D]')
+        event.target.classList.add('bg-white','border-gray-200','cursor-not-allowed','border','duration-200','text-gray-100')
+        const play = document.getElementById('play')
+        play.disabled =false
+        play.classList.remove('bg-white','border-gray-200','cursor-not-allowed','border','duration-200','text-gray-100')    
+        play.classList.add('bg-neutral-700',	 'hover:bg-black',  'text-white' ,'duration-200' ,'hover:text-[#D4011D]')
+      }
+
+
       flag = false
     })
 

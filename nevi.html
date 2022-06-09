@@ -1,0 +1,389 @@
+<!-- #D4011D -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEVI</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://d3js.org/d3.v6.js"></script>
+  <script src="https://unpkg.com/d3-simple-slider"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-cloud/1.2.5/d3.layout.cloud.min.js"
+    integrity="sha512-HjKxWye8lJGPu5q1u/ZYkHlJrJdm6KGr89E6tOrXeKm1mItb1xusPU8QPcKVhP8F9LjpZT7vsu1Fa+dQywP4eg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3-color@3"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3-interpolate@3"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3-scale-chromatic@3"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Joan&display=swap" rel="stylesheet" />
+  <script src="utils.js"></script>
+
+  <style>
+    body {
+      font-family: 'Joan', serif;
+    }
+
+    #racingBar {
+      display: inline-block;
+      position: relative;
+      width: 100%;
+      padding-bottom: 75%;
+      vertical-align: top;
+      overflow: hidden;
+    }
+
+    #slider {
+      display: inline-block;
+      position: relative;
+      width: 100%;
+      padding-bottom: 15%;
+      vertical-align: top;
+      overflow: hidden;
+    }
+
+    .svg-content {
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .axis text {
+      font-size: 16px;
+    }
+
+    .slider text {
+      font-size: 18px;
+    }
+
+    .netflixList {
+      list-style-image: url('https://upload.wikimedia.org/wikipedia/commons/0/0c/Netflix_2015_N_logo.svg');
+    }
+
+    text {
+      font-family: Joan;
+    }
+
+    #parallel text {
+      color: white;
+    }
+
+    .filterSlider {
+      display: inline-block;
+      position: relative;
+      width: 100%;
+      padding-bottom: 20%;
+      vertical-align: top;
+      overflow: hidden;
+    }
+
+    #pixel_filter .axis text {
+      font-size: 32px;
+    }
+
+    #pixel_filter .svg-content {
+      margin-top: 25px;
+    }
+
+    #numVotes text {
+      transform: rotate(-45deg);
+      text-anchor: end;
+    }
+
+    .image_group image {
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body class="">
+  <header class="relative">
+    <img class="w-full h-[30rem] object-cover block"
+      src="http://brief.promax.org/images/uploads/11598/netflix-opening-1920__large.jpg"
+      alt="" />
+    <div class="w-80 h-80 rounded-full bg-black flex absolute bottom-[-10rem] left-0 right-0 mx-auto">
+      <img src="logo.png" alt="" class="w-4/6 m-auto" />
+    </div>
+  </header>
+  <div class="container grid grid-cols-7 mx-auto mt-64 my-10 px-14">
+    <div class="col-span-3 mr-10">
+      <img class="w-2/3 mx-auto" src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" alt="" />
+      <p class="text-xl mt-4">Netflixis an American subscription streaming service and production company. Launched on
+        August 29, 1997, it offers a film and television series library through distribution deals as well as its own
+        productions, known as Netflix Originals.</p>
+      <ul class="mt-5 mr-4">
+        <li class="relative">
+          <div class="absolute block w-4 h-4 px-2 rounded-full bg-red-500 mt-2.5 left-[-6px]"></div>
+          <p class="py-1 border-l-2 pl-4 border-black">1997 :Reed Hastings and Marc Randolph have an idea to rent DVDs
+            by mail. They test the concept by mailing themselves a DVD. The DVD arrives intact, and the idea for Netflix
+            is born</p>
+        </li>
+        <li class="relative">
+          <div class="absolute block w-4 h-4 px-2 rounded-full bg-red-500 mt-2.5 left-[-6px]"></div>
+          <p class="py-1 border-l-2 pl-4 border-black">2002 :Netflix makes its initial public offering (IPO), at a
+            selling price of $1 a share under the NASDAQ ticker NFLX.</p>
+        </li>
+        <li class="relative">
+          <div class="absolute block w-4 h-4 px-2 rounded-full bg-red-500 mt-2.5 left-[-6px]"></div>
+          <p class="py-1 border-l-2 pl-4 border-black">2007 :Streaming is introduced, allowing members to instantly
+            watch series and films.</p>
+        </li>
+        <li class="relative">
+          <div class="absolute block w-4 h-4 px-2 rounded-full bg-red-500 mt-2.5 left-[-6px]"></div>
+          <p class="py-1 border-l-2 pl-4 border-black">2013 :'House of Cards,' 'Hemlock Grove,' 'Arrested Development'
+            and 'Orange Is the New Black' usher in the first slate of original series programming. 'House of Cards' goes
+            on to win three Primetime Emmy awards - the first for an internet streaming service. The Profiles and My
+            List features debut on streaming.</p>
+        </li>
+        <li class="relative">
+          <div class="absolute block w-4 h-4 px-2 rounded-full bg-red-500 mt-2.5 left-[-6px]"></div>
+          <p class="py-1 border-l-2 pl-4 border-black">2017 :Membership hits 100 million members globally. Netflix wins
+            its first Academy Award, for 'The White Helmets.'</p>
+        </li>
+
+        <li class="relative">
+          <div class="absolute block w-4 h-4 px-2 rounded-full bg-red-500 mt-2.5 left-[-6px]"></div>
+          <p class="py-1 border-l-2 pl-4 border-black">2021 :Membership surpasses 200 million.'</p>
+        </li>
+      </ul>
+      <p class="mt-2">Due to being a pioneer of the streaming platform, it’s not surprising that Netflix becomes the
+        tycoon. For now, subscribers can see 7000+ movies and TV shows on Netflix. These movies and TV shows are filmed
+        in different countries and have various genres which are suitable for the subscribers who have different
+        preferences and are at different ages. Thus, subscribers can select the movies or TV shows they want to see on
+        Netflix.</p>
+    </div>
+    <div class="border-2 col-span-4">
+      <div id="racingBar"></div>
+      <div id="slider">
+        <div class="flex justify-between mx-10">
+          <div class="text-xl text-bold">
+            <p>
+              From :
+              <span id="slide_min" class="mr-10">2008</span>
+              To :
+              <span id="slide_max">2021</span>
+            </p>
+          </div>
+          <div>
+            <button id="play" disabled class="bg-white border-gray-200 cursor-not-allowed border duration-200  text-gray-100 px-3 py-1 rounded-full font-bold">START</button>
+            <button id="stop" class="bg-neutral-700	 hover:bg-black  text-white duration-200 hover:text-[#D4011D] px-3 py-1 rounded-full font-bold">STOP</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="grid grid-cols-7 container px-10">
+    <div class="col-span-5 mx-auto">
+      <p class="text-5xl text-bold text-center">
+        Total Number :
+        <span id="amount"></span>
+
+      </p>
+      <div class="flex justify-center mt-3">
+        <div class="form-check form-switch">
+          <input
+            class="form-check-input appearance-none w-9 -ml-10 rounded-full float-left h-5 align-top bg-white bg-no-repeat bg-contain bg-gray-300 focus:outline-none cursor-pointer shadow-sm"
+            type="checkbox" role="switch" id="coverShow" checked="false">
+          <label class="form-check-label inline-block text-gray-800 " for="flexSwitchCheckDefault">Show the
+            cover</label>
+        </div>
+      </div>
+      <p class="text-3xl mx-auto margin-[-10rem] text-center mt-2 text-[#D4011D]" id="hoverTitle">
+        &nbsp;
+      </p>
+      <div id="pixel"></div>
+
+    </div>
+    <div id="pixel_filter" class="col-span-2 relative">
+
+      <p class="my-1">Country:</p>
+      <select class="select_countrys border-2 rounded-md border-gray-200 px-2 py-2 w-full"
+        data-filter_type="country"></select>
+      <div class="selected_country flex flex-wrap"></div>
+      <p  class="my-1">Genre:</p>
+
+      <select class="select_genres border-2 rounded-md border-gray-200 px-2 py-2 w-full" data-filter_type="genre"
+        class="border-1 border-dark"></select>
+      <div class="selected_genre flex flex-wrap"></div>
+      <br />
+      <div id="duration" class="filterSlider">
+        <div class="flex justify-between">
+          <p>Duration</p>
+          <div>
+            <span id="duration_min">1</span>
+            ~
+            <span id="duration_max">312</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="date_added" class="filterSlider">
+        <div class="flex justify-between">
+          <p>Added date</p>
+          <div>
+            <span id="time_min">2009-05</span>
+            ~
+            <span id="time_max">2021-01</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="averageRating" class="filterSlider">
+        <div class="flex justify-between">
+          <p>IMDB score</p>
+          <div>
+            <span id="averageRating_min">0</span>
+            ~
+            <span id="averageRating_max">10</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="numVotes" class="filterSlider">
+        <div class="flex justify-between">
+          <p>Number of IMDB ratings</p>
+          <div>
+            <span id="numVotes_min">0</span>
+            ~
+            <span id="numVotes_max">2.27405M</span>
+          </div>
+        </div>
+      </div>
+      <div class="absolute top-0 left-0 w-full">
+        <img src="" alt="" id="hoverImg" class="opacity-0 w-full object-cover" />
+      </div>
+    </div>
+  </div>
+  <div class="bg-[#141414]	 hidden" id="clickDetail">
+    <div class="container grid grid-cols-3 mx-auto py-10 px-14">
+      <div class="col-span-1 flex flex-col">
+        <img class="object-contain w-3/4 mx-auto" data-type="image" src="" alt="" />
+        <p class="text-bold text-3xl text-white mx-auto mt-3" data-type="title">Sex Education</p>
+        <ul class="text-xl  mt-5 text-[#D4011D]">
+          <li class="my-2 ">Country: <span data-type="clickCountry" class="text-white"></span> </li>
+          <li class="my-2">IMDB: <span data-type="IMDB" class="text-white"></span></li>
+          <li class="my-2">Duration: <span data-type="Duration" class="text-white"></span></li>
+          <li class="my-2">Release Year: <span data-type="Realease Year" class="text-white"></span></li>
+          <li class="my-2">Number of IMDB ratings: <span data-type="IMDB amount" class="text-white"></span></li>
+          <li class="my-2 ">rating-group: <span data-type="rating_group" class="text-white"></span></li>
+          <li class="my-2 ">Decription: <span data-type="Decription" class="text-white text-base"></span></li>
+        </ul>
+      </div>
+      <div class="col-span-2 flex flex-col">
+        <div id="wordCloud"></div>
+        <div id="parallel"></div>
+      </div>
+    </div>
+  </div>
+  <div class="container grid grid-cols-8 px-10 mx-auto gap-4">
+    <div class="col-span-8 text-4xl my-10 pl-6 border-l-[16px] border-[#D4011D] hidden" id="networkTitle">
+      Casts Network
+    </div>
+    <div id="network" class="col-span-6 ">
+    </div>
+    <div class="col-span-2 flex flex-col justify-center items-center">
+      <img src="" alt="" id="networkHoverImg">
+      <p class="text-center text-2xl mt-3" id="networkHoverTitle"></p>
+    </div>
+    <div id="networkAlert" class="col-span-8 text-4xl text-red-600 text-center my-20">
+    </div>
+  </div>
+  <div class="bg-[#141414] py-10">
+    <div class="container mx-auto px-10">
+      <div class="col-span-8 text-4xl mb-10 pl-6 text-white border-l-[16px] border-[#D4011D] " id="networkTitle">
+        World map
+      </div>
+
+      <div id="map_filter" class="flex justify-between mb-3 ">
+        <div class="flex">
+          <select id='map_select_genres' class="border-2 rounded-xl p-2 pl-2 border-gray-200"></select>
+
+          <!-- 這個div裡面只會有一個元素，代表被選到的genre，這裡default是comedies -->
+          <div id='map_selected_genres' class="flex items-center ml-3 text-2xl  text-[#D4011D]">
+            <p class="">Comedies</p>
+          </div>
+        </div>
+
+        <div class="form-check flex items-center" id="variable">
+          <label class="mx-2 text-white">
+            <input type='radio'
+              class=" form-check-input appearance-none  rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-[#D4011D] checked:border-rose-800 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+              name="variable" value="averageRating" checked> IMDB Score
+          </label>
+
+          <label class="mx-2 text-white">
+            <input type='radio'
+              class=" form-check-input appearance-none  rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-[#D4011D] checked:border-rose-800 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+              name="variable" value="numVotes" checked>
+             Average Number of IMDB Ratings
+          </label>
+          <!-- <input type='radio' name="variable" value="numVotes"> numVotes
+
+        <label class="form-check-label inline-block text-gray-800" for="flexRadioDefault1">
+          Default radio
+        </label> -->
+        </div>
+
+      </div>
+
+      <!-- Create an element where the map will take place -->
+      <div id="map_dataviz" class="border-4 border-gray-200 cursor-move relative bg-white">
+        <div id="colorScale" class="ml-3">
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div  class="container grid grid-cols-5 px-10 mx-auto py-5">
+    <div class="col-span-8 text-4xl mb-10 pl-6  border-l-[16px] border-[#D4011D] " id="networkTitle">
+      The propotion of  genres in differnt country.
+    </div>
+    <div class="col-span-3">
+      <div  id="stackBar_filter">
+        <p>Country:</p>
+        <div class="flex my-2">
+          <select id='select_countrys' class="w-52 border border-gray-200 rounded-md"></select>
+          <div id='selected_countrys' class="flex"></div>
+        </div>
+        <p>Genre:</p>
+        <div class="flex my-2">
+          
+          <select id='select_genres' class="w-52 border border-gray-200 rounded-md"></select>
+          <div id='selected_genres' class="flex"></div>
+        </div>
+        <p class="text-md my-2 text-red-600 ml-12">Tips : See the radar chart by double click the bar.</p>
+      </div>
+
+      <div id="stackBar"></div>
+    </div>
+    <div id="radarChart" class="col-span-2 flex items-center"></div>
+  </div>
+  <script src="racing.js"></script>
+  <script src="word_cloud.js"></script>
+  <script src="parallel.js"></script>
+  <script src="filter_sliders.js"></script>
+  <script src="pixel_chart.js"></script>
+  <script src="network.js"></script>
+
+  <script src="https://d3js.org/topojson.v0.min.js"></script>
+  <script src="utils.js"></script>
+  <script src="color_legend.js"></script>
+  <script src="map.js"></script>
+  <script src="stackBar.js"></script>
+  <script src="radar.js"></script>
+  <script>
+    racingChart()
+    pixel_chart()
+    map()
+    stackBar()
+  </script>
+</body>
+
+</html>

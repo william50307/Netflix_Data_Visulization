@@ -352,6 +352,21 @@
       const stackedData = d3.stack()
       .keys(countrys)
       (new_data)
+
+
+      x.domain(genres)
+      xAxis//.selectAll("g.bar_Xaxis")
+        .transition()
+        .duration(1000)
+        .call(d3.axisBottom(x));
+      
+
+      // find the max value, ref: http://using-d3js.com/05_06_stacks.html
+      y.domain([0, d3.max(stackedData[stackedData.length-1].map(d => d[1]))])
+      yAxis
+        .transition()
+        .duration(1000)
+        .call(d3.axisLeft(y));
       
       draw(stackedData)
 

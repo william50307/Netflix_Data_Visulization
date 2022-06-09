@@ -48,8 +48,26 @@
 		<span>To : </span><span id='numVotes_max'>10</span>
 	</div>
 
+	<input id='country_search' type='text' placeholder="Search..">
+	<ul id="search_support"></ul>
 </div>
 
 <script>
 	pixel_chart();
+
+	// 記得轉換成小寫 .toLowerCase()
+	countrys = ['abc', 'aaa', 'cde', 'dbc', 'hh12asd']
+	
+	d3.select('#country_search').on('keyup', function(event, d){
+		
+		let v = d3.select(this).property('value').toLowerCase()
+		console.log(v)
+		if (v !== ''){
+			const matched = countrys.filter( d => {console.log(d.includes(v));return d.includes(v)})
+			d3.select('#search_support').selectAll('li').data(matched).join('li').text(d => d)
+		}
+		else{
+			d3.selectAll('#search_support li').remove()
+		}
+	})
 </script>

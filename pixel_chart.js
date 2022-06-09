@@ -47,9 +47,6 @@ function pixel_chart() {
       update()
     })
 
-
-    //const filter_variables = ['countrys', 'genres']
-
     d3.select('#amount').text(data.length)
 
     // show country options and binding on change event
@@ -59,10 +56,10 @@ function pixel_chart() {
       .data(countrys_all)
       .join('option')
       .attr('class', 'country_para')
-      .property('selected', function (d) {
-        return d === 'Japan' ? true : false
-      })
-      .text((d) => d)
+      // .property('disabled', function (d) {
+      //   return d.country === 'Japan' ? true : false
+      // })
+      .text((d) => `${d.country} (${d.amount})` )
 
 
 
@@ -70,14 +67,14 @@ function pixel_chart() {
 
     // show genres options and binding onchange event
     let genres_all = get_all_genres(data)
-    d3.select('.select_genres')
+    d3.select('#pixel_filter .select_genres')
       .selectAll('option')
       .data(genres_all)
       .join('option')
       .attr('class', 'genre_para')
-      .property('selected', function (d) {
-        return d === 'Dramas' ? true : false
-      })
+      // .property('disabled', function (d) {
+      //   return d === 'Dramas' ? true : false
+      // })
       .text((d) => d)
 
     d3.select('#pixel_filter .select_genres').on('change', add_and_update)
@@ -101,7 +98,7 @@ function pixel_chart() {
       .domain(genres_all)
       .range(genres_all.map((d, i) => d3.hsl((360 / 19) * i, 0.8, 0.6)))
 
-    add_selected_country('Japan')
+    add_selected_country('Germany')
 
     // add default genres
     add_selected_genre('Dramas')
@@ -224,18 +221,25 @@ function pixel_chart() {
           d.matched_genres = matched_genres
         })
         filtered_data.sort((a, b) => a.matched_genres.length - b.matched_genres.length || a.matched_genres[0].localeCompare(b.matched_genres[0]))
+      }else{ // for paralle chart bug
+        filtered_data.forEach(d => d.matched_genres = ['none'])
       }
 
       // Map( country -> array())
       const map_data = new Map()
-      selected_countrys.map((c) =>
-        map_data.set(
-          c,
-          filtered_data.filter(function (d) {
-            return d.country.split(', ').includes(c)
-          }),
-        ),
-      )
+			if (selected_countrys.length === 0){
+				map_data.set('All countrys', filtered_data)
+			}
+			else{
+				selected_countrys.map((c) =>
+					map_data.set(
+						c,
+						filtered_data.filter(function (d) {
+							return d.country.split(', ').includes(c)
+						}),
+					),
+				)
+			}
 
       return [map_data, selected_countrys, selected_genres, amount, filtered_data]
     }
@@ -356,7 +360,7 @@ function pixel_chart() {
       country_selected_block.append('p').attr('class', 'px-3 py-1 mr-3 my-1 border-2 border-gray-200 bg-red-300 rounded-xl').text(value)
 
       country_selected_block.append('button').attr('data-country', value).attr('data-type', 'country').attr('class', ' absolute top-0 right-0 rounded-full w-5 text-xs h-5 text-center text-white bg-red-300 hover:bg-red-500 hover:duration-150 transition border-2 border-white font-sans	').text('X').on('click', remove)
-    }
+		}
 
     function add_selected_genre(value) {
       let country_selected_block = d3
@@ -383,7 +387,8 @@ function pixel_chart() {
 
       // add selected country
       if (type === 'country') {
-        add_selected_country(value)
+				// 去除country後面的數字
+        add_selected_country(value.split(' ')[0])
       }
       // add selected genre
       else {
